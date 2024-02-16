@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #132D46;
+    --darkgrey: #191E29;
+    --accentcolor: #03DDA0;
+    --white: #FFFFFF;
+    --buttoncolor: #FF006E;
+    --secondarycolor: #696E79;
+}
+
+::selection {
+    background-color: var(--buttoncolor);
+}
+
+main {
+    color: var(--var);
+}
