@@ -1,1 +1,1 @@
-# project-tech-group
+# Project Tech
