@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --blue: #132d46;
+    --darkgrey: #191e29;
+    --accentcolor: #03dda0;
+    --white: #ffffff;
+    --buttoncolor: #ff006e;
+    --secondarycolor: #696e79;
+    --lightblue: #5cadff;
+  }
+  
+  body {
+    background: linear-gradient(180deg, var(--blue), var(--darkgrey));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main section:first-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 100vw;
+    font-size: 1.2rem;
+  }
+  
+  h1 {
+    color: var(--accentcolor);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 2rem;
+    align-self: flex-start;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  form {
+    position: relative;
+  }
+  #searchbar {
+    width: 65vw;
+    height: 3rem;
+    border-radius: 14px;
+    margin-right: 0.5rem;
+    border-style: none;
+    font-size: 1.2rem;
+    background-color: var(--secondarycolor);
+    color: white;
+    position: relative;
+    padding: 10px 10px;
+  }
+  main section:first-of-type .flexdiv {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  main section:first-of-type .flexdiv form svg {
+    position: absolute;
+    width: 2rem;
+    height: 5vh;
+    right: 0;
+    margin-right: 1rem;
+    fill: white;
+  }
+  input::placeholder {
+    color: white;
+    padding: 10px 10px;
+  }
+  
+  input::after {
+    position: absolute;
+    content: "TEST";
+    background-color: red;
+  }
+  
+  main section:first-of-type .flexdiv button {
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--secondarycolor);
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+  }
+  main section:nth-of-type(2) {
+    display: flex;
+    width: 80vw;
+    margin-bottom: 1rem;
+  }
+  main section:nth-of-type(2) button {
+    width: 6rem;
+    height: 2rem;
+    background-color: var(--secondarycolor);
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    margin: 0.2rem;
+    background-color: white;
+  }
+  #Icon_awesome-filter {
+    fill: white;
+    width: 1vw;
+  }
+  main section:first-of-type .flexdiv button svg {
+    width: 1rem;
+  }
+  main section:nth-of-type(3) article {
+    width: 80vw;
+    height: 15vh;
+    background-color: #191e29;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    border: 1px solid white;
+  }
+  
+  .flexdiv {
+    display: flex;
+  }
+  
+  .filterMenu {
+    width: 100vw;
+    height: 90vh;
+    background: red;
+    z-index: 100;
+    position: absolute;
+    bottom: 0;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+  }
+  
