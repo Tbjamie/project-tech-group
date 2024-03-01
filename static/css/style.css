@@ -1,22 +1,21 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --blue: #132D46;
-    --darkgrey: #191E29;
-    --accentcolor: #03DDA0;
-    --white: #FFFFFF;
-    --buttoncolor: #FF006E;
-    --secondarycolor: #696E79;
+  --blue: #132d46;
+  --darkgrey: #191e29;
+  --accentcolor: #03dda0;
+  --white: #ffffff;
+  --buttoncolor: #ff006e;
+  --secondarycolor: #696e79;
 }
 
 ::selection {
-    background-color: var(--buttoncolor);
+  background-color: var(--buttoncolor);
 }
-
-main {
-    color: var(--var);
+body {
+  background: linear-gradient(180deg, var(--blue), var(--darkgrey));
 }
