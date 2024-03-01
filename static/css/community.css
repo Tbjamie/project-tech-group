@@ -72,17 +72,17 @@ article{
     align-items: center;
     width: 80vw;
     height: 80vw;
-    color: white;
-    border: solid 1px white;
+    color: var(--white);
+    border: solid 1px var(--white);
     margin: 1rem;
-    background-color: #191e29;
+    background-color: var(--darkgrey);
     border-radius: 1rem;
 }
 
 article svg{
     width: 50vw;
     height: 50vw;
-    background-color:  #03dda0;
+    order: -2;
    
 }
 
@@ -92,4 +92,8 @@ article p{
     text-align: center;
     font-size: 1.5rem;
     margin: 1rem;
+}
+
+section article svg path, section article svg circle{
+    fill: var(--accentcolor);
 }
