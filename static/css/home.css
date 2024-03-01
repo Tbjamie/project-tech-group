@@ -73,12 +73,6 @@ p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.newReleases img {
-  width: 80vw;
-  margin-top: 0.1em;
-  border-radius: 0.5em;
-}
-
 .slider article {
   background-color: #696e79;
   width: 80vw;
@@ -100,6 +94,21 @@ p {
   border-radius: 0.5em;
   font-weight: 700;
   letter-spacing: 0.1rem;
+}
+
+.newReleases img {
+  width: 80vw;
+  margin-top: 0.1em;
+  border-radius: 0.5em;
+}
+
+.newReleases article {
+  display: flex;
+  margin: ;
+}
+
+.newReleases h4 {
+  margin: 0 .5rem 0 .5rem;
 }
 
 .popular {
