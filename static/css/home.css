@@ -73,7 +73,25 @@ p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.slider article {
+.swiper-container {
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide li {
+}
+
+.swiper li {
+  list-style: none;
   background-color: #696e79;
   width: 80vw;
   height: auto;
@@ -82,12 +100,13 @@ p {
   margin: 1em;
 }
 
-.slider p {
+.swiper p {
   margin-bottom: 2rem;
 }
 
-.slider button {
-  padding: 1em 1.5em 1em 1.5em;
+.swiper a {
+  text-decoration: none;
+  padding: 0.8em 1.2em 0.8em 1.2em;
   color: var(--white);
   background-color: var(--buttoncolor);
   border: none;

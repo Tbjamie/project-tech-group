@@ -6,42 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="static\css\home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body id="home">
     <header></header>
     <main>
-      <section class="slider">
-        <h1>Welcome!</h1>
-        <article>
-          <h4>Helldivers II</h4>
-          <p>
-            Fight aliens together with other Helldivers in a new third-person
-            shooter game.
-          </p>
-          <p>€39,99</p>
-          <button>Buy now</button>
-        </article>
+      <div class="swiper-container">
+        <section class="swiper">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <h4>Helldivers I</h4>
+              <p>
+                Fight aliens together with other Helldivers in a new
+                third-person shooter game.
+              </p>
+              <p>€39,99</p>
+              <a href="#">Buy now</a>
+            </li>
 
-        <article>
-          <h4>Helldivers II</h4>
-          <p>
-            Fight aliens together with other Helldivers in a new third-person
-            shooter game.
-          </p>
-          <p>€39,99</p>
-          <button>Buy now</button>
-        </article>
+            <li class="swiper-slide">
+              <h4>Helldivers II</h4>
+              <p>
+                Fight aliens together with other Helldivers in a new
+                third-person shooter game.
+              </p>
+              <p>€39,99</p>
+              <a href="#">Buy now</a>
+            </li>
 
-        <article>
-          <h4>Helldivers II</h4>
-          <p>
-            Fight aliens together with other Helldivers in a new third-person
-            shooter game.
-          </p>
-          <p>€39,99</p>
-          <button>Buy now</button>
-        </article>
-      </section>
+            <li class="swiper-slide">
+              <h4>Helldivers III</h4>
+              <p>
+                Fight aliens together with other Helldivers in a new
+                third-person shooter game.
+              </p>
+              <p>€39,99</p>
+              <a href="#">Buy now</a>
+            </li>
+
+            <li class="swiper-slide">
+              <h4>Helldivers IIII</h4>
+              <p>
+                Fight aliens together with other Helldivers in a new
+                third-person shooter game.
+              </p>
+              <p>€39,99</p>
+              <a href="#">Buy now</a>
+            </li>
+          </ul>
+          <button class="swiper-button-prev"></button>
+          <!-- dit element met de class (swiper-button-next) gebruikt de lib voor de volgende button -->
+          <button class="swiper-button-next"></button>
+          <p class="swiper-pagination"></p>
+        </section>
+      </div>
 
       <section class="newReleases">
         <h2>New releases</h2>
@@ -81,5 +102,7 @@
       </section>
     </main>
     <footer></footer>
+    <script src="home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
