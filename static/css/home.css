@@ -104,11 +104,7 @@ p {
 
 .newReleases article {
   display: flex;
-  margin: ;
-}
-
-.newReleases h4 {
-  margin: 0 .5rem 0 .5rem;
+  flex-direction: column;
 }
 
 .popular {
