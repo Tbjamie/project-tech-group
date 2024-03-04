@@ -20,6 +20,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
 }
 
 main {
@@ -77,12 +78,6 @@ input::placeholder {
   padding: 10px 10px;
 }
 
-input::after {
-  position: absolute;
-  content: "TEST";
-  background-color: red;
-}
-
 main section:first-of-type .flexdiv button {
   width: 3rem;
   height: 3rem;
@@ -127,12 +122,143 @@ main section:nth-of-type(3) article {
 }
 
 .filterMenu {
+  padding-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
   width: 100vw;
-  height: 90vh;
-  background: red;
+  height: 88vh;
+  background: var(--darkgrey);
   z-index: 100;
   position: absolute;
   bottom: 0;
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
 }
+h2 {
+  color: var(--accentcolor);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2rem;
+  align-self: flex-start;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  width: 100%;
+}
+
+.filterMenu article {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.filterMenu svg {
+  width: 9vw;
+  fill: var(--accentcolor);
+  position: absolute;
+  right: 0;
+  margin-right: 1rem;
+}
+.filterMenu article h3 {
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.filterMenu article .divFlexPlatform button {
+  align-items: flex-start;
+  width: 7rem;
+  height: 2.5rem;
+  border-radius: 10px;
+  border-style: none;
+  cursor: pointer;
+}
+.divFlexPlatform {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 1rem;
+}
+hr {
+  text-align: center;
+  margin-top: 1rem;
+  border: 1px solid var(--lightblue);
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+label {
+  margin-top: 1rem;
+  width: 2em;
+  color: var(--lightblue);
+  margin: 1rem;
+  font-size: 2rem;
+}
+input[type="range"] {
+  margin-top: 6rem;
+  width: 90vw;
+  margin-left: 5vw;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"],
+input[type="range"]::-webkit-slider-runnable-track,
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  background-color: var(--lightblue);
+  width: 25px;
+  height: 25px;
+
+  border-radius: 50%;
+  margin-top: -10px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+input[type="range"]::-ms-thumb {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 3px;
+  background: linear-gradient(
+    to right,
+    var(--accentcolor) calc(var(--value) * 1%),
+    var(--buttoncolor) 0
+  );
+}
+/* input[type="range"]::-moz-range-track {
+  height: 3px;
+  background: linear-gradient(
+    to right,
+    var(--accentcolor) calc(var(--value) * 1%),
+    black 0
+  );
+} */
+
+/* input[type="range"]::-ms-track {
+  background-color: #777;
+  height: 3px;
+} */
+
+/* input[type="range"]::-ms-fill-lower {
+  background-color: HotPink;
+} */
+
+/* input[type="range"]::-ms-fill-upper {
+  background-color: black;
+} */
