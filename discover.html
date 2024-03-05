@@ -63,6 +63,7 @@
       <section class="filterMenu">
         <h2>FILTERS</h2>
         <?xml version="1.0" ?><svg
+          class="cross"
           style="enable-background: new 0 0 24 24"
           version="1.1"
           viewBox="0 0 24 24"
@@ -83,20 +84,36 @@
             <button></button>
             <button></button>
             <button></button>
-            <!-- <button></button>
-            <button></button>
-            <button></button>
-            <button></button> -->
           </div>
         </article>
         <hr />
         <article>
-          <input type="range" min="0" max="170" step="1" value="90" /><label
-            >90</label
-          >
+          <h3>MAX. PRICE</h3>
+          <input
+            id="priceValue"
+            type="range"
+            min="0"
+            max="150"
+            step="1"
+            value="75"
+          /><label id="prijsLabel">90</label>
         </article>
         <hr />
-        <article></article>
+        <article>
+          <h3>Genre</h3>
+          <div class="divFlexGenre">
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+          </div>
+        </article>
+        <div class="buttonContainer">
+          <button class="resetButton">RESET</button>
+          <button class="resultButton">RESULT</button>
+        </div>
       </section>
     </main>
     <footer></footer>

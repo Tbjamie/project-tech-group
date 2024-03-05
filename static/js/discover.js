@@ -1,3 +1,5 @@
+const priceValue = document.querySelector("#priceValue");
+
 for (input of document.querySelectorAll("input[type=range]")) {
   actualizarInput(input);
 }
@@ -14,4 +16,14 @@ function actualizarInput(input) {
   var inputMax = input.getAttribute("max");
   var unidad = (inputMax - inputMin) / 100;
   input.style.setProperty("--value", (input.value - inputMin) / unidad);
+  if (priceValue.value == 0) {
+    document.getElementById("prijsLabel").innerHTML = "Free";
+  } else {
+    return;
+  }
 }
+
+$("cross").on("click", function () {
+  $("filterMenu").removeClass("selected");
+  $(this).addClass("selected");
+});
