@@ -20,6 +20,7 @@
 
 #welcome {
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 #welcome main {
@@ -38,6 +39,8 @@
     text-align: center;
     color: var(--accentcolor);
     position: relative;
+    margin-bottom: 5rem;
+    font-size: 2.25rem;
 }
 
 #welcome main form h1::after {
@@ -88,7 +91,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100vw;
+    align-items: center;
 }
 
 #welcome main form fieldset:last-of-type {
@@ -114,6 +117,10 @@
     100% {
         opacity: 1;
     }
+}
+
+#welcome main form fieldset:nth-of-type(3) {
+    display: none;
 }
 
 #welcome main form fieldset input[type="submit"] {
@@ -151,8 +158,6 @@
 }
 
 #welcome fieldset {
-    display: flex;
-    flex-direction: column;
     border: none;
     margin-bottom: 2rem;
     animation-name: fadeIn;
@@ -160,7 +165,6 @@
     animation-iteration-count: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 #welcome fieldset label {
@@ -176,6 +180,8 @@
     width: 60vw;
     height: 2.25rem;
     border-radius: 5px;
+    color: var(--white);
+    padding: .5rem;
 }
 
 #welcome fieldset input:focus {

@@ -7,12 +7,14 @@
     <title>TEST</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<body style="height: 100vh; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 2rem;">
+<body style="height: 100vh; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center;">
     <!-- FIXME: DIT IS EEN TESTBESTAND -->
-    <p><%- users[0].username -%></p>
-    <p><%- users[0].email -%></p>
-    <p><%- users[0].genre -%></p>
-    <p><%- users[0].password -%></p>
-
+    <% if(users){
+        for(users of users) { %>
+            <h2>Welcome back, <%= users.username %></h2>
+        <% } %>
+    <% } else { %>
+        <p>No users found &#128531;</p>
+    <% } %>
 </body>
 </html>

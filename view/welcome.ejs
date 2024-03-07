@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to, GameSphere!</title>
     <link rel="stylesheet" href="/css/ejs.css">
-    <link rel="stylesheet" href="/js/welcome.js">
+    <script src="/js/welcome.js" defer></script>
 </head>
 <body id="welcome">
     <header></header>
@@ -26,7 +26,12 @@
             </fieldset>
 
             <fieldset>
-                    <input type="submit" name="submitButton" id="submitButton">
+                <label for="email">email</label>
+                <input type="email" name="email" id="email" autocomplete="email">
+            </fieldset>
+
+            <fieldset>
+                    <input type="submit" name="submitButton" id="submitButton" value="Sign in">
                     <p>or <a href="/sign-up">Create an account</a></p>
             </fieldset>
         </form>

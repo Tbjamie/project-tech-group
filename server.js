@@ -40,6 +40,8 @@ app
   .set("view engine", "ejs") // Set EJS to be our templating engine
   .set("views", "view") // And tell it the views can be found in the directory named view
   .get("/", welcome)
+  // .post("/", home)
+  // .get("/home", home)
   .get("/discover", discover)
   .get("/get-users", getUsers)
   .get("/sign-up", signUp)
@@ -52,9 +54,11 @@ app.listen(`${process.env.PORT}`, () => {
 });
 
 async function getUsers(req, res) {
-    users = await collection.find().toArray()
-
-    console.log(users[0])
+    let users = await collection.find().toArray()
+    users.forEach(user => {
+      console.log(user.username)
+    })
+    // console.log(users)
     res.render('users.ejs', {users: users})
 }
 

@@ -124,6 +124,19 @@ aan de hand daarvan een active state geven ipv onclick */
   display: block;
 }
 
+
+/****************/
+/****************/
+/***** HOME *****/
+/****************/
+/****************/
+
+#home {
+  width: 100vw;
+  min-height: 100vh;
+  color: var(--white);
+}
+
 /****************/
 /****************/
 /*** SIGN UP ****/

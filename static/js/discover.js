@@ -16,16 +16,16 @@ for (input of document.querySelectorAll("input[type=range]")) {
 }
 
 document.addEventListener("input", function (evt) {
-  var input = evt.target;
+  let input = evt.target;
   actualizarInput(input);
 });
 
 function actualizarInput(input) {
-  var label = input.parentElement.querySelector("label");
+  let label = input.parentElement.querySelector("label");
   label.innerHTML = input.value;
-  var inputMin = input.getAttribute("min");
-  var inputMax = input.getAttribute("max");
-  var unidad = (inputMax - inputMin) / 100;
+  let inputMin = input.getAttribute("min");
+  let inputMax = input.getAttribute("max");
+  let unidad = (inputMax - inputMin) / 100;
   input.style.setProperty("--value", (input.value - inputMin) / unidad);
   if (priceValue.value == 0) {
     document.getElementById("prijsLabel").innerHTML = "Free";
