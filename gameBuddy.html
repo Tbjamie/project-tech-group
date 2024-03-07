@@ -59,10 +59,12 @@
         <article></article>
         <article></article>
         <article></article>
+        <article></article>
       </section>
       <section class="filterMenu">
         <h2>FILTERS</h2>
         <?xml version="1.0" ?><svg
+        class="cross"
           style="enable-background: new 0 0 24 24"
           version="1.1"
           viewBox="0 0 24 24"
@@ -78,26 +80,30 @@
           </g>
         </svg>
         <article>
-          <h3>Genre</h3>
+          <h3>Leeftijd</h3>
           <div class="divFlexPlatform">
-            <button></button>
-            <button></button>
-            <button></button>
-            <span><button></button></span>
-            <button></button>
-            <button></button>
-            <button></button>
-            <span><button></button></span>
-            <button></button>
-            <button></button>
-            <button></button>
-            <span><button></button></span>
+            <button>PEGI 12</button>
+            <button>PEGI 16</button>
+            <button>PEGI 18</button>
           </div></article>
           <article>
-            <h3>Leeftijd</h3>
-          <div>
-            <span id="rangeValue">0</span>
-            <Input class="range" type="range" name "" value="0" min="18" max="35" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
+            <h3>Taal</h3>
+        <div class="select-dropdown">
+          <select>
+            <option value="Option 1">Taal</option>
+            <option value="Option 2"></option>
+            <option value="Option 3"></option>
+          </select>
+        </div>
+      </article>
+      <article>
+        <h3>Genre</h3>
+        <div class="select-dropdown">
+          <select>
+            <option value="Option 1">Genre</option>
+            <option value="Option 2"></option>
+            <option value="Option 3"></option>
+          </select>
         </div>
       </article>
       </section>
@@ -106,3 +112,5 @@
     <script src="./static/js/gameBuddy.js"></script>
   </body>
 </html>
+
+
