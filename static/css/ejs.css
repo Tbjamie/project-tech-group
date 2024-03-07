@@ -7,20 +7,22 @@
 }
 
 :root {
-    --blue: #132D46;
-    --darkgrey: #191E29;
-    --accentcolor: #03DDA0;
-    --white: #FFFFFF;
-    --buttoncolor: #FF006E;
-    --secondarycolor: #696E79;
-    --lightblue: #5CADFF;
+    --blue: #132d46;
+  --darkgrey: #191e29;
+  --accentcolor: #03dda0;
+  --white: #ffffff;
+  --buttoncolor: #ff006e;
+  --secondarycolor: #696e79;
+  --inactive: #696e79;
+  --navcolor:#212E3A;
+  --lightblue: #5CADFF;
 }
 
-body {
+#welcome {
     overflow-y: hidden;
 }
 
-main {
+#welcome main {
     width: 100vw;
     height: 100vh;
     background: linear-gradient(180deg, var(--blue), var(--darkgrey));
@@ -28,16 +30,17 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', sans-serif, Tahoma, Geneva, Verdana;
+    color: var(--white);
 }
 
-#welcome main h1 {
+#welcome main form h1 {
     text-align: center;
     color: var(--accentcolor);
     position: relative;
 }
 
-#welcome main h1::after {
+#welcome main form h1::after {
     width: 100%;
     height: 50%;
     content: '';
@@ -48,16 +51,15 @@ main {
     animation-name: introAnimation;
     animation-duration: 3.25s;
     animation-iteration-count: 1;
-    /* animation-delay: 750ms; */
     opacity: 0;
 }
 
-#welcome main h1 span {
+#welcome main form h1 span {
     color: white;
     position: relative;
 }
 
-#welcome main h1 span::after {
+#welcome main form h1 span::after {
     width: 100%;
     height: 100%;
     content: '';
@@ -82,14 +84,21 @@ main {
     }
 }
 
-#welcome main article {
+#welcome main form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+}
+
+#welcome main form fieldset:last-of-type {
     width: 100vw;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     animation-name: fadeIn;
-    animation-duration: 4s;
+    animation-duration: 5s;
     animation-iteration-count: 1;
 }
 
@@ -107,20 +116,22 @@ main {
     }
 }
 
-#welcome main article > a {
-    width: 80vw;
+#welcome main form fieldset input[type="submit"] {
+    width: 60vw;
     padding: 0.75rem;
     border-radius: 10px;
     border: none;
-    background-color: var(--buttoncolor);
+    background-color: var(--inactive);
     color: var(--white);
     text-transform: uppercase;
     font-weight: 600;
-    cursor: pointer;
+    cursor: default;
     text-align: center;
     text-decoration: none;
     display: block;
+    margin-top: 5rem;
     margin-bottom: 1rem;
+    letter-spacing: 1px;
 }
 
 #welcome main p {
@@ -139,131 +150,39 @@ main {
     color: var(--buttoncolor);
 }
 
-
-fieldset {
-    width: 80vw;
+#welcome fieldset {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background: linear-gradient(0deg, var(--blue), var(--darkgrey));
-    border-color: var(--lightblue);
-    border-radius: 20px;
-    padding: 2rem;
-    position: relative;
-}
-
-fieldset form {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 1;
-}
-
-fieldset h2 {
-    color: var(--accentcolor);
-    text-transform: uppercase;
-    letter-spacing: .2rem;
+    border: none;
     margin-bottom: 2rem;
-}
-
-fieldset .flexDiv {
+    animation-name: fadeIn;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
     display: flex;
     flex-direction: column;
-    width: 100%;
     align-items: center;
-    margin-bottom: 1.5rem;
 }
 
-fieldset .flexDiv:focus-within label {
-    font-weight: 600;
-}
-
-fieldset .flexDiv label {
+#welcome fieldset label {
     text-transform: uppercase;
-    font-weight: 400;
-    color: var(--white);
-    align-self: flex-start;
-    margin-bottom: 0.25rem;
-    letter-spacing: .1rem;
+    font-weight: 600;
+    margin-bottom: .25rem;
+    letter-spacing: 1px;
 }
 
-fieldset .flexDiv input,
-fieldset .flexDiv select {
-    width: 100%;
-    padding: .5rem;
-    border-radius: 10px;
-    border: none;
+#welcome fieldset input {
     background-color: var(--secondarycolor);
-    color: var(--white);
-}
-
-fieldset .flexDiv input:focus {
-    border: solid 1px var(--accentcolor);
-}
-
-fieldset .flexDiv input::placeholder {
-    color: var(--white);
-    opacity: .6;
-}
-
-fieldset .flexDiv:last-of-type {
-    margin-top: 1rem;
-}
-
-fieldset input[type="submit"] {
-    width: 100%;
-    padding: 0.75rem;
-    border-radius: 10px;
     border: none;
-    background-color: var(--buttoncolor);
-    color: var(--white);
-    text-transform: uppercase;
-    font-weight: 600;
-    cursor: pointer;
-    margin-bottom: 1rem;
+    width: 60vw;
+    height: 2.25rem;
+    border-radius: 5px;
 }
 
-#signUp p {
-    color: var(--white);
-}
-
-#signUp p a {
-    color: var(--accentcolor);
-    transition: 250ms;
-}
-
-#signUp p a:hover,
-#signUp p a:focus,
-#signUp p a:active {
-    color: var(--buttoncolor);
-}
-
-/* #makeAccount main {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-#makeAccount h1 {
-    color: var(--accentcolor); */
-    /* margin-bottom: 10rem; */
-/* }
-
-#makeAccount a {
-    width: 80vw;
-    padding: 0.75rem;
-    border-radius: 10px;
+#welcome fieldset input:focus {
+    outline: solid 1px var(--accentcolor);
+    outline-offset: 2px;
     border: none;
-    background-color: var(--buttoncolor);
-    color: var(--white);
-    text-transform: uppercase;
-    font-weight: 600;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-} */
+    width: 60vw;
+    height: 2.25rem;
+    border-radius: 5px;
+}

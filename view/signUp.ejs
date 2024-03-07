@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <script src="../static/js/script.js"></script> -->
+  </head>
+  <body id="signUp">
+    <header></header>
+    <main>
+        <form action="/add-user" method="post">
+          <h2>Sign Up</h2>
+
+          <div class="flexDiv">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+
+          <div class="flexDiv">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" required />
+          </div>
+
+          <div class="flexDiv">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required />
+          </div>
+
+          <div class="flexDiv">
+            <label for="genre">Genre</label>
+            <select name="genre" id="genre" required>
+              <option value="select">--Select--</option>
+            </select>
+          </div>
+
+          <input type="submit" id="submitButton" value="Sign up">
+          <p>or <a href="/login">Log in</a></p>
+        </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>

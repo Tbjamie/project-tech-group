@@ -41,6 +41,8 @@ app
   .set("views", "view") // And tell it the views can be found in the directory named view
   .get("/", welcome)
   .get("/discover", discover)
+  .get("/get-users", getUsers)
+  .get("/sign-up", signUp)
 //   .post("/sign-up", signUp);
 
 app.listen(`${process.env.PORT}`, () => {
@@ -49,12 +51,12 @@ app.listen(`${process.env.PORT}`, () => {
   );
 });
 
-// async function getUsers(req, res) {
-//     users = await collection.find().toArray()
+async function getUsers(req, res) {
+    users = await collection.find().toArray()
 
-//     console.log(users)
-//     res.render('test.ejs', {users: users})
-// }
+    console.log(users[0])
+    res.render('users.ejs', {users: users})
+}
 
 function welcome(req, res) {
     res.render("welcome.ejs")
@@ -62,6 +64,10 @@ function welcome(req, res) {
 
 function discover(req, res) {
     res.render("discover.ejs")
+}
+
+function signUp(req, res) {
+  res.render("signUp.ejs")
 }
 
 // Middleware to handle not found errors - error 404
