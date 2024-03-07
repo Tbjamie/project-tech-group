@@ -130,9 +130,18 @@ main section:nth-of-type(2) button {
 main section:first-of-type .flexdiv button svg {
   width: 1rem;
 }
+
+main section:nth-of-type(3){
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 1rem;
+}
+
 main section:nth-of-type(3) article {
-  width: 80vw;
-  height: 15vh;
+  width: 40vw;
+  height: 25vh;
   background-color: #191e29;
   margin-bottom: 1rem;
   border-radius: 1rem;
@@ -151,10 +160,16 @@ main section:nth-of-type(3) article {
   height: 88vh;
   background: var(--darkgrey);
   z-index: 100;
-  position: absolute;
-  bottom: 0;
+  position: fixed;
+  bottom: -100%;
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
+}
+
+.activeFilter {
+  bottom: 0%;
+  -webkit-transition: all 0.5s ease-out;
+  
 }
 
 .filterMenu article {
@@ -169,7 +184,9 @@ main section:nth-of-type(3) article {
   position: absolute;
   right: 0;
   margin-right: 1rem;
+  cursor: pointer;
 }
+
 .filterMenu article h3 {
   color: var(--white);
   text-transform: uppercase;
@@ -210,40 +227,41 @@ position: absolute;
 margin-top: 5rem;
 }
 
-#rangeValue {
-  position: relative;
-  display: block;
-  text-align: center;
-  font-size: 5em;
-  color: #999;
-  font-weight: 400;
-  top: 0.5rem;
+.select-dropdown {
+	position: relative;
+	background-color: var(--white);
+	border-radius: 4px;
 }
-.range {
-  width: 370px;
-  height: 15px;
-  /* -webkit-appearance: none; */
-  background: #111;
-  outline: none;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
+.select-dropdown select {
+	font-size: 1rem;
+	font-weight: normal;
+  width: 100%;
+	padding: 8px 24px 8px 10px;
+	border: none;
+	background-color: transparent;
+	appearance: none;
 }
-.range::-webkit-slider-thumb {
-  /* -webkit-appearance: none; */
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background: #00fd0a;
-  cursor: pointer;
-  border: 4px solid #333;
-  box-shadow: -407px 0 0 400px #00fd0a;
+.select-dropdown select:active, .select-dropdown select:focus {
+	outline: none;
+	box-shadow: none;
 }
-
-section:nth-of-type(4) div:nth-of-type(2){
-  margin-top: 10rem;
+.select-dropdown:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 8px;
+	width: 0;
+	height: 0;
+	margin-top: -2px;
+	border-top: 5px solid var(--secondarycolor);
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
 }
 
 section:nth-of-type(4) article:nth-of-type(2){
-  margin-top: 2rem;
+  margin-top: 3rem;
+}
+
+section:nth-of-type(4) article:nth-of-type(3){
+  margin-top: 5rem;
 }
