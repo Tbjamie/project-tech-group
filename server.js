@@ -69,12 +69,13 @@ app.use((req, res) => {
   console.error("404 error at URL: " + req.url);
   if(res.status(404)) {
       res.render("404page.ejs")
-      console.log("TEST")
   }
 });
 
 // Middleware to handle server errors - error 500
 app.use((err, req, res) => {
   console.error(err.stack);
-  res.status(500).send("500: server error");
+  if(res.status(500)) {
+      res.render("500page.ejs")
+  }
 });
