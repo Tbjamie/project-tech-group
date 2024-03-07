@@ -74,6 +74,10 @@ nav ul li a:active {
   fill: var(--accentcolor);
 }
 
+/* FIXME: Om de active page op alle pagina's te laten 
+werken moeten we kijken op welke pagina de url staat en 
+aan de hand daarvan een active state geven ipv onclick */
+
 /****************/
 /****************/
 /***** 404 ******/
@@ -94,16 +98,16 @@ nav ul li a:active {
   text-align: center;
 }
 
-#errPage h1 {
+#errPage div h1 {
   font-size: 6rem;
 }
 
-#errPage p {
+#errPage div p {
   font-size: 1.25rem;
   font-weight: 300;
 }
 
-#errPage a {
+#errPage main a {
   width: 80vw;
   padding: 0.75rem;
   border-radius: 10px;
