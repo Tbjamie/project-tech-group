@@ -7,32 +7,32 @@ require("dotenv").config();
 const express = require("express");
 const { disconnect } = require("process");
 const app = express();
-// const {
-//   ServerApiVersion,
-//   ObjectId,
-//   MongoClient,
-// } = require("mongodb");
+const {
+  ServerApiVersion,
+  ObjectId,
+  MongoClient,
+} = require("mongodb");
 
-// const uri = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}/${process.env.DB_NAME}?retryWrites=true&w=majority`;
-// const client = new MongoClient(uri, {
-//   serverApi: {
-//     version: ServerApiVersion.v1,
-//     strict: true,
-//     deprecationErrors: true,
-//   }
-// })
+const uri = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}/${process.env.DB_NAME}?retryWrites=true&w=majority`;
+const client = new MongoClient(uri, {
+  serverApi: {
+    version: ServerApiVersion.v1,
+    strict: true,
+    deprecationErrors: true,
+  }
+})
 
-// client.connect()
-//     .then((res) => {
-//         console.log("Database connection established")
-//     })
-//     .catch((err) => {
-//         console.log(`Database connection error - ${err}`)
-//         console.log(`For uri - ${uri}`)
-//     })
+client.connect()
+    .then((res) => {
+        console.log("Database connection established")
+    })
+    .catch((err) => {
+        console.log(`Database connection error - ${err}`)
+        console.log(`For uri - ${uri}`)
+    })
 
-// const db = client.db(process.env.DB_NAME)
-// const collection = db.collection(process.env.DB_COLLECTION)
+const db = client.db(process.env.DB_NAME)
+const collection = db.collection(process.env.DB_COLLECTION)
 
 app
   .use(express.urlencoded({ extended: true })) // middleware to parse form data from incoming HTTP request and add form fields to req.body
@@ -43,9 +43,9 @@ app
   .get("/discover", discover)
 //   .post("/sign-up", signUp);
 
-app.listen(`${8006}`, () => {
+app.listen(`${process.env.PORT}`, () => {
   console.log(
-    `Running on port ${8006}`
+    `Running on port ${process.env.PORT}`
   );
 });
 
