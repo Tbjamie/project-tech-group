@@ -129,14 +129,15 @@ main section:nth-of-type(3) article {
   height: 88vh;
   background: var(--darkgrey);
   z-index: 100;
-  position: absolute;
-  bottom: 0;
+  position: fixed;
+  bottom: -100%;
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
 }
-.filterMenu:active {
-  bottom: -100%;
+.activeFilter {
+  bottom: 0%;
   -webkit-transition: all 0.5s ease-out;
+  /* transition: all 1s ease-out; */
 }
 h2 {
   color: var(--accentcolor);

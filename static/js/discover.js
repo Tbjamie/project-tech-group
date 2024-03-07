@@ -1,4 +1,9 @@
 const priceValue = document.querySelector("#priceValue");
+const filterMenu = document.querySelector(".filterMenu");
+const filterButton = document.querySelector(
+  "main section:first-of-type .flexdiv button"
+);
+const closeButtonFilter = document.querySelector(".cross");
 
 for (input of document.querySelectorAll("input[type=range]")) {
   actualizarInput(input);
@@ -23,7 +28,25 @@ function actualizarInput(input) {
   }
 }
 
-$("cross").on("click", function () {
-  $("filterMenu").removeClass("selected");
-  $(this).addClass("selected");
+filterButton.addEventListener("click", () => {
+  let stateChecker = "inactive";
+  if (stateChecker == "inactive") {
+    stateChecker = "active";
+    filterMenu.classList.add("activeFilter");
+    document.body.style.overflowY = "hidden";
+    // filterMenu.style.display = "flex";
+  }
+  // else {
+  //   stateChecker = "inactive";
+  //   filterMenu.classList.remove("activeFilter");
+  // }
+});
+
+closeButtonFilter.addEventListener("click", () => {
+  // filterMenu.style.display = "none";
+  // setTimeout(1000, () => {
+  filterMenu.classList.remove("activeFilter");
+  document.body.style.overflowY = "scroll";
+  //   });
+  // });
 });
