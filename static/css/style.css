@@ -20,11 +20,10 @@
 body {
   background: linear-gradient(180deg, var(--blue), var(--darkgrey));
   width: 100vw;
-  height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1 {
+/* h1 {
   color: var(--accentcolor);
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -62,10 +61,10 @@ h4 {
 }
 
 p {
-  /* color: var(--white); */
+  color: var(--white);
   align-self: flex-start;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
+} */
 
 nav {
   position: fixed;
@@ -105,4 +104,9 @@ nav ul li a:active {
   color: var(--accentcolor);
   fill: var(--accentcolor);
   cursor: pointer;
+}
+
+.activeNavPage {
+  color: var(--accentcolor);
+  fill: var(--accentcolor);
 }
