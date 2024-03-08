@@ -12,6 +12,7 @@ const {
   ObjectId,
   MongoClient,
 } = require("mongodb");
+const { error } = require("console");
 
 const uri = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}/${process.env.DB_NAME}?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, {
@@ -40,12 +41,15 @@ app
   .set("view engine", "ejs") // Set EJS to be our templating engine
   .set("views", "view") // And tell it the views can be found in the directory named view
   .get("/", welcome)
-  .post("/", home)
+  .post("/", login)
+  .get("/login", loginPage)
+  .post("/login", login)
+  // .get("/home", home)
   // .get("/home", home)
   .get("/discover", discover)
-  .get("/get-users", getUsers)
+  // .get("/get-users", getUsers)
   .get("/sign-up", signUp)
-//   .post("/sign-up", signUp);
+  .post("/sign-up", signUp)
 
 app.listen(`${process.env.PORT}`, () => {
   console.log(
@@ -53,34 +57,55 @@ app.listen(`${process.env.PORT}`, () => {
   );
 });
 
-async function getUsers(req, res) {
-    let users = await collection.find().toArray()
-    users.forEach(user => {
-      console.log(user.username)
-    })
-    // console.log(users)
-    res.render('users.ejs', {users: users})
+// async function getUsers(req, res) {
+//     let users = await collection.find().toArray()
+//     users.forEach(user => {
+//       console.log(user.username)
+//     })
+//     // console.log(users)
+//     res.render('users.ejs', {users: users})
+// }
+
+async function login(req, res) {
+  let user = await collection.findOne({
+    username: req.body.username,
+  })
+  if((user) && (user.password === req.body.password)) {
+    console.log(user)
+    res.render('home.ejs', {user: user})
+  } else {
+    console.log(`${req.body.username} not found`)
+  }
 }
 
-async function home(req, res) {
-  let user = await collection.findOne({
-    username: req.body.username
-  })
-  console.log(user)
-  // res.render('users.ejs', {user: user})
+async function signUp(req, res) {
+  res.render('signUp.ejs')
+  // let user = await collection.findOne({
+  //   username: req.body.username,
+  // })
+  // if((user) && (user.password === req.body.password)) {
+  //   console.log(user)
+  //   res.render('home.ejs', {user: user})
+  // } else if((!user) || (user.password != req.body.password)) {
+  //   console.log(`${user} not found`)
+  // }
 }
 
 function welcome(req, res) {
     res.render("welcome.ejs")
 }
 
+function loginPage(req, res) {
+    res.render("login.ejs")
+}
+
 function discover(req, res) {
     res.render("discover.ejs")
 }
 
-function signUp(req, res) {
-  res.render("signUp.ejs")
-}
+// function signUp(req, res) {
+//   res.render("signUp.ejs")
+// }
 
 // Middleware to handle not found errors - error 404
 app.use((req, res) => {
