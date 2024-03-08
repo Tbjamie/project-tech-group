@@ -40,7 +40,7 @@ app
   .set("view engine", "ejs") // Set EJS to be our templating engine
   .set("views", "view") // And tell it the views can be found in the directory named view
   .get("/", welcome)
-  // .post("/", home)
+  .post("/", home)
   // .get("/home", home)
   .get("/discover", discover)
   .get("/get-users", getUsers)
@@ -60,6 +60,14 @@ async function getUsers(req, res) {
     })
     // console.log(users)
     res.render('users.ejs', {users: users})
+}
+
+async function home(req, res) {
+  let user = await collection.findOne({
+    username: req.body.username
+  })
+  console.log(user)
+  // res.render('users.ejs', {user: user})
 }
 
 function welcome(req, res) {

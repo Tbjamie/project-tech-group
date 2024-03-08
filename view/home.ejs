@@ -9,9 +9,11 @@
 <body id="home">
     <header>
         <%- include ("nav") -%>
+        <% include ("nav") %>
+        <%= include ("nav") %>
     </header>
     <main>
-        <!-- <h1><% req.params.username %></h1> -->
+        <h1><%= user %></h1>
     </main>
 </body>
 </html>
