@@ -20,7 +20,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  overflow-x: hidden;
+  max-width: 100%;
 }
 
 main {
@@ -28,6 +28,7 @@ main {
   flex-direction: column;
   align-items: center;
 }
+
 main section:first-of-type {
   display: flex;
   flex-direction: column;
@@ -70,6 +71,7 @@ h3 {
 form {
   position: relative;
 }
+
 #searchbar {
   width: 65vw;
   height: 3rem;
@@ -82,11 +84,13 @@ form {
   position: relative;
   padding: 10px 10px;
 }
+
 main section:first-of-type .flexdiv {
   width: 100vw;
   display: flex;
   justify-content: center;
 }
+
 main section:first-of-type .flexdiv form svg {
   position: absolute;
   width: 2rem;
@@ -95,6 +99,7 @@ main section:first-of-type .flexdiv form svg {
   margin-right: 1rem;
   fill: white;
 }
+
 input::placeholder {
   color: white;
   padding: 10px 10px;
@@ -108,11 +113,13 @@ main section:first-of-type .flexdiv button {
   border-style: none;
   cursor: pointer;
 }
+
 main section:nth-of-type(2) {
   display: flex;
   width: 80vw;
   margin-bottom: 1rem;
 }
+
 main section:nth-of-type(2) button {
   width: 6rem;
   height: 2rem;
@@ -123,23 +130,25 @@ main section:nth-of-type(2) button {
   margin: 0.2rem;
   background-color: white;
 }
+
 #Icon_awesome-filter {
   fill: white;
   width: 1vw;
 }
+
 main section:first-of-type .flexdiv button svg {
   width: 1rem;
 }
 
-main section:nth-of-type(3){
+main section:nth-of-type(4){
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 2rem;
-  margin: 1rem;
+  margin: 2.5rem;
 }
 
-main section:nth-of-type(3) article {
+main section:nth-of-type(4) article{
   width: 40vw;
   height: 35vh;
   background-color: #191e29;
@@ -168,7 +177,7 @@ main section:nth-of-type(3) article {
 
 .activeFilter {
   bottom: 0%;
-  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
   
 }
 
@@ -178,6 +187,7 @@ main section:nth-of-type(3) article {
   flex-direction: column;
   flex-wrap: wrap;
 }
+
 .filterMenu svg {
   width: 9vw;
   fill: var(--accentcolor);
@@ -195,6 +205,7 @@ main section:nth-of-type(3) article {
   text-align: left;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .filterMenu article .divFlexPlatform button {
   align-items: flex-start;
   width: 7rem;
@@ -203,10 +214,13 @@ main section:nth-of-type(3) article {
   border-style: none;
   cursor: pointer;
 }
+
 .divFlexPlatform {
   flex-wrap: wrap;
   display: flex;
+  justify-content: center;
   gap: 1rem;
+  margin-bottom: 3rem;
 }
 
 .divFlexPlatform span{
@@ -222,10 +236,10 @@ label {
   font-size: 2rem;
 }
 
-section:nth-of-type(4) div:nth-of-type(2){
+/* section:nth-of-type(4) div:nth-of-type(2){
 position: absolute;
 margin-top: 5rem;
-}
+}  */
 
 .select-dropdown {
 	position: relative;
@@ -258,10 +272,32 @@ margin-top: 5rem;
 	border-left: 5px solid transparent;
 }
 
-section:nth-of-type(4) article:nth-of-type(2){
-  margin-top: 3rem;
+.scroll{
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 5rem;
+  margin: 1rem;;
+  overflow-x: scroll;
+  margin: 1rem;;
+  overflow-y: hidden;
+
 }
 
-section:nth-of-type(4) article:nth-of-type(3){
-  margin-top: 5rem;
+.scroll article{
+  display: flex;
+  justify-content: space-between;
+  width: 40vw;
+  height: 35vh;
+  background-color: var(--darkgrey);
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  border: 1px solid white;
+  gap: 10rem;
+}
+
+section:nth-of-type(5) article:nth-of-type(3){
+  margin-top: 3rem;
 }
