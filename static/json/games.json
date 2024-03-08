@@ -25,7 +25,7 @@
         "age": "13",
         "description": "Legends of Runeterra is a free-to-play strategy card game set in the world of League of Legends. It features cards based on the iconic champions of League of Legends, as well as new characters and allies hailing from the regions of Runeterra, each with their own style and strategic advantage.",
         "developer": "Riot Games",
-        "url": "./static/images/cover/lor.jpg"
+        "url": "./static/images/cover/lorCover.jpg"
     },
     {
         "launcher": "Riot client",
@@ -115,7 +115,7 @@
         "age": "11",
         "description": "Among Us is an online multiplayer party game where crewmates work together to complete tasks on a spaceship, while impostors try to sabotage and kill them without being caught.",
         "developer": "Innersloth",
-        "url": "./static/images/cover/susCover.jpeg"
+        "url": "./static/images/cover/susCover.jpg"
     },
     {
         "launcher": "Steam",
