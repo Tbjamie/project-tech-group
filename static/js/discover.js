@@ -1,19 +1,57 @@
+// const { response } = require("express");
+
 const priceValue = document.querySelector("#priceValue");
 const filterMenu = document.querySelector(".filterMenu");
 const filterButton = document.querySelector(
   "main section:first-of-type .flexdiv button"
 );
 const closeButtonFilter = document.querySelector(".cross");
-const navButtonHome = document.querySelector("nav ul li a:first-of-type")
-const navButtonDiscover = document.querySelector("nav ul li a:nth-of-type(2)")
-const navButtonCommunity = document.querySelector("nav ul li a:nth-of-type(3)")
-const navButtonForum = document.querySelector("nav ul li a:nth-of-type(4)")
-const navButtonAccount = document.querySelector("nav ul li a:last-of-type")
-const navButtons = document.querySelectorAll("nav ul li")
+const navButtonHome = document.querySelector("nav ul li a:first-of-type");
+const navButtonDiscover = document.querySelector("nav ul li a:nth-of-type(2)");
+const navButtonCommunity = document.querySelector("nav ul li a:nth-of-type(3)");
+const navButtonForum = document.querySelector("nav ul li a:nth-of-type(4)");
+const navButtonAccount = document.querySelector("nav ul li a:last-of-type");
+const navButtons = document.querySelectorAll("nav ul li");
+
+const gameSection = document.querySelector("section:nth-of-type(3)");
 
 for (input of document.querySelectorAll("input[type=range]")) {
   actualizarInput(input);
 }
+
+// const gameList = async () => {
+//   const response = await fetch("/static/json/games.json");
+//   const data = response.json();
+
+//   const games = data.games;
+
+//   console.log(games);
+// };
+
+// gameList();
+
+fetch("/static/json/games.json")
+  .then((response) => {
+    if (!response.ok) {
+      console.log("ERROR");
+    }
+
+    return response.json();
+  })
+  .then((data) => {
+    const games = data.games;
+    console.log(games);
+    games.forEach((game) => {
+      let gameItem = document.createElement("article");
+      gameSection.append(gameItem);
+      let gameTitle = document.createElement("h3");
+      gameTitle.innerText = game.title;
+      gameItem.append(gameTitle);
+      let gameLauncher = document.createElement("h4");
+      gameLauncher.innerText = game.launcher;
+      gameItem.append(gameLauncher);
+    });
+  });
 
 document.addEventListener("input", function (evt) {
   let input = evt.target;
@@ -58,54 +96,13 @@ closeButtonFilter.addEventListener("click", () => {
 });
 
 const activeNavPage = () => {
-
-  // navButtonHome.addEventListener("click", () => {
-  //   navButtonHome.classList.add("activeNavPage")
-  //   navButtonDiscover.classList.remove("activeNavPage")
-  //   navButtonCommunity.classList.remove("activeNavPage")
-  //   navButtonForum.classList.remove("activeNavPage")
-  //   navButtonAccount.classList.remove("activeNavPage")
-  // })
-
-  // navButtonDiscover.addEventListener("click", () => {
-  //   navButtonHome.classList.remove("activeNavPage")
-  //   navButtonDiscover.classList.add("activeNavPage")
-  //   navButtonCommunity.classList.remove("activeNavPage")
-  //   navButtonForum.classList.remove("activeNavPage")
-  //   navButtonAccount.classList.remove("activeNavPage")
-  // })
-
-  // navButtonCommunity.addEventListener("click", () => {
-  //   navButtonHome.classList.remove("activeNavPage")
-  //   navButtonDiscover.classList.remove("activeNavPage")
-  //   navButtonCommunity.classList.add("activeNavPage")
-  //   navButtonForum.classList.remove("activeNavPage")
-  //   navButtonAccount.classList.remove("activeNavPage")
-  // })
-
-  // navButtonForum.addEventListener("click", () => {
-  //   navButtonHome.classList.remove("activeNavPage")
-  //   navButtonDiscover.classList.remove("activeNavPage")
-  //   navButtonCommunity.classList.remove("activeNavPage")
-  //   navButtonForum.classList.add("activeNavPage")
-  //   navButtonAccount.classList.remove("activeNavPage")
-  // })
-
-  // navButtonAccount.addEventListener("click", () => {
-  //   navButtonHome.classList.remove("activeNavPage")
-  //   navButtonDiscover.classList.remove("activeNavPage")
-  //   navButtonCommunity.classList.remove("activeNavPage")
-  //   navButtonForum.classList.remove("activeNavPage")
-  //   navButtonAccount.classList.add("activeNavPage")
-  // })
-
-  navButtons.forEach(button => {
-    console.log(button)
-      button.addEventListener("click", () => {
-        button.classList.add("activeNavPage")
-      })
-      button.classList.remove("activeNavPage")
-  })
-}
+  navButtons.forEach((button) => {
+    console.log(button);
+    button.addEventListener("click", () => {
+      button.classList.add("activeNavPage");
+    });
+    button.classList.remove("activeNavPage");
+  });
+};
 
 activeNavPage();
