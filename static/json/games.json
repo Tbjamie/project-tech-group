@@ -1,0 +1,38 @@
+[
+    {
+        "launcher": "Riot client",
+        "title": "VALORANT",
+        "genre": "FPS",
+        "age": "16",
+        "description": "Valorant is a team-based first-person tactical hero shooter set in the near future. Players play as one of a set of Agents, characters based on several countries and cultures around the world. In the main game mode, players are assigned to either the attacking or defending team with each team having five players on it.",
+        "developer": "Riot Games",
+        "url": ""
+    },
+    {
+        "launcher": "Riot client",
+        "title": "League of Legends",
+        "genre": "MOBA",
+        "age": "13",
+        "description": "League of Legends is a team-based strategy game where two teams of five powerful champions face off to destroy the other's base. Choose from over 140 champions to make epic plays, secure kills, and take down towers as you battle your way to victory.",
+        "developer": "Riot Games",
+        "url": ""
+    },
+    {
+        "launcher": "Riot client",
+        "title": "Legends of Runeterra",
+        "genre": "CCG",
+        "age": "13",
+        "description": "Legends of Runeterra is a free-to-play strategy card game set in the world of League of Legends. It features cards based on the iconic champions of League of Legends, as well as new characters and allies hailing from the regions of Runeterra, each with their own style and strategic advantage.",
+        "developer": "Riot Games",
+        "url": ""
+    },
+    {
+        "launcher": "Riot client",
+        "title": "Teamfight Tactics (TFT)",
+        "genre": "Auto Battler",
+        "age": "13",
+        "description": "Teamfight Tactics is an autobattler: a round-based PvP game where you'll draft a team that battles automatically on your behalf, featuring iconic champions from League of Legends. Your goal? Grow your team and protect your board to become the last player standing.",
+        "developer": "Riot Games",
+        "url": ""
+    }
+]
