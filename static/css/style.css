@@ -12,8 +12,9 @@
   --buttoncolor: #ff006e;
   --secondarycolor: #696e79;
   --inactive: #696e79;
-  --navcolor:#212E3A;
-  --lightblue: #5CADFF;
+  --navcolor: #212e3a;
+  --lightblue: #5cadff;
+  --hrcolor: #132d46;
 }
 
 ::selection {
@@ -22,7 +23,7 @@
 body {
   background: linear-gradient(180deg, var(--blue), var(--darkgrey));
   width: 100vw;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /****************/
@@ -51,7 +52,7 @@ nav ul {
 
 nav ul li a {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   align-items: center;
   text-decoration: none;
   gap: 0.4em;
@@ -124,7 +125,6 @@ aan de hand daarvan een active state geven ipv onclick */
   display: block;
 }
 
-
 /****************/
 /****************/
 /***** HOME *****/
@@ -154,7 +154,7 @@ aan de hand daarvan een active state geven ipv onclick */
 }
 
 #signUp form {
-  width: 80vw;;
+  width: 80vw;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -170,7 +170,7 @@ aan de hand daarvan een active state geven ipv onclick */
 #signUp h2 {
   color: var(--accentcolor);
   text-transform: uppercase;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   margin-bottom: 2rem;
 }
 
@@ -192,13 +192,13 @@ aan de hand daarvan een active state geven ipv onclick */
   color: var(--white);
   align-self: flex-start;
   margin-bottom: 0.25rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 #signUp .flexDiv input,
 #signUp .flexDiv select {
   width: 100%;
-  padding: .5rem;
+  padding: 0.5rem;
   border-radius: 10px;
   border: none;
   background-color: var(--secondarycolor);
@@ -211,7 +211,7 @@ aan de hand daarvan een active state geven ipv onclick */
 
 #signUp .flexDiv input::placeholder {
   color: var(--white);
-  opacity: .6;
+  opacity: 0.6;
 }
 
 #signUp .flexDiv:last-of-type {
