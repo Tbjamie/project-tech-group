@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign up</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- <script src="../static/js/script.js"></script> -->
-  </head>
-  <body id="signUp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to, GameSphere!</title>
+    <link rel="stylesheet" href="/css/ejs.css">
+    <!-- <script src="/js/welcome.js" defer></script> -->
+</head>
+<body id="signUp">
     <header></header>
     <main>
-        <form action="/add-user" method="post">
-          <h2>Sign Up</h2>
+        <form action="/sign-up" method="post">
 
-          <div class="flexDiv">
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" required />
-          </div>
+            <h1><span>Welcome to,</span> GameSphere</h1>
 
-          <div class="flexDiv">
-            <label for="username">Username</label>
-            <input type="text" name="username" id="username" required />
-          </div>
+            <fieldset>
+                <label for="username">username</label>
+                <input type="text" name="username" id="username" autocomplete="username">
+            </fieldset>
 
-          <div class="flexDiv">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" required />
-          </div>
+            <fieldset>
+                <label for="password">password</label>
+                <input type="password" name="password" id="password" autocomplete="current-password">
+            </fieldset>
 
-          <div class="flexDiv">
-            <label for="genre">Genre</label>
-            <select name="genre" id="genre" required>
-              <option value="select">--Select--</option>
-            </select>
-          </div>
+            <fieldset>
+                <label for="email">email</label>
+                <input type="email" name="email" id="email" autocomplete="email">
+            </fieldset>
 
-          <input type="submit" id="submitButton" value="Sign up">
-          <p>or <a href="/login">Log in</a></p>
+            <fieldset>
+                    <input type="submit" name="submitButton" id="submitButton" value="Sign up">
+                    <p>or <a href="/login">Log in</a></p>
+            </fieldset>
         </form>
+        <!-- TODO: IF USERNAME EXISTS IN DB, METHOD GET (OM IN TE LOGGEN) & ACTION => HOMEPAGE & AUTOCOMPLETE = CURRENT PASSWORD, 
+            ELSE IF USERNAME DOESNT EXIST IN DB, METHOD PUSH (OM ACC TE MAKEN) & ACTION => HOMEPAGE & AUTOCOMPLETE = NEW PASSWORD -->
+        <!-- <article>
+            <a href="/login">Sign in</a>
+            <p>or <a href="/sign-up">Create an account</a></p>
+        </article> -->
     </main>
     <footer></footer>
-  </body>
+</body>
 </html>
