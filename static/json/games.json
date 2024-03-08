@@ -34,5 +34,194 @@
         "description": "Teamfight Tactics is an autobattler: a round-based PvP game where you'll draft a team that battles automatically on your behalf, featuring iconic champions from League of Legends. Your goal? Grow your team and protect your board to become the last player standing.",
         "developer": "Riot Games",
         "url": ""
+    },
+    {
+        "launcher": "Epic client",
+        "title": "Fortnite",
+        "genre": ["Battle Royale", "Survival"],
+        "age": "13",
+        "description": "Fortnite is a popular online multiplayer game where players fight to be the last one standing in a rapidly shrinking battlefield. It features building mechanics, a variety of weapons, and frequent updates with new content.",
+        "developer": "Epic Games",
+        "url": "https://www.epicgames.com/fortnite/"
+    },
+    {
+        "launcher": ["Steam", "Epic client"],
+        "title": "Bloons TD 6",
+        "genre": "Tower Defense",
+        "age": "10",
+        "description": "Bloons TD 6 is a tower defense game where players strategically place towers to defend against waves of colorful balloons. It features a variety of towers, upgrades, and maps to challenge players of all skill levels.",
+        "developer": "Ninja Kiwi",
+        "url": ""
+    },
+    {
+        "launcher": "Epic client",
+        "title": "Fall Guys: Ultimate Knockout",
+        "genre": ["Battle Royale", "Platformer"],
+        "age": "11",
+        "description": "Fall Guys: Ultimate Knockout is a colorful and chaotic battle royale game where players compete in a series of mini-games to be the last one standing. It features a variety of whimsical obstacle courses and challenges.",
+        "developer": "Mediatonic",
+        "url": ""
+    },
+    {
+        "launcher": "Epic client",
+        "title": "Rocket League",
+        "genre": ["Sports", "Racing"],
+        "age": "11",
+        "description": "Rocket League is a high-powered hybrid of arcade-style soccer and vehicular mayhem with easy-to-understand controls and fluid, physics-driven competition. Players control rocket-powered cars to hit a ball into the opponent's goal.",
+        "developer": "Psyonix",
+        "url": ""
+    },
+    {
+        "launcher": "Steam",
+        "title": "The Witcher 3: Wild Hunt",
+        "genre": ["Action", "RPG"],
+        "age": "18",
+        "description": "The Witcher 3: Wild Hunt is an open-world action role-playing game set in a dark fantasy universe. Players control Geralt of Rivia, a monster hunter, as he searches for his missing adopted daughter.",
+        "developer": "CD Projekt Red",
+        "url": ""
+    },
+    {
+        "launcher": "Steam",
+        "title": "Grand Theft Auto V",
+        "genre": ["Action", "Adventure"],
+        "age": "19",
+        "description": "Grand Theft Auto V is an action-adventure game set in an open-world environment. Players complete missions—linear scenarios with set objectives—to progress through the story.",
+        "developer": "Rockstar North",
+        "url": ""
+    },
+    {
+        "launcher": "Steam",
+        "title": "PlayerUnknown's Battlegrounds (PUBG)",
+        "genre": "Battle Royale",
+        "age": "17",
+        "description": "PUBG is a multiplayer battle royale game developed and published by PUBG Corporation, a subsidiary of South Korean video game company Bluehole.",
+        "developer": "PUBG Corporation",
+        "url": ""
+    },
+    {
+        "launcher": "Steam",
+        "title": "Counter-Strike: Global Offensive",
+        "genre": "FPS",
+        "age": "17",
+        "description": "CS:GO is a multiplayer first-person shooter game developed by Valve and Hidden Path Entertainment. It's the fourth game in the Counter-Strike series.",
+        "developer": "Valve",
+        "url": ""
+    },
+    {
+        "launcher": "Steam",
+        "title": "Among Us",
+        "genre": ["Party", "Social Deduction"],
+        "age": "11",
+        "description": "Among Us is an online multiplayer party game where crewmates work together to complete tasks on a spaceship, while impostors try to sabotage and kill them without being caught.",
+        "developer": "Innersloth",
+        "url": ""
+    },
+    {
+        "launcher": "Steam",
+        "title": "Dota 2",
+        "genre": "MOBA",
+        "age": "14",
+        "description": "Dota 2 is a multiplayer online battle arena (MOBA) game developed and published by Valve. It's a sequel to Defense of the Ancients (DotA), a community-created mod for Warcraft III: Reign of Chaos.",
+        "developer": "Valve",
+        "url": ""
+    },
+    {
+        "launcher": "Steam",
+        "title": "Red Dead Redemption 2",
+        "genre": ["Action", "Adventure"],
+        "age": "18",
+        "description": "Red Dead Redemption 2 is an action-adventure game set in an open-world environment. It's the third entry in the Red Dead series and a prequel to the 2010 game Red Dead Redemption.",
+        "developer": "Rockstar Games",
+        "url": ""
+    },
+    {
+        "launcher": "Steam",
+        "title": "Cyberpunk 2077",
+        "genre": ["Action", "RPG"],
+        "age": "19",
+        "description": "Cyberpunk 2077 is an open-world action-adventure RPG set in the dystopian Night City, a megalopolis obsessed with power, glamour, and body modification.",
+        "developer": "CD Projekt Red",
+        "url": ""
+    },
+    {
+        "launcher": "Steam",
+        "title": "Rust",
+        "genre": "Survival",
+        "age": "18",
+        "description": "Rust is a multiplayer-only survival video game developed by Facepunch Studios. Players must successfully manage their hunger, thirst, and health, or risk dying.",
+        "developer": "Facepunch Studios",
+        "url": ""
+    },
+    {
+        "launcher": "Steam",
+        "title": "Monster Hunter: World",
+        "genre": ["Action", "RPG"],
+        "age": "13",
+        "description": "Monster Hunter: World is an action role-playing game developed and published by Capcom. Players take on the role of a hunter tasked with tracking and hunting down monsters in various environments.",
+        "developer": "Capcom",
+        "url": ""
+    },
+    {
+        "launcher": "Steam",
+        "title": "Stardew Valley",
+        "genre": ["Simulation", "RPG"],
+        "age": "11",
+        "description": "Stardew Valley is a farming simulation role-playing game developed by Eric ConcernedApe Barone. Players can grow crops, raise animals, mine for resources, and build relationships with villagers.",
+        "developer": "ConcernedApe",
+        "url": ""
+    },
+    {
+        "launcher": "Steam",
+        "title": "Rainbow Six Siege",
+        "genre": "Tactical Shooter",
+        "age": "19",
+        "description": "Rainbow Six Siege is an online tactical shooter game developed by Ubisoft. Players control operators from the Rainbow team and counter-terrorism units, each with their own unique abilities.",
+        "developer": "Ubisoft",
+        "url": ""
+    },
+    {
+        "launcher": "Steam",
+        "title": "Terraria",
+        "genre": ["Action", "Adventure"],
+        "age": "11",
+        "description": "Terraria is an action-adventure sandbox game developed by Re-Logic. Players can explore, build, and fight in a procedurally generated 2D world.",
+        "developer": "Re-Logic",
+        "url": ""
+    },
+    {
+        "launcher": "Steam",
+        "title": "Team Fortress 2",
+        "genre": "FPS",
+        "age": "14",
+        "description": "Team Fortress 2 is a multiplayer first-person shooter game developed and published by Valve. It's the sequel to the 1996 mod Team Fortress for Quake and its 1999 remake.",
+        "developer": "Valve",
+        "url": ""
+    },
+    {
+        "launcher": "Steam",
+        "title": "Apex Legends",
+        "genre": ["Battle Royale", "First-Person Shooter"],
+        "age": "14",
+        "description": "Apex Legends is a free-to-play battle royale game developed by Respawn Entertainment. It features characters with unique abilities and squad-based gameplay.",
+        "developer": "Respawn Entertainment",
+        "url": ""
+    },
+    {
+        "launcher": "Steam",
+        "title": "Fallout 4",
+        "genre": "Action",
+        "age": "18",
+        "description": "Fallout 4 is an action role-playing game developed by Bethesda Game Studios. Players assume the role of the Sole Survivor, who emerges from a long cryogenic stasis in Vault 111, an underground nuclear fallout shelter.",
+        "developer": "Bethesda Game Studios",
+        "url": ""
+    },
+    {
+        "launcher": "Steam",
+        "title": "Skyrim Special Edition",
+        "genre": ["Action", "RPG"],
+        "age": "18",
+        "description": "The Elder Scrolls V: Skyrim Special Edition is an open-world action role-playing game developed by Bethesda Game Studios. It's a remastered version of the original game with improved graphics and mod support.",
+        "developer": "Bethesda Game Studios",
+        "url": ""
     }
 ]
