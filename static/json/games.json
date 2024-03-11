@@ -46,7 +46,7 @@
       "url": "./static/images/cover/fortniteCover.jpg"
     },
     {
-      "launcher": ["./static/logos/steam.svg"],
+      "launcher": "./static/logos/steam.svg",
       "title": "Bloons TD 6",
       "genre": "Tower Defense",
       "age": "10",
@@ -199,7 +199,7 @@
       "url": "./static/images/cover/tf2Coverjpg.jpg"
     },
     {
-      "launcher": ["./static/logos/steam.svg"],
+      "launcher": "./static/logos/steam.svg",
       "title": "Apex Legends",
       "genre": ["Battle Royale", "First-Person Shooter"],
       "age": "14",
@@ -404,6 +404,25 @@
       "description": "Dragon Age: Inquisition is an epic action-RPG set in a fantasy world on the brink of chaos. Players assume the role of the Inquisitor and lead a team of heroes on a quest to restore order and save the world from a supernatural threat. With its deep story, strategic combat, and expansive world, it offers a memorable gaming experience.",
       "developer": "BioWare",
       "url": "./static/images/cover/dragonageCover.jpg"
+    },
+    {
+        "launcher": "./static/logos/steam.svg",
+        "title": "Hades",
+        "genre": ["Action, Indie", "Rogue-like"],
+        "age": "13",
+        "description": "Hades is a rogue-like dungeon crawler where you defy the god of the dead as you hack and slash your way out of the Underworld of Greek myth. ",
+        "developer": "Supergiant Games",
+        "url": "./static/images/cover/hadesCover.jpeg"
+    },
+    {
+        "launcher": "./static/logos/steam.svg",
+        "title": "Helldivers",
+        "genre": ["Action", "Strategy", "Shooter"],
+        "age": "17",
+        "description": "Helldivers is a hardcore, cooperative, twin-stick shooter from the creators of Magicka. Dive into a procedurally generated universe filled with chaos and challenge as you fight to protect Super Earth and defeat the enemies of mankind in an intense intergalactic war.",
+        "developer": "Arrowhead Game Studios",
+        "url": "./static/images/cover/helldiversCover.jpg"
+    
     }
   ]
 }
