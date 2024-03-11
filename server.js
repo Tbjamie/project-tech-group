@@ -1,20 +1,23 @@
 // dit is een boilerplate voor een node.js webserver met alle basis die je nodig hebt om je webserver aan de praat te krijgen
 
 // Add info from .env file to process.env
-require("dotenv").config();
+require("dotenv").config()
+
+const xss = require("xss") // TODO: GEBRUIK DEZE NOG ERGENS
+var bcrypt = require('bcryptjs') // TODO: GEBRUIK DEZE NOG ERGENS
 
 // Initialise Express webserver
-const express = require("express");
-const { disconnect } = require("process");
-const app = express();
+const express = require("express")
+const { disconnect } = require("process")
+const app = express()
 const {
   ServerApiVersion,
   ObjectId,
   MongoClient,
-} = require("mongodb");
-const { error } = require("console");
+} = require("mongodb")
+const { error } = require("console")
 
-const uri = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}/${process.env.DB_NAME}?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}/${process.env.DB_NAME}?retryWrites=true&w=majority`
 const client = new MongoClient(uri, {
   serverApi: {
     version: ServerApiVersion.v1,
@@ -54,8 +57,8 @@ app
 app.listen(`${process.env.PORT}`, () => {
   console.log(
     `Running on port ${process.env.PORT}`
-  );
-});
+  )
+})
 
 // async function getUsers(req, res) {
 //     let users = await collection.find().toArray()
@@ -122,16 +125,16 @@ function discover(req, res) {
 
 // Middleware to handle not found errors - error 404
 app.use((req, res) => {
-  console.error("404 error at URL: " + req.url);
+  console.error("404 error at URL: " + req.url)
   if(res.status(404)) {
       res.render("404page.ejs")
   }
-});
+})
 
 // Middleware to handle server errors - error 500
 app.use((err, req, res) => {
-  console.error(err.stack);
+  console.error(err.stack)
   if(res.status(500)) {
       res.render("500page.ejs")
   }
-});
+})
