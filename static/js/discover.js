@@ -47,9 +47,12 @@ fetch("/static/json/games.json")
       let gameTitle = document.createElement("h3");
       gameTitle.innerText = game.title;
       gameItem.append(gameTitle);
-      let gameLauncher = document.createElement("h4");
-      gameLauncher.innerText = game.launcher;
+      let gameLauncher = document.createElement("img");
+      gameLauncher.setAttribute("src", game.launcher);
       gameItem.append(gameLauncher);
+      let gameImage = document.createElement("img");
+      gameImage.setAttribute("src", game.url);
+      gameItem.append(gameImage);
     });
   });
 
