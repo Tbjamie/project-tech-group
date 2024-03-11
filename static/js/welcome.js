@@ -6,16 +6,26 @@ const allInputs = document.querySelectorAll("#welcome main form fieldset input")
 
 console.log(allInputs)
 
-const loginValidation = () => {
-    allInputs.forEach(input => {
-        input.addEventListener("focusout", () => {
-            if((usernameInput == "") && (passwordInput == "")) {
-                console.log("ICBWIBCIWBLCHBW")
-            } else if((!usernameInput == "") && (!passwordInput == "")) {
-                console.log("NOOOOO")
-            }
-        })
-    })
-}
+// const loginValidation = () => {
+//     allInputs.forEach(input => {
+//         input.addEventListener("focusout", () => {
+//             if((usernameInput == "") && (passwordInput == "")) {
+//                 console.log("ICBWIBCIWBLCHBW")
+//             } else if((!usernameInput == "") && (!passwordInput == "")) {
+//                 console.log("NOOOOO")
+//             }
+//         })
+//     })
+// }
 
-loginValidation()
+// loginValidation()
+
+// const submitButtonActivate = () => {
+//     if(0 != 0) {
+//         submitButton.removeAttribute('disabled')
+//     } else {
+//         submitButton.removeAttribute('disabled')
+//     }
+// }
+
+// submitButtonActivate();

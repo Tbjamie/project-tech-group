@@ -137,6 +137,10 @@ aan de hand daarvan een active state geven ipv onclick */
   color: var(--white);
 }
 
+#home h1 span {
+  color: var(--accentcolor);
+}
+
 /****************/
 /****************/
 /*** SIGN UP ****/

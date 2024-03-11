@@ -80,16 +80,29 @@ async function login(req, res) {
 
 async function signUp(req, res) {
   res.render('signUp.ejs')
-  // let user = await collection.findOne({
-  //   username: req.body.username,
-  // })
-  // if((user) && (user.password === req.body.password)) {
-  //   console.log(user)
-  //   res.render('home.ejs', {user: user})
-  // } else if((!user) || (user.password != req.body.password)) {
-  //   console.log(`${user} not found`)
-  // }
+  let user = await collection.findOne({
+    username: req.body.username,
+  })
+  if(user) {
+    console.log(`The username: ${req.body.username} is already in use, please pick another username!`)
+    // res.render('signUp.ejs', {existingUser: existingUser})
+  } else {
+    // FIXME: ZORG DAT JE NIET MET DEZELFDE EMAIL EEN ACC AAN KAN MAKEN
+    let newUser = await collection.insertOne({
+      username: req.body.username,
+      email: req.body.email,
+      genre: "",
+      password: req.body.password,
+      profilepic: "",
+      friends: [],
+      recentlypw: []
+    })
+    console.log(`You made a new account with the username ${req.body.username}`)
+    // res.render('home.ejs', {user: newUser})
+  }
 }
+
+
 
 function welcome(req, res) {
     res.render("welcome.ejs")
