@@ -255,7 +255,7 @@
       "launcher": "./static/logos/microsoft.svg",
       "title": "Minecraft",
       "genre": ["Sandbox", "Survival"],
-      "age": "E for Everyone",
+      "age": "4",
       "description": "Minecraft is a sandbox game that allows players to explore, build, and survive in a blocky, procedurally-generated world. With endless possibilities and creative freedom, it has become one of the best-selling games of all time.",
       "developer": "Mojang Studios",
       "url": "./static/images/cover/minecraftCover.png"
@@ -265,7 +265,7 @@
       "launcher": "./static/logos/microsoft.svg",
       "title": "Forza Horizon 4",
       "genre": "Racing",
-      "age": "E for Everyone",
+      "age": "4",
       "description": "Forza Horizon 4 is an open-world racing game set in a fictional representation of the United Kingdom. With dynamic seasons, a vast car roster, and stunning visuals, it offers an immersive racing experience for players of all skill levels.",
       "developer": "Playground Games",
       "url": "./static/images/cover/forzaCover.jpg"
@@ -275,7 +275,7 @@
       "launcher": "./static/logos/microsoft.svg",
       "title": "Sea of Thieves",
       "genre": "MMO",
-      "age": "T for Teen",
+      "age": "13",
       "description": "Sea of Thieves is a pirate-themed action-adventure game where players can explore a vast open world, engage in naval battles, and search for hidden treasure. With its cooperative multiplayer gameplay, it offers a unique and immersive pirate experience.",
       "developer": "Rare Ltd.",
       "url": "./static/images/cover/seaofthievesCover.jpg"
@@ -285,7 +285,7 @@
       "launcher": "./static/logos/microsoft.svg",
       "title": "Halo: The Master Chief Collection",
       "genre": "FPS",
-      "age": "M for Mature",
+      "age": "19",
       "description": "Halo: The Master Chief Collection is a compilation of first-person shooter games from the Halo series. With enhanced graphics, multiplayer modes, and all previously released campaigns, it offers a comprehensive Halo experience for both new and returning players.",
       "developer": "343 Industries",
       "url": "./static/images/cover/haloCover.jpg"
@@ -295,7 +295,7 @@
       "launcher": "./static/logos/microsoft.svg",
       "title": "Gears 5",
       "genre": "TPS",
-      "age": "M for Mature",
+      "age": "19",
       "description": "Gears 5 is a third-person shooter game set in the Gears of War universe. With intense combat, a compelling story, and a variety of multiplayer modes, it offers an action-packed experience for fans of the series.",
       "developer": "The Coalition",
       "url": "./static/images/cover/gears5Cover.jpg"
@@ -305,7 +305,7 @@
       "launcher": "./static/logos/microsoft.svg",
       "title": "Ori and the Will of the Wisps",
       "genre": "Platformer, Metroidvania",
-      "age": "E for Everyone",
+      "age": "4",
       "description": "Ori and the Will of the Wisps is a platform-adventure game where players control Ori, a guardian spirit, as they navigate through a beautiful and perilous world. With stunning visuals, emotional storytelling, and challenging gameplay, it offers an unforgettable experience.",
       "developer": "Moon Studios",
       "url": "./static/images/cover/oriCover.jpg"
@@ -315,7 +315,7 @@
       "launcher": "./static/logos/microsoft.svg",
       "title": "Age of Empires II: Definitive Edition",
       "genre": "strategy",
-      "age": "T for Teen",
+      "age": "13",
       "description": "Age of Empires II: Definitive Edition is a remastered version of the classic real-time strategy game. With enhanced graphics, new content, and improved gameplay, it offers both nostalgia for fans of the original and a fresh experience for newcomers.",
       "developer": "Forgotten Empires, Tantalus Media, Wicked Witch",
       "url": "./static/images/cover/ageofempires2Cover.jpg"
@@ -325,7 +325,7 @@
       "launcher": "./static/logos/microsoft.svg",
       "title": "State of Decay 2",
       "genre": ["Action-adventure", "Survival"],
-      "age": "M for Mature",
+      "age": "19",
       "description": "State of Decay 2 is an open-world zombie survival game where players must build and manage a community of survivors in a post-apocalyptic world. With its focus on resource management and strategic decision-making, it offers a challenging and immersive survival experience.",
       "developer": "Undead Labs",
       "url": "./static/images/cover/stateofdecayCover.jpg"
