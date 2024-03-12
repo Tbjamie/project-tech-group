@@ -1,6 +1,7 @@
 {
   "games": [
     {
+      "id": "1",
       "launcher": "./static/logos/riotgames.svg",
       "title": "VALORANT",
       "genre": "FPS",
@@ -10,6 +11,7 @@
       "url": "./static/images/cover/valorantCover.jpeg"
     },
     {
+      "id": "2",
       "launcher": "./static/logos/riotgames.svg",
       "title": "League of Legends",
       "genre": "MOBA",
@@ -19,6 +21,7 @@
       "url": "./static/images/cover/lolCover.jpg"
     },
     {
+      "id": "3",
       "launcher": "./static/logos/riotgames.svg",
       "title": "Legends of Runeterra",
       "genre": "CCG",
@@ -28,6 +31,7 @@
       "url": "./static/images/cover/lorCover.jpg"
     },
     {
+      "id": "4",
       "launcher": "./static/logos/riotgames.svg",
       "title": "Teamfight Tactics (TFT)",
       "genre": "Auto Battler",
@@ -37,6 +41,7 @@
       "url": "./static/images/cover/tftCover.jpg"
     },
     {
+      "id": "5",
       "launcher": "./static/logos/epicgames.svg",
       "title": "Fortnite",
       "genre": ["Battle Royale", "Survival"],
@@ -46,6 +51,7 @@
       "url": "./static/images/cover/fortniteCover.jpg"
     },
     {
+      "id": "6",
       "launcher": "./static/logos/steam.svg",
       "title": "Bloons TD 6",
       "genre": "Tower Defense",
@@ -55,6 +61,7 @@
       "url": "./static/images/cover/bloonsCover.jpg"
     },
     {
+      "id": "7",
       "launcher": "./static/logos/epicgames.svg",
       "title": "Fall Guys: Ultimate Knockout",
       "genre": ["Battle Royale", "Platformer"],
@@ -64,6 +71,7 @@
       "url": "./static/images/cover/fallguysCover.jpeg"
     },
     {
+      "id": "8",
       "launcher": "./static/logos/epicgames.svg",
       "title": "Rocket League",
       "genre": ["Sports", "Racing"],
@@ -73,6 +81,7 @@
       "url": "./static/images/cover/rocketleagueCover.jpg"
     },
     {
+      "id": "9",
       "launcher": "./static/logos/steam.svg",
       "title": "The Witcher 3: Wild Hunt",
       "genre": ["Action", "RPG"],
@@ -82,6 +91,7 @@
       "url": "./static/images/cover/witcher3Cover.jpg"
     },
     {
+      "id": "10",
       "launcher": "./static/logos/steam.svg",
       "title": "Grand Theft Auto V",
       "genre": ["Action", "Adventure"],
@@ -91,6 +101,7 @@
       "url": "./static/images/cover/gtavCover.jpg"
     },
     {
+      "id": "11",
       "launcher": "./static/logos/steam.svg",
       "title": "PlayerUnknown's Battlegrounds (PUBG)",
       "genre": "Battle Royale",
@@ -100,6 +111,7 @@
       "url": "./static/images/cover/pubgCover.jpg"
     },
     {
+      "id": "12",
       "launcher": "./static/logos/steam.svg",
       "title": "Counter-Strike: Global Offensive",
       "genre": "FPS",
@@ -109,6 +121,7 @@
       "url": "./static/images/cover/csgoCover.jpeg"
     },
     {
+      "id": "13",
       "launcher": "./static/logos/steam.svg",
       "title": "Among Us",
       "genre": ["Party", "Social Deduction"],
@@ -118,6 +131,7 @@
       "url": "./static/images/cover/susCover.jpg"
     },
     {
+      "id": "14",
       "launcher": "./static/logos/steam.svg",
       "title": "Dota 2",
       "genre": "MOBA",
@@ -127,6 +141,7 @@
       "url": "./static/images/cover/dota2Cover.jpg"
     },
     {
+      "id": "15",
       "launcher": "./static/logos/steam.svg",
       "title": "Red Dead Redemption 2",
       "genre": ["Action", "Adventure"],
@@ -136,6 +151,7 @@
       "url": "./static/images/cover/rdr2Cover.jpeg"
     },
     {
+      "id": "16",
       "launcher": "./static/logos/steam.svg",
       "title": "Cyberpunk 2077",
       "genre": ["Action", "RPG"],
@@ -145,6 +161,7 @@
       "url": "./static/images/cover/cyberpunkCover.jpg"
     },
     {
+      "id": "17",
       "launcher": "./static/logos/steam.svg",
       "title": "Rust",
       "genre": "Survival",
@@ -154,6 +171,7 @@
       "url": "./static/images/cover/rustCover.jpeg"
     },
     {
+      "id": "18",
       "launcher": "./static/logos/steam.svg",
       "title": "Monster Hunter: World",
       "genre": ["Action", "RPG"],
@@ -163,6 +181,7 @@
       "url": "./static/images/cover/monsterhunterCover.jpg"
     },
     {
+      "id": "19",
       "launcher": "./static/logos/steam.svg",
       "title": "Stardew Valley",
       "genre": ["Simulation", "RPG"],
@@ -172,6 +191,7 @@
       "url": "./static/images/cover/stardewvalleyCover.jpg"
     },
     {
+      "id": "20",
       "launcher": "./static/logos/steam.svg",
       "title": "Rainbow Six Siege",
       "genre": "Tactical Shooter",
@@ -181,6 +201,7 @@
       "url": "./static/images/cover/r6Cover.jpeg"
     },
     {
+      "id": "21",
       "launcher": "./static/logos/steam.svg",
       "title": "Terraria",
       "genre": ["Action", "Adventure"],
@@ -190,6 +211,7 @@
       "url": "./static/images/cover/terrariaCover.jpeg"
     },
     {
+      "id": "22",
       "launcher": "./static/logos/steam.svg",
       "title": "Team Fortress 2",
       "genre": "FPS",
@@ -199,6 +221,7 @@
       "url": "./static/images/cover/tf2Coverjpg.jpg"
     },
     {
+      "id": "23",
       "launcher": "./static/logos/steam.svg",
       "title": "Apex Legends",
       "genre": ["Battle Royale", "First-Person Shooter"],
@@ -208,6 +231,7 @@
       "url": "./static/images/cover/apexCover.jpg"
     },
     {
+      "id": "24",
       "launcher": "./static/logos/steam.svg",
       "title": "Fallout 4",
       "genre": "Action",
@@ -217,6 +241,7 @@
       "url": "./static/images/cover/fallout4Cover.jpg"
     },
     {
+      "id": "25",
       "launcher": "./static/logos/steam.svg",
       "title": "Skyrim Special Edition",
       "genre": ["Action", "RPG"],
@@ -226,6 +251,7 @@
       "url": "./static/images/cover/skyrimCover.jpg"
     },
     {
+      "id": "26",
       "launcher": "./static/logos/microsoft.svg",
       "title": "Minecraft",
       "genre": ["Sandbox", "Survival"],
@@ -235,6 +261,7 @@
       "url": "./static/images/cover/minecraftCover.png"
     },
     {
+      "id": "27",
       "launcher": "./static/logos/microsoft.svg",
       "title": "Forza Horizon 4",
       "genre": "Racing",
@@ -244,6 +271,7 @@
       "url": "./static/images/cover/forzaCover.jpg"
     },
     {
+      "id": "28",
       "launcher": "./static/logos/microsoft.svg",
       "title": "Sea of Thieves",
       "genre": "MMO",
@@ -253,6 +281,7 @@
       "url": "./static/images/cover/seaofthievesCover.jpg"
     },
     {
+      "id": "29",
       "launcher": "./static/logos/microsoft.svg",
       "title": "Halo: The Master Chief Collection",
       "genre": "FPS",
@@ -262,6 +291,7 @@
       "url": "./static/images/cover/haloCover.jpg"
     },
     {
+      "id": "30",
       "launcher": "./static/logos/microsoft.svg",
       "title": "Gears 5",
       "genre": "TPS",
@@ -271,6 +301,7 @@
       "url": "./static/images/cover/gears5Cover.jpg"
     },
     {
+      "id": "31",
       "launcher": "./static/logos/microsoft.svg",
       "title": "Ori and the Will of the Wisps",
       "genre": "Platformer, Metroidvania",
@@ -280,6 +311,7 @@
       "url": "./static/images/cover/oriCover.jpg"
     },
     {
+      "id": "32",
       "launcher": "./static/logos/microsoft.svg",
       "title": "Age of Empires II: Definitive Edition",
       "genre": "strategy",
@@ -289,6 +321,7 @@
       "url": "./static/images/cover/ageofempires2Cover.jpg"
     },
     {
+      "id": "33",
       "launcher": "./static/logos/microsoft.svg",
       "title": "State of Decay 2",
       "genre": ["Action-adventure", "Survival"],
@@ -298,6 +331,7 @@
       "url": "./static/images/cover/stateofdecayCover.jpg"
     },
     {
+      "id": "34",
       "launcher": "./static/logos/microsoft.svg",
       "title": "Microsoft Flight Simulator",
       "genre": "Simulation",
@@ -307,6 +341,7 @@
       "url": "./static/images/cover/flightsimCover.jpeg"
     },
     {
+      "id": "35",
       "launcher": "./static/logos/microsoft.svg",
       "title": "Cuphead",
       "genre": "Run and gun",
@@ -316,6 +351,7 @@
       "url": "./static/images/cover/cupheadCover.jpeg"
     },
     {
+      "id": "36",
       "launcher": "./static/logos/origin.svg",
       "title": "The Sims 4",
       "genre": "Life Simulation",
@@ -325,6 +361,7 @@
       "url": "./static/images/cover/sims4Cover.png"
     },
     {
+      "id": "37",
       "launcher": "./static/logos/origin.svg",
       "title": "Battlefield V",
       "genre": "FPS",
@@ -334,6 +371,7 @@
       "url": "./static/images/cover/battlefieldvCover.jpg"
     },
     {
+      "id": "38",
       "launcher": "./static/logos/origin.svg",
       "title": "Star Wars Jedi: Fallen Order",
       "genre": ["Action", "Adventure"],
@@ -343,6 +381,7 @@
       "url": "./static/images/cover/jedifallenorderCover.jpg"
     },
     {
+      "id": "39",
       "launcher": "./static/logos/origin.svg",
       "title": "Titanfall 2",
       "genre": "FPS",
@@ -352,6 +391,7 @@
       "url": "./static/images/cover/titanfall2Cover.jpeg"
     },
     {
+      "id": "40",
       "launcher": "./static/logos/origin.svg",
       "title": "FIFA 21",
       "genre": "Sports",
@@ -361,6 +401,7 @@
       "url": "./static/images/cover/fifa21Cover.jpeg"
     },
     {
+      "id": "41",
       "launcher": "./static/logos/origin.svg",
       "title": "Need for Speed Heat",
       "genre": "Racing",
@@ -370,6 +411,7 @@
       "url": "./static/images/cover/nfsheatCover.jpg"
     },
     {
+      "id": "42",
       "launcher": "./static/logos/origin.svg",
       "title": "Plants vs. Zombies: Battle for Neighborville",
       "genre": "Third-Person Shooter",
@@ -379,6 +421,7 @@
       "url": "./static/images/cover/pvzCover.jpg"
     },
     {
+      "id": "43",
       "launcher": "./static/logos/origin.svg",
       "title": "Anthem",
       "genre": ["Action", "RPG"],
@@ -388,6 +431,7 @@
       "url": "./static/images/cover/anthemCover.jpg"
     },
     {
+      "id": "44",
       "launcher": "./static/logos/origin.svg",
       "title": "Mass Effect: Andromeda",
       "genre": ["Action", "RPG"],
@@ -397,6 +441,7 @@
       "url": "./static/images/cover/masseffectCover.jpg"
     },
     {
+      "id": "45",
       "launcher": "./static/logos/origin.svg",
       "title": "Dragon Age: Inquisition",
       "genre": "Action-RPG",
@@ -406,23 +451,24 @@
       "url": "./static/images/cover/dragonageCover.jpg"
     },
     {
-        "launcher": "./static/logos/steam.svg",
-        "title": "Hades",
-        "genre": ["Action, Indie", "Rogue-like"],
-        "age": "13",
-        "description": "Hades is a rogue-like dungeon crawler where you defy the god of the dead as you hack and slash your way out of the Underworld of Greek myth. ",
-        "developer": "Supergiant Games",
-        "url": "./static/images/cover/hadesCover.jpeg"
+      "id": "46",
+      "launcher": "./static/logos/steam.svg",
+      "title": "Hades",
+      "genre": ["Action, Indie", "Rogue-like"],
+      "age": "13",
+      "description": "Hades is a rogue-like dungeon crawler where you defy the god of the dead as you hack and slash your way out of the Underworld of Greek myth. ",
+      "developer": "Supergiant Games",
+      "url": "./static/images/cover/hadesCover.jpeg"
     },
     {
-        "launcher": "./static/logos/steam.svg",
-        "title": "Helldivers",
-        "genre": ["Action", "Strategy", "Shooter"],
-        "age": "17",
-        "description": "Helldivers is a hardcore, cooperative, twin-stick shooter from the creators of Magicka. Dive into a procedurally generated universe filled with chaos and challenge as you fight to protect Super Earth and defeat the enemies of mankind in an intense intergalactic war.",
-        "developer": "Arrowhead Game Studios",
-        "url": "./static/images/cover/helldiversCover.jpg"
-    
+      "id": "47",
+      "launcher": "./static/logos/steam.svg",
+      "title": "Helldivers",
+      "genre": ["Action", "Strategy", "Shooter"],
+      "age": "17",
+      "description": "Helldivers is a hardcore, cooperative, twin-stick shooter from the creators of Magicka. Dive into a procedurally generated universe filled with chaos and challenge as you fight to protect Super Earth and defeat the enemies of mankind in an intense intergalactic war.",
+      "developer": "Arrowhead Game Studios",
+      "url": "./static/images/cover/helldiversCover.jpg"
     }
   ]
 }

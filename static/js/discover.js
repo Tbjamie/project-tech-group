@@ -44,6 +44,11 @@ fetch("/static/json/games.json")
     games.forEach((game) => {
       let gameItem = document.createElement("article");
       gameSection.append(gameItem);
+      let gameLink = document.createElement("a");
+      let gameId = game.id;
+      let hrefValue = `detail.html?id=${gameId}`;
+      gameLink.setAttribute("href", hrefValue);
+      gameItem.append(gameLink);
       let gameTitle = document.createElement("h3");
       gameTitle.innerText = game.title;
       gameItem.append(gameTitle);
