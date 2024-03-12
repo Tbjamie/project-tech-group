@@ -1,6 +1,7 @@
 {
   "games": [
     {
+      "id": "1",
       "launcher": "./static/logos/riotgames.svg",
       "title": "VALORANT",
       "genre": "FPS",
@@ -10,6 +11,7 @@
       "url": "./static/images/cover/valorantCover.jpeg"
     },
     {
+      "id": "2",
       "launcher": "./static/logos/riotgames.svg",
       "title": "League of Legends",
       "genre": "MOBA",
