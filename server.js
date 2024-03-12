@@ -4,7 +4,8 @@
 require("dotenv").config()
 
 const xss = require("xss") // TODO: GEBRUIK DEZE NOG ERGENS
-var bcrypt = require('bcryptjs') // TODO: GEBRUIK DEZE NOG ERGENS
+const bcrypt = require('bcryptjs') // TODO: GEBRUIK DEZE NOG ERGENS
+const session = require('express-session') // TODO: GEBRUIK DEZE NOG ERGENS
 
 // Initialise Express webserver
 const express = require("express")
@@ -16,6 +17,7 @@ const {
   MongoClient,
 } = require("mongodb")
 const { error } = require("console")
+const { Cookie } = require("express-session")
 
 const uri = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}/${process.env.DB_NAME}?retryWrites=true&w=majority`
 const client = new MongoClient(uri, {
@@ -60,6 +62,12 @@ app.listen(`${process.env.PORT}`, () => {
   )
 })
 
+app.use(session({
+  secret: 'some secret',
+  cookie: { maxAge: 30000 },
+  saveUninitialized: false
+}))
+
 // async function getUsers(req, res) {
 //     let users = await collection.find().toArray()
 //     users.forEach(user => {
@@ -75,6 +83,10 @@ async function login(req, res) {
   })
   if((user) && (user.password === req.body.password)) {
     console.log(user)
+    console.log(req.sessionID)
+    // if(req.session.authenticated) {
+
+    // }
     res.render('home.ejs', {user: user})
   } else {
     console.log(`${req.body.username} not found`)
