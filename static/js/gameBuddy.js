@@ -3,8 +3,11 @@ const filterButton = document.querySelector(
   "main section:first-of-type .flexdiv button"
 );
 
+const genreSelect = document.querySelector(".genreSelect");
 
+const taalSelect = document.querySelector(".taalSelect");
 const closeButtonFilter = document.querySelector(".cross");
+const dropDown = document.querySelector(".select-dropdown");
 
 function rangeSlide(value) {
     document.getElementById('rangeValue').innerHTML = value;
@@ -33,3 +36,44 @@ filterButton.addEventListener("click", () => {
     // });
   });
 
+
+fetch("/static/json/games.json")
+.then((response) => {
+  if (!response.ok) {
+    console.log("ERROR");
+  }
+
+  return response.json();
+})
+.then((data) => {
+  const games = data.games;
+  games.forEach((game) => {
+    let genre = game.genre
+    console.log(genre)
+    let dropDownOptions = document.createElement('option')
+    dropDownOptions.innerText = genre
+    // let gameItem = document.createElement("option");
+    genreSelect.append(dropDownOptions);
+  });
+});
+
+
+fetch("/static/json/taal.json")
+.then((response) => {
+  if (!response.ok) {
+    console.log("ERROR");
+  }
+
+  return response.json();
+})
+.then((data) => {
+  const taal = data.taal;
+  taal.forEach((land) => {
+    let nationality = land.nationality
+    console.log(nationality)
+    let dropDownOptions = document.createElement('option')
+    dropDownOptions.innerText = nationality
+    // let gameItem = document.createElement("option");
+    taalSelect.append(dropDownOptions);
+  });
+});
