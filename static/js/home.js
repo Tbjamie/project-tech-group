@@ -1,21 +1,10 @@
-var options = {
-  direction: "horizontal", //richting van de carousel - de default
-  loop: "true", // van 25 naar 1 en vice versa
-  speed: 300, // duur van transitie in ms
-  cssMode: true, // smoother
-
-  // pagination
+var swiper = new Swiper(".mySwiper", {
   pagination: {
-    el: ".swiper-pagination", // class van de paginering
-    type: "fraction", // x/xx als paginering
+    el: ".swiper-pagination",
+    dynamicBullets: true,
   },
-
-  // navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next", // class van next button
-    prevEl: ".swiper-button-prev", // class van prev button
+  autoplay: {
+    delay: 10000, // Set the delay to 5000 milliseconds (5 seconds)
+    disableOnInteraction: false, // Allow autoplay to continue even if the user interacts with the slider
   },
-};
-
-/* het daadwerkelijk initialiseren van de carousel */
-const swiper = new Swiper(".swiper", options);
+});

@@ -14,84 +14,80 @@
   <body id="home">
     <header></header>
     <main>
-      <div class="swiper-container">
-        <section class="swiper">
-          <ul class="swiper-wrapper">
-            <li class="swiper-slide">
-              <h4>Helldivers I</h4>
-              <p>
-                Fight aliens together with other Helldivers in a new
-                third-person shooter game.
-              </p>
-              <p>€39,99</p>
-              <a href="#">Buy now</a>
-            </li>
-
-            <li class="swiper-slide">
-              <h4>Helldivers II</h4>
-              <p>
-                Fight aliens together with other Helldivers in a new
-                third-person shooter game.
-              </p>
-              <p>€39,99</p>
-              <a href="#">Buy now</a>
-            </li>
-
-            <li class="swiper-slide">
-              <h4>Helldivers III</h4>
-              <p>
-                Fight aliens together with other Helldivers in a new
-                third-person shooter game.
-              </p>
-              <p>€39,99</p>
-              <a href="#">Buy now</a>
-            </li>
-
-            <li class="swiper-slide">
-              <h4>Helldivers IIII</h4>
-              <p>
-                Fight aliens together with other Helldivers in a new
-                third-person shooter game.
-              </p>
-              <p>€39,99</p>
-              <a href="#">Buy now</a>
-            </li>
-          </ul>
-          <button class="swiper-button-prev"></button>
-          <!-- dit element met de class (swiper-button-next) gebruikt de lib voor de volgende button -->
-          <button class="swiper-button-next"></button>
-          <p class="swiper-pagination"></p>
-        </section>
-      </div>
+      <section class="swiper mySwiper">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <h4>Helldivers I</h4>
+            <p>
+              Fight aliens together with other Helldivers in a new third-person
+              shooter game.
+            </p>
+            <p>€39,99</p>
+            <a href="#">Buy now</a>
+          </li>
+          <li class="swiper-slide">
+            <h4>Helldivers II</h4>
+            <p>
+              Fight aliens together with other Helldivers in a new third-person
+              shooter game.
+            </p>
+            <p>€39,99</p>
+            <a href="#">Buy now</a>
+          </li>
+          <li class="swiper-slide">
+            <h4>Helldivers III</h4>
+            <p>
+              Fight aliens together with other Helldivers in a new third-person
+              shooter game.
+            </p>
+            <p>€39,99</p>
+            <a href="#">Buy now</a>
+          </li>
+          <li class="swiper-slide">
+            <h4>Helldivers IV</h4>
+            <p>
+              Fight aliens together with other Helldivers in a new third-person
+              shooter game.
+            </p>
+            <p>€39,99</p>
+            <a href="#">Buy now</a>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+      </section>
 
       <section class="newReleases">
         <h2>New releases</h2>
-        <img
-          src="./static/images/helldiversTwo.jpg"
-          alt="players holding guns on top of a rock"
-        />
-        <article>
-          <h3>TPS</h3>
-          <h4>Helldivers II</h4>
-        </article>
+        <div class="carousel-container">
+          <ul class="carousel-list">
+            <li class="carousel-item">
+              <article class="content">content 1</article>
+              <h3>TPS</h3>
+              <h4>Helldivers I</h4>
+            </li>
+            <li class="carousel-item">
+              <article class="content">content 2</article>
+              <h3>TPS</h3>
+              <h4>Helldivers II</h4>
+            </li>
+            <li class="carousel-item">
+              <article class="content">content 3</article>
+              <h3>TPS</h3>
+              <h4>Helldivers III</h4>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="popular">
         <h2>Popular</h2>
-        <img
-          src="./static/images/fortnite.jpg"
-          alt="Players holding weapons stating on wood with a storm in the background"
-        />
+        <article></article>
         <h3>Battle Royal</h3>
         <h4>Fortnite</h4>
       </section>
 
       <section class="featuredDiscounts">
         <h2>Featured Discounts</h2>
-        <img
-          src="./static/images/fortnite.jpg"
-          alt="Players holding weapons stating on wood with a storm in the background"
-        />
         <h3>Battle Royal</h3>
         <h4>Fortnite</h4>
         <article>
@@ -102,7 +98,7 @@
       </section>
     </main>
     <footer></footer>
-    <script src="home.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./static/js/home.js"></script>
   </body>
 </html>
