@@ -31,11 +31,11 @@ main {
 
 h1 {
   color: var(--accentcolor);
-  text-transform: uppercase;
   letter-spacing: 0.2rem;
-  margin-bottom: 2rem;
+  margin: 2rem ;
   align-self: flex-start;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: var(--darkgrey) 2px 5px ;
 }
 
 h2 {
@@ -84,18 +84,6 @@ p {
   width: 100%;
   max-width: 374px;
   height: 100%;
-<<<<<<< HEAD
-}
-
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* .swiper-slide li {
-} */
-=======
   position: relative; 
 }
 >>>>>>> 9e602fa2d3cab7ca5aa0ce39e39d28a163336896
@@ -133,25 +121,19 @@ p {
 }
 
 .slider {
-    overflow: hidden;
-    width: 300px; /* Adjust width as needed */
-    margin: 0 auto;
-    position: relative;
-  }
+  overflow: hidden;
+  width: 300px;
+  margin: 0 auto;
+  position: relative;
+}
 
-  .slider-wrapper {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
+.slider-wrapper {
+  display: flex;
+  overflow-x: scroll hidden;
+}
 
-  .slider-slide {
-    flex: 0 0 163px; /* Set slide width */
-    margin-right: 1em;
-  }
-
-.popular {
-  height: auto;
-  border-radius: 2em;
+.slider-slide {
+  margin-right: 1em;
 }
 
 .popular li {
@@ -163,9 +145,6 @@ p {
   padding: 4em 6em;
   border-radius: 1em;
 }
-
-
-
 
 .featuredDiscounts article {
   display: flex;

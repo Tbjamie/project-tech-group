@@ -8,7 +8,8 @@
       "age": "16",
       "description": "Valorant is a team-based first-person tactical hero shooter set in the near future. Players play as one of a set of Agents, characters based on several countries and cultures around the world. In the main game mode, players are assigned to either the attacking or defending team with each team having five players on it.",
       "developer": "Riot Games",
-      "url": "./static/images/cover/valorantCover.jpeg"
+      "url": "./static/images/cover/valorantCover.jpeg",
+      "release": "2020"
     },
     {
       "id": "2",
@@ -18,7 +19,8 @@
       "age": "13",
       "description": "League of Legends is a team-based strategy game where two teams of five powerful champions face off to destroy the other's base. Choose from over 140 champions to make epic plays, secure kills, and take down towers as you battle your way to victory.",
       "developer": "Riot Games",
-      "url": "./static/images/cover/lolCover.jpg"
+      "url": "./static/images/cover/lolCover.jpg",
+      "release": "2009"
     },
     {
       "id": "3",
@@ -28,7 +30,8 @@
       "age": "13",
       "description": "Legends of Runeterra is a free-to-play strategy card game set in the world of League of Legends. It features cards based on the iconic champions of League of Legends, as well as new characters and allies hailing from the regions of Runeterra, each with their own style and strategic advantage.",
       "developer": "Riot Games",
-      "url": "./static/images/cover/lorCover.jpg"
+      "url": "./static/images/cover/lorCover.jpg",
+      "release": "2020"
     },
     {
       "id": "4",
@@ -38,7 +41,8 @@
       "age": "13",
       "description": "Teamfight Tactics is an autobattler: a round-based PvP game where you'll draft a team that battles automatically on your behalf, featuring iconic champions from League of Legends. Your goal? Grow your team and protect your board to become the last player standing.",
       "developer": "Riot Games",
-      "url": "./static/images/cover/tftCover.jpg"
+      "url": "./static/images/cover/tftCover.jpg",
+      "release": "2019"
     },
     {
       "id": "5",
@@ -48,7 +52,8 @@
       "age": "13",
       "description": "Fortnite is a popular online multiplayer game where players fight to be the last one standing in a rapidly shrinking battlefield. It features building mechanics, a variety of weapons, and frequent updates with new content.",
       "developer": "Epic Games",
-      "url": "./static/images/cover/fortniteCover.jpg"
+      "url": "./static/images/cover/fortniteCover.jpg",
+      "release": "2017"
     },
     {
       "id": "6",
@@ -58,7 +63,8 @@
       "age": "10",
       "description": "Bloons TD 6 is a tower defense game where players strategically place towers to defend against waves of colorful balloons. It features a variety of towers, upgrades, and maps to challenge players of all skill levels.",
       "developer": "Ninja Kiwi",
-      "url": "./static/images/cover/bloonsCover.jpg"
+      "url": "./static/images/cover/bloonsCover.jpg",
+      "release": "2018"
     },
     {
       "id": "7",
@@ -68,7 +74,8 @@
       "age": "11",
       "description": "Fall Guys: Ultimate Knockout is a colorful and chaotic battle royale game where players compete in a series of mini-games to be the last one standing. It features a variety of whimsical obstacle courses and challenges.",
       "developer": "Mediatonic",
-      "url": "./static/images/cover/fallguysCover.jpeg"
+      "url": "./static/images/cover/fallguysCover.jpeg",
+      "release": "2020"
     },
     {
       "id": "8",
@@ -78,7 +85,8 @@
       "age": "11",
       "description": "Rocket League is a high-powered hybrid of arcade-style soccer and vehicular mayhem with easy-to-understand controls and fluid, physics-driven competition. Players control rocket-powered cars to hit a ball into the opponent's goal.",
       "developer": "Psyonix",
-      "url": "./static/images/cover/rocketleagueCover.jpg"
+      "url": "./static/images/cover/rocketleagueCover.jpg",
+      "release": "2015"
     },
     {
       "id": "9",
@@ -88,7 +96,8 @@
       "age": "18",
       "description": "The Witcher 3: Wild Hunt is an open-world action role-playing game set in a dark fantasy universe. Players control Geralt of Rivia, a monster hunter, as he searches for his missing adopted daughter.",
       "developer": "CD Projekt Red",
-      "url": "./static/images/cover/witcher3Cover.jpg"
+      "url": "./static/images/cover/witcher3Cover.jpg",
+      "release": "2015"
     },
     {
       "id": "10",
@@ -98,7 +107,8 @@
       "age": "19",
       "description": "Grand Theft Auto V is an action-adventure game set in an open-world environment. Players complete missions—linear scenarios with set objectives—to progress through the story.",
       "developer": "Rockstar North",
-      "url": "./static/images/cover/gtavCover.jpg"
+      "url": "./static/images/cover/gtavCover.jpg",
+      "release": "2013"
     },
     {
       "id": "11",
@@ -108,7 +118,8 @@
       "age": "17",
       "description": "PUBG is a multiplayer battle royale game developed and published by PUBG Corporation, a subsidiary of South Korean video game company Bluehole.",
       "developer": "PUBG Corporation",
-      "url": "./static/images/cover/pubgCover.jpg"
+      "url": "./static/images/cover/pubgCover.jpg",
+      "release": "2017"
     },
     {
       "id": "12",
@@ -118,7 +129,8 @@
       "age": "17",
       "description": "CS:GO is a multiplayer first-person shooter game developed by Valve and Hidden Path Entertainment. It's the fourth game in the Counter-Strike series.",
       "developer": "Valve",
-      "url": "./static/images/cover/csgoCover.jpeg"
+      "url": "./static/images/cover/csgoCover.jpeg",
+      "release": "2012"
     },
     {
       "id": "13",
@@ -128,7 +140,8 @@
       "age": "11",
       "description": "Among Us is an online multiplayer party game where crewmates work together to complete tasks on a spaceship, while impostors try to sabotage and kill them without being caught.",
       "developer": "Innersloth",
-      "url": "./static/images/cover/susCover.jpg"
+      "url": "./static/images/cover/susCover.jpg",
+      "release": "2018"
     },
     {
       "id": "14",
@@ -138,7 +151,8 @@
       "age": "14",
       "description": "Dota 2 is a multiplayer online battle arena (MOBA) game developed and published by Valve. It's a sequel to Defense of the Ancients (DotA), a community-created mod for Warcraft III: Reign of Chaos.",
       "developer": "Valve",
-      "url": "./static/images/cover/dota2Cover.jpg"
+      "url": "./static/images/cover/dota2Cover.jpg",
+      "release": "2013"
     },
     {
       "id": "15",
@@ -148,7 +162,8 @@
       "age": "18",
       "description": "Red Dead Redemption 2 is an action-adventure game set in an open-world environment. It's the third entry in the Red Dead series and a prequel to the 2010 game Red Dead Redemption.",
       "developer": "Rockstar Games",
-      "url": "./static/images/cover/rdr2Cover.jpeg"
+      "url": "./static/images/cover/rdr2Cover.jpeg",
+      "release": "2018"
     },
     {
       "id": "16",
@@ -158,7 +173,8 @@
       "age": "19",
       "description": "Cyberpunk 2077 is an open-world action-adventure RPG set in the dystopian Night City, a megalopolis obsessed with power, glamour, and body modification.",
       "developer": "CD Projekt Red",
-      "url": "./static/images/cover/cyberpunkCover.jpg"
+      "url": "./static/images/cover/cyberpunkCover.jpg",
+      "release": "2020"
     },
     {
       "id": "17",
@@ -168,7 +184,8 @@
       "age": "18",
       "description": "Rust is a multiplayer-only survival video game developed by Facepunch Studios. Players must successfully manage their hunger, thirst, and health, or risk dying.",
       "developer": "Facepunch Studios",
-      "url": "./static/images/cover/rustCover.jpeg"
+      "url": "./static/images/cover/rustCover.jpeg",
+      "release": "2013"
     },
     {
       "id": "18",
@@ -178,7 +195,8 @@
       "age": "13",
       "description": "Monster Hunter: World is an action role-playing game developed and published by Capcom. Players take on the role of a hunter tasked with tracking and hunting down monsters in various environments.",
       "developer": "Capcom",
-      "url": "./static/images/cover/monsterhunterCover.jpg"
+      "url": "./static/images/cover/monsterhunterCover.jpg",
+      "release": "2018"
     },
     {
       "id": "19",
@@ -188,7 +206,8 @@
       "age": "11",
       "description": "Stardew Valley is a farming simulation role-playing game developed by Eric ConcernedApe Barone. Players can grow crops, raise animals, mine for resources, and build relationships with villagers.",
       "developer": "ConcernedApe",
-      "url": "./static/images/cover/stardewvalleyCover.jpg"
+      "url": "./static/images/cover/stardewvalleyCover.jpg",
+      "release": "2016"
     },
     {
       "id": "20",
@@ -198,7 +217,8 @@
       "age": "19",
       "description": "Rainbow Six Siege is an online tactical shooter game developed by Ubisoft. Players control operators from the Rainbow team and counter-terrorism units, each with their own unique abilities.",
       "developer": "Ubisoft",
-      "url": "./static/images/cover/r6Cover.jpeg"
+      "url": "./static/images/cover/r6Cover.jpeg",
+      "release": "2015"
     },
     {
       "id": "21",
@@ -208,7 +228,8 @@
       "age": "11",
       "description": "Terraria is an action-adventure sandbox game developed by Re-Logic. Players can explore, build, and fight in a procedurally generated 2D world.",
       "developer": "Re-Logic",
-      "url": "./static/images/cover/terrariaCover.jpeg"
+      "url": "./static/images/cover/terrariaCover.jpeg",
+      "release": "2011"
     },
     {
       "id": "22",
@@ -218,7 +239,8 @@
       "age": "14",
       "description": "Team Fortress 2 is a multiplayer first-person shooter game developed and published by Valve. It's the sequel to the 1996 mod Team Fortress for Quake and its 1999 remake.",
       "developer": "Valve",
-      "url": "./static/images/cover/tf2Coverjpg.jpg"
+      "url": "./static/images/cover/tf2Coverjpg.jpg",
+      "release": "2007"
     },
     {
       "id": "23",
@@ -228,7 +250,8 @@
       "age": "14",
       "description": "Apex Legends is a free-to-play battle royale game developed by Respawn Entertainment. It features characters with unique abilities and squad-based gameplay.",
       "developer": "Respawn Entertainment",
-      "url": "./static/images/cover/apexCover.jpg"
+      "url": "./static/images/cover/apexCover.jpg",
+      "release": "2019"
     },
     {
       "id": "24",
@@ -238,7 +261,8 @@
       "age": "18",
       "description": "Fallout 4 is an action role-playing game developed by Bethesda Game Studios. Players assume the role of the Sole Survivor, who emerges from a long cryogenic stasis in Vault 111, an underground nuclear fallout shelter.",
       "developer": "Bethesda Game Studios",
-      "url": "./static/images/cover/fallout4Cover.jpg"
+      "url": "./static/images/cover/fallout4Cover.jpg",
+      "release": "2015"
     },
     {
       "id": "25",
@@ -248,7 +272,8 @@
       "age": "18",
       "description": "The Elder Scrolls V: Skyrim Special Edition is an open-world action role-playing game developed by Bethesda Game Studios. It's a remastered version of the original game with improved graphics and mod support.",
       "developer": "Bethesda Game Studios",
-      "url": "./static/images/cover/skyrimCover.jpg"
+      "url": "./static/images/cover/skyrimCover.jpg",
+      "release": "2011"
     },
     {
       "id": "26",
@@ -258,7 +283,8 @@
       "age": "4",
       "description": "Minecraft is a sandbox game that allows players to explore, build, and survive in a blocky, procedurally-generated world. With endless possibilities and creative freedom, it has become one of the best-selling games of all time.",
       "developer": "Mojang Studios",
-      "url": "./static/images/cover/minecraftCover.png"
+      "url": "./static/images/cover/minecraftCover.png",
+      "release": "2011"
     },
     {
       "id": "27",
@@ -268,7 +294,8 @@
       "age": "4",
       "description": "Forza Horizon 4 is an open-world racing game set in a fictional representation of the United Kingdom. With dynamic seasons, a vast car roster, and stunning visuals, it offers an immersive racing experience for players of all skill levels.",
       "developer": "Playground Games",
-      "url": "./static/images/cover/forzaCover.jpg"
+      "url": "./static/images/cover/forzaCover.jpg",
+      "release": "2018"
     },
     {
       "id": "28",
@@ -278,7 +305,8 @@
       "age": "13",
       "description": "Sea of Thieves is a pirate-themed action-adventure game where players can explore a vast open world, engage in naval battles, and search for hidden treasure. With its cooperative multiplayer gameplay, it offers a unique and immersive pirate experience.",
       "developer": "Rare Ltd.",
-      "url": "./static/images/cover/seaofthievesCover.jpg"
+      "url": "./static/images/cover/seaofthievesCover.jpg",
+      "release": "2018"
     },
     {
       "id": "29",
@@ -288,7 +316,8 @@
       "age": "19",
       "description": "Halo: The Master Chief Collection is a compilation of first-person shooter games from the Halo series. With enhanced graphics, multiplayer modes, and all previously released campaigns, it offers a comprehensive Halo experience for both new and returning players.",
       "developer": "343 Industries",
-      "url": "./static/images/cover/haloCover.jpg"
+      "url": "./static/images/cover/haloCover.jpg",
+      "release": "2014"
     },
     {
       "id": "30",
@@ -298,7 +327,8 @@
       "age": "19",
       "description": "Gears 5 is a third-person shooter game set in the Gears of War universe. With intense combat, a compelling story, and a variety of multiplayer modes, it offers an action-packed experience for fans of the series.",
       "developer": "The Coalition",
-      "url": "./static/images/cover/gears5Cover.jpg"
+      "url": "./static/images/cover/gears5Cover.jpg",
+      "release": "2019"
     },
     {
       "id": "31",
@@ -308,7 +338,8 @@
       "age": "4",
       "description": "Ori and the Will of the Wisps is a platform-adventure game where players control Ori, a guardian spirit, as they navigate through a beautiful and perilous world. With stunning visuals, emotional storytelling, and challenging gameplay, it offers an unforgettable experience.",
       "developer": "Moon Studios",
-      "url": "./static/images/cover/oriCover.jpg"
+      "url": "./static/images/cover/oriCover.jpg",
+      "release": "2020"
     },
     {
       "id": "32",
@@ -318,7 +349,8 @@
       "age": "13",
       "description": "Age of Empires II: Definitive Edition is a remastered version of the classic real-time strategy game. With enhanced graphics, new content, and improved gameplay, it offers both nostalgia for fans of the original and a fresh experience for newcomers.",
       "developer": "Forgotten Empires, Tantalus Media, Wicked Witch",
-      "url": "./static/images/cover/ageofempires2Cover.jpg"
+      "url": "./static/images/cover/ageofempires2Cover.jpg",
+      "release": "1999"
     },
     {
       "id": "33",
@@ -328,7 +360,8 @@
       "age": "19",
       "description": "State of Decay 2 is an open-world zombie survival game where players must build and manage a community of survivors in a post-apocalyptic world. With its focus on resource management and strategic decision-making, it offers a challenging and immersive survival experience.",
       "developer": "Undead Labs",
-      "url": "./static/images/cover/stateofdecayCover.jpg"
+      "url": "./static/images/cover/stateofdecayCover.jpg",
+      "release": "2018"
     },
     {
       "id": "34",
@@ -338,7 +371,8 @@
       "age": "4",
       "description": "Microsoft Flight Simulator is a stunningly realistic flight simulation game that allows players to pilot a variety of aircraft across the entire globe. With breathtaking graphics and accurate physics, it offers an immersive experience for both aviation enthusiasts and casual players alike.",
       "developer": "Asobo Studio",
-      "url": "./static/images/cover/flightsimCover.jpeg"
+      "url": "./static/images/cover/flightsimCover.jpeg",
+      "release": "2020"
     },
     {
       "id": "35",
@@ -348,7 +382,8 @@
       "age": "4",
       "description": "Cuphead is a challenging run-and-gun platformer inspired by 1930s cartoons. With its unique art style, classic boss battles, and jazz soundtrack, it offers a nostalgic and exhilarating gaming experience.",
       "developer": "Studio MDHR",
-      "url": "./static/images/cover/cupheadCover.jpeg"
+      "url": "./static/images/cover/cupheadCover.jpeg",
+      "release": "2017"
     },
     {
       "id": "36",
@@ -358,7 +393,8 @@
       "age": "14",
       "description": "The Sims 4 is a popular life simulation game where players create and control virtual characters, build homes, and pursue various activities and relationships. With endless possibilities for creativity and storytelling, it offers a unique and engaging gameplay experience.",
       "developer": "Maxis",
-      "url": "./static/images/cover/sims4Cover.png"
+      "url": "./static/images/cover/sims4Cover.png",
+      "release": "2014"
     },
     {
       "id": "37",
@@ -368,7 +404,8 @@
       "age": "17",
       "description": "Battlefield V is a first-person shooter set during World War II, featuring large-scale multiplayer battles and immersive single-player War Stories. With realistic graphics, diverse gameplay modes, and extensive customization options, it offers an intense and authentic combat experience.",
       "developer": "EA DICE",
-      "url": "./static/images/cover/battlefieldvCover.jpg"
+      "url": "./static/images/cover/battlefieldvCover.jpg",
+      "release": "2018"
     },
     {
       "id": "38",
@@ -378,7 +415,8 @@
       "age": "17",
       "description": "Star Wars Jedi: Fallen Order is an action-adventure game set in the Star Wars universe, following the story of a young Jedi Padawan named Cal Kestis. With its engaging narrative, intense lightsaber combat, and exploration of iconic locations, it offers an immersive Star Wars experience.",
       "developer": "Respawn Entertainment",
-      "url": "./static/images/cover/jedifallenorderCover.jpg"
+      "url": "./static/images/cover/jedifallenorderCover.jpg",
+      "release": "2019"
     },
     {
       "id": "39",
@@ -388,7 +426,8 @@
       "age": "17",
       "description": "Titanfall 2 is a fast-paced first-person shooter that combines fluid parkour movement with mech-based combat. With its thrilling multiplayer modes and captivating single-player campaign, it offers a dynamic and adrenaline-fueled gameplay experience.",
       "developer": "Respawn Entertainment",
-      "url": "./static/images/cover/titanfall2Cover.jpeg"
+      "url": "./static/images/cover/titanfall2Cover.jpeg",
+      "release": "2016"
     },
     {
       "id": "40",
@@ -398,7 +437,8 @@
       "age": "4",
       "description": "FIFA 21 is a popular football simulation game that offers realistic gameplay, extensive career modes, and immersive online features. With its authentic presentation and innovative gameplay improvements, it provides an unparalleled football experience for players of all skill levels.",
       "developer": "EA Sports",
-      "url": "./static/images/cover/fifa21Cover.jpeg"
+      "url": "./static/images/cover/fifa21Cover.jpeg",
+      "release": "2020"
     },
     {
       "id": "41",
@@ -408,7 +448,8 @@
       "age": "17",
       "description": "Need for Speed Heat is a high-octane racing game set in the fictional open-world of Palm City, where players compete in illicit street races and evade the law during the day and night. With its adrenaline-fueled gameplay and extensive customization options, it offers a thrilling racing experience.",
       "developer": "Ghost Games",
-      "url": "./static/images/cover/nfsheatCover.jpg"
+      "url": "./static/images/cover/nfsheatCover.jpg",
+      "release": "2019"
     },
     {
       "id": "42",
@@ -418,7 +459,8 @@
       "age": "11",
       "description": "Plants vs. Zombies: Battle for Neighborville is a wacky third-person shooter game where players can choose to join the Plants or Zombies in their ongoing battle for suburbia. With its colorful characters, diverse maps, and fun-filled gameplay, it offers a lighthearted and entertaining experience for all ages.",
       "developer": "PopCap Games",
-      "url": "./static/images/cover/pvzCover.jpg"
+      "url": "./static/images/cover/pvzCover.jpg",
+      "release": "2019"
     },
     {
       "id": "43",
@@ -428,7 +470,8 @@
       "age": "17",
       "description": "Anthem is an action-RPG set in a vast open-world where players control powerful exosuits known as Javelins and embark on cooperative missions to explore and fight hostile forces. With its stunning visuals and dynamic gameplay, it offers a captivating sci-fi experience.",
       "developer": "BioWare",
-      "url": "./static/images/cover/anthemCover.jpg"
+      "url": "./static/images/cover/anthemCover.jpg",
+      "release": "2019"
     },
     {
       "id": "44",
@@ -438,7 +481,8 @@
       "age": "17",
       "description": "Mass Effect: Andromeda is an action-RPG set in the Andromeda galaxy, where players take on the role of a Pathfinder tasked with exploring new worlds and unraveling the mysteries of a hostile alien species. With its expansive universe and engaging narrative, it offers an immersive sci-fi adventure.",
       "developer": "BioWare",
-      "url": "./static/images/cover/masseffectCover.jpg"
+      "url": "./static/images/cover/masseffectCover.jpg",
+      "release": "2017"
     },
     {
       "id": "45",
@@ -448,7 +492,8 @@
       "age": "18",
       "description": "Dragon Age: Inquisition is an epic action-RPG set in a fantasy world on the brink of chaos. Players assume the role of the Inquisitor and lead a team of heroes on a quest to restore order and save the world from a supernatural threat. With its deep story, strategic combat, and expansive world, it offers a memorable gaming experience.",
       "developer": "BioWare",
-      "url": "./static/images/cover/dragonageCover.jpg"
+      "url": "./static/images/cover/dragonageCover.jpg",
+      "release": "2014"
     },
     {
       "id": "46",
@@ -458,17 +503,19 @@
       "age": "13",
       "description": "Hades is a rogue-like dungeon crawler where you defy the god of the dead as you hack and slash your way out of the Underworld of Greek myth. ",
       "developer": "Supergiant Games",
-      "url": "./static/images/cover/hadesCover.jpeg"
+      "url": "./static/images/cover/hadesCover.jpeg",
+      "release": "2018"
     },
     {
       "id": "47",
       "launcher": "./static/logos/steam.svg",
-      "title": "Helldivers",
+      "title": "Helldivers II",
       "genre": ["Action", "Strategy", "Shooter"],
       "age": "17",
-      "description": "Helldivers is a hardcore, cooperative, twin-stick shooter from the creators of Magicka. Dive into a procedurally generated universe filled with chaos and challenge as you fight to protect Super Earth and defeat the enemies of mankind in an intense intergalactic war.",
+      "description": "Helldivers II is a hardcore, cooperative, twin-stick shooter from the creators of Magicka. Dive into a procedurally generated universe filled with chaos and challenge as you fight to protect Super Earth and defeat the enemies of mankind in an intense intergalactic war.",
       "developer": "Arrowhead Game Studios",
-      "url": "./static/images/cover/helldiversCover.jpg"
+      "url": "./static/images/cover/helldiversCover.jpg",
+      "release": "2024"
     }
   ]
 }
