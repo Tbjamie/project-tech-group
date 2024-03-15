@@ -20,6 +20,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 100%;
 }
 
 main {
@@ -73,12 +74,17 @@ p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+<<<<<<< HEAD
 /* .swiper-container {
 } */
 
+=======
+>>>>>>> 9e602fa2d3cab7ca5aa0ce39e39d28a163336896
 .swiper {
   width: 100%;
+  max-width: 374px;
   height: 100%;
+<<<<<<< HEAD
 }
 
 .swiper-slide {
@@ -89,19 +95,20 @@ p {
 
 /* .swiper-slide li {
 } */
+=======
+  position: relative; 
+}
+>>>>>>> 9e602fa2d3cab7ca5aa0ce39e39d28a163336896
 
 .swiper li {
   list-style: none;
-  background-color: #696e79;
-  width: 80vw;
   height: auto;
   border-radius: 2em;
   padding: 2em;
-  margin: 1em;
 }
 
 .swiper p {
-  margin-bottom: 2rem;
+  margin-bottom: 2em;
 }
 
 .swiper a {
@@ -112,37 +119,53 @@ p {
   border: none;
   border-radius: 0.5em;
   font-weight: 700;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.1em;
 }
 
-.newReleases img {
-  width: 80vw;
-  margin-top: 0.1em;
-  border-radius: 0.5em;
+.newReleases li {
+  list-style: none;
 }
 
-.newReleases article {
-  display: flex;
-  flex-direction: column;
+.newReleases-content {
+  background-color: #696e79;
+  padding: 7em 4em;
+  border-radius: 1em;
 }
+
+.slider {
+    overflow: hidden;
+    width: 300px; /* Adjust width as needed */
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .slider-slide {
+    flex: 0 0 163px; /* Set slide width */
+    margin-right: 1em;
+  }
 
 .popular {
-  width: 80vw;
   height: auto;
   border-radius: 2em;
 }
 
-.popular img {
-  width: 50vw;
-  margin-top: 0.1em;
-  border-radius: 0.5em;
+.popular li {
+  list-style: none;
 }
 
-.featuredDiscounts img {
-  width: 50vw;
-  margin-top: 0.1em;
-  border-radius: 0.5em;
+.popular-content {
+  background-color: #696e79;
+  padding: 4em 6em;
+  border-radius: 1em;
 }
+
+
+
 
 .featuredDiscounts article {
   display: flex;
@@ -154,7 +177,7 @@ p {
 
 .percentage {
   background-color: var(--lightblue);
-  padding: 0.1rem 0.3rem 0.1rem 0.3rem;
+  padding: 0.1em 0.3em 0.1em 0.3em;
   border-radius: 0.5em;
 }
 
