@@ -1,0 +1,25 @@
+{
+    "users": [
+      {
+        "username": "test123",
+        "genre": "FPS",
+        "nationality": "Afghan"
+      }, 
+      {
+        "username": "test456",
+        "genre": "MOBA",
+        "nationality": "Albanian"
+      },
+      {
+        "username": "test789",
+        "genre": "CCG",
+        "nationality": "Argentine"
+      },
+      {
+        "username": "test101",
+        "genre": "Auto Battler",
+        "nationality": "Australian"
+      }
+    ]
+  }
+  

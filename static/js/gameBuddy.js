@@ -3,11 +3,15 @@ const filterButton = document.querySelector(
   "main section:first-of-type .flexdiv button"
 );
 
+// const pElement = document.querySelector("p")
+
 const genreSelect = document.querySelector(".genreSelect");
 
 const taalSelect = document.querySelector(".taalSelect");
 const closeButtonFilter = document.querySelector(".cross");
 const dropDown = document.querySelector(".select-dropdown");
+const matchSection = document.querySelector("section:nth-of-type(4)");
+
 
 function rangeSlide(value) {
     document.getElementById('rangeValue').innerHTML = value;
@@ -77,3 +81,41 @@ fetch("/static/json/taal.json")
     taalSelect.append(dropDownOptions);
   });
 });
+
+
+
+fetch("/static/json/user.json")
+.then((response) => {
+  if (!response.ok) {
+    console.log("ERROR");
+  }
+
+  return response.json();
+})
+.then((data) => {
+  let users = data.users;
+  console.log(users)
+  users.forEach((user) => {
+    let userArticle  = document.createElement('article')
+    let username = document.createElement('h3')
+    username.innerText = user.username
+    matchSection.append(userArticle)
+    userArticle.append(username)
+
+    let pElement = document.createElement('p')
+    pElement.innerText = "match based on:"
+    userArticle.append(pElement)
+
+    let genre = document.createElement('p')
+    genre.innerText = user.genre
+    userArticle.append(genre)
+
+    let nationality = document.createElement('p')
+    nationality.innerText = user.nationality
+    userArticle.append(nationality)
+
+ 
+  });
+});
+
+
