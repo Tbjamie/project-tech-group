@@ -15,6 +15,10 @@ const navButtons = document.querySelectorAll("nav ul li");
 
 const gameSection = document.querySelector("section:nth-of-type(3)");
 
+const divFlexGenre = document.querySelector(".divFlexGenre");
+
+let genreArray;
+
 for (input of document.querySelectorAll("input[type=range]")) {
   actualizarInput(input);
 }
@@ -40,6 +44,16 @@ fetch("/static/json/games.json")
   })
   .then((data) => {
     const games = data.games;
+    const uniqueGenres = new Set(); // Een set om unieke genres bij te houden
+    // Functie om games te filteren op basis van het geselecteerde genre
+    function filterGamesByGenre(genre) {
+      const filteredGames = games.filter(
+        (game) => Array.isArray(game.genre) && game.genre.includes(genre)
+      );
+      // Voeg hier je eigen logica toe om de gefilterde games weer te geven
+      console.log(filteredGames);
+    }
+
     console.log(games);
     games.forEach((game) => {
       let gameItem = document.createElement("article");
@@ -58,6 +72,35 @@ fetch("/static/json/games.json")
       let gameImage = document.createElement("img");
       gameImage.setAttribute("src", game.url);
       gameItem.append(gameImage);
+
+      let genre = game.genre; // Haal de genres op van de game
+
+      // Als er meerdere genres zijn, pak dan alleen het eerste genre
+      if (Array.isArray(genre) && genre.length > 0) {
+        genre = genre[0].trim(); // Neem alleen het eerste genre
+      }
+
+      // Voeg het genre toe aan de set als het nog niet voorkomt
+      uniqueGenres.add(genre);
+    });
+
+    // Maak knoppen voor elk uniek genre en voeg eventlisteners toe
+    uniqueGenres.forEach((genre) => {
+      let genreFilterButton = document.createElement("button");
+      genreFilterButton.innerText = genre;
+      divFlexGenre.append(genreFilterButton);
+
+      // Voeg een eventlistener toe aan de knop om te filteren op genre
+      genreFilterButton.addEventListener("click", () => {
+        // Markeer de geselecteerde knop en demarkeer de andere knoppen
+        document.querySelectorAll("button").forEach((button) => {
+          button.classList.remove("selected");
+        });
+        genreFilterButton.classList.add("selected");
+
+        // Filter games op basis van het geselecteerde genre
+        filterGamesByGenre(genre);
+      });
     });
   });
 
