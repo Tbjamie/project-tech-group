@@ -32,10 +32,10 @@ main {
 h1 {
   color: var(--accentcolor);
   letter-spacing: 0.2rem;
-  margin: 2rem ;
+  margin: 2rem;
   align-self: flex-start;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  text-shadow: var(--darkgrey) 2px 5px ;
+  text-shadow: var(--darkgrey) 2px 5px;
 }
 
 h2 {
@@ -76,16 +76,16 @@ p {
 
 .swiper {
   width: 100%;
-  max-width: 374px;
+  max-width: 300px;
   height: 100%;
-  position: relative; 
+  position: relative;
 }
 
 .swiper li {
   list-style: none;
-  height: auto;
-  border-radius: 2em;
   padding: 2em;
+  border-radius: 1.5em;
+  margin-bottom: 4em;
 }
 
 .swiper p {
@@ -103,14 +103,54 @@ p {
   letter-spacing: 0.1em;
 }
 
+#game-image {
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  width: 100%;
+}
+
+#game-image::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  border-radius: 1.5em;
+  opacity: 50%;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#game-image h4 {
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  text-shadow: #2d2d2d 3px 3px 3px;
+}
+
+#game-image p {
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  text-shadow: #2d2d2d 3px 3px 3px;
+}
+
+#game-image a {
+  box-shadow: #00000080 3px 3px 3px;
+}
+
 .newReleases li {
   list-style: none;
 }
 
-.newReleases-content {
-  background-color: #696e79;
-  padding: 7em 4em;
-  border-radius: 1em;
+#nr-image {
+  object-fit: cover;
+  margin-top: 1em;
+  max-width: 9em;
+  height: 12em;
+  border-radius: 0.8em;
 }
 
 .slider {
@@ -129,14 +169,25 @@ p {
   margin-right: 1em;
 }
 
+.popular-wrapper {
+  display: flex;
+  overflow-x: scroll hidden;
+}
+
+.popular-slide {
+  margin-right: 1em;
+}
+
 .popular li {
   list-style: none;
 }
 
-.popular-content {
-  background-color: #696e79;
-  padding: 4em 6em;
-  border-radius: 1em;
+#popular-image {
+  object-fit: cover;
+  margin-top: 1em;
+  max-width: 16em;
+  height: 12em;
+  border-radius: 0.8em;
 }
 
 .featuredDiscounts article {
