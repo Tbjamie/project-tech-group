@@ -72,18 +72,24 @@ main section:first-of-type .flexdiv button {
 }
 main section:nth-of-type(2) {
   display: flex;
-  width: 80vw;
+  max-width: 80vw;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
 }
 main section:nth-of-type(2) button {
-  width: 6rem;
-  height: 2rem;
+  width: 5rem;
+  height: 2.3rem;
   background-color: var(--secondarycolor);
   border-radius: 10px;
   border-style: none;
   cursor: pointer;
   margin: 0.2rem;
   background-color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-weight: bold;
 }
 #Icon_awesome-filter {
   fill: white;
@@ -296,7 +302,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 }
 
 .selected {
-  background-color: var(--secondarycolor);
+  background-color: var(--buttoncolor);
   color: var(--white);
 }
 

@@ -6,6 +6,7 @@ const filterButton = document.querySelector(
   "main section:first-of-type .flexdiv button"
 );
 const closeButtonFilter = document.querySelector(".cross");
+const resultButton = document.querySelector(".resultButton");
 const navButtonHome = document.querySelector("nav ul li a:first-of-type");
 const navButtonDiscover = document.querySelector("nav ul li a:nth-of-type(2)");
 const navButtonCommunity = document.querySelector("nav ul li a:nth-of-type(3)");
@@ -14,6 +15,7 @@ const navButtonAccount = document.querySelector("nav ul li a:last-of-type");
 const navButtons = document.querySelectorAll("nav ul li");
 
 const gameSection = document.querySelector("section:nth-of-type(3)");
+const activeFilterSection = document.querySelector("section:nth-of-type(2)");
 
 const divFlexGenre = document.querySelector(".divFlexGenre");
 
@@ -95,6 +97,7 @@ fetch("/static/json/games.json")
       let gameLauncher = document.createElement("img");
       gameLauncher.setAttribute("src", game.launcher);
       gameItem.append(gameLauncher);
+
       let gameImage = document.createElement("img");
       gameImage.setAttribute("src", game.url);
       gameItem.append(gameImage);
@@ -122,10 +125,31 @@ fetch("/static/json/games.json")
       genreFilterButton.addEventListener("click", () => {
         // Markeer de geselecteerde knop en voeg toe aan/verwijder uit de lijst met geselecteerde genres
         genreFilterButton.classList.toggle("selected");
+
         if (selectedGenres.includes(genre)) {
           selectedGenres.splice(selectedGenres.indexOf(genre), 1);
+          // Verwijder de bijbehorende filterknop als het genre wordt gedeselecteerd
+          const filterButtons = Array.from(activeFilterSection.children);
+          const selectedFilterButton = filterButtons.find(
+            (button) => button.dataset.genre === genre
+          );
+          if (selectedFilterButton) {
+            activeFilterSection.removeChild(selectedFilterButton);
+          }
         } else {
           selectedGenres.push(genre);
+          // Voeg een nieuwe filterknop toe voor het geselecteerde genre
+          let filterItem = document.createElement("button");
+          filterItem.innerText = genre;
+          filterItem.dataset.genre = genre; // Voeg dataset-attribuut toe voor identificatie
+          filterItem.addEventListener("click", () => {
+            // Deselecteer het genre wanneer de filterknop wordt geklikt
+            genreFilterButton.classList.remove("selected");
+            selectedGenres.splice(selectedGenres.indexOf(genre), 1);
+            activeFilterSection.removeChild(filterItem); // Verwijder de filterknop
+            displayGamesByGenres(selectedGenres); // Update de weergave van games
+          });
+          activeFilterSection.append(filterItem);
         }
 
         // Weergeef alleen de games van de geselecteerde genres
@@ -171,6 +195,14 @@ filterButton.addEventListener("click", () => {
 });
 
 closeButtonFilter.addEventListener("click", () => {
+  // filterMenu.style.display = "none";
+  // setTimeout(1000, () => {
+  filterMenu.classList.remove("activeFilter");
+  document.body.style.overflowY = "scroll";
+  //   });
+  // });
+});
+resultButton.addEventListener("click", () => {
   // filterMenu.style.display = "none";
   // setTimeout(1000, () => {
   filterMenu.classList.remove("activeFilter");
