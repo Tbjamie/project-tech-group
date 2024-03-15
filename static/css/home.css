@@ -76,40 +76,20 @@ p {
 
 .swiper {
   width: 100%;
-  max-width: 374px; /* Adjusted to match the screen width */
+  max-width: 374px;
   height: 100%;
-  overflow: hidden;
-  margin: 0 auto;
-  position: relative; /* Add this line */
-}
-
-.swiper-slide {
-  flex-shrink: 0; /* Ensure slides don't shrink */
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.swiper-slide li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative; 
 }
 
 .swiper li {
   list-style: none;
-  width: 80vw;
   height: auto;
   border-radius: 2em;
   padding: 2em;
 }
 
 .swiper p {
-  margin-bottom: 2rem;
+  margin-bottom: 2em;
 }
 
 .swiper a {
@@ -120,38 +100,53 @@ p {
   border: none;
   border-radius: 0.5em;
   font-weight: 700;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.1em;
 }
 
-.content {
-  background-color: #696e79;
-  padding: 4em;
-  border-radius: 1rem;
+.newReleases li {
+  list-style: none;
 }
+
+.newReleases-content {
+  background-color: #696e79;
+  padding: 7em 4em;
+  border-radius: 1em;
+}
+
+.slider {
+    overflow: hidden;
+    width: 300px; /* Adjust width as needed */
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .slider-slide {
+    flex: 0 0 163px; /* Set slide width */
+    margin-right: 1em;
+  }
 
 .popular {
-  width: 80vw;
   height: auto;
   border-radius: 2em;
 }
 
-.popular article {
+.popular li {
+  list-style: none;
+}
+
+.popular-content {
   background-color: #696e79;
-  padding: 4em;
-  border-radius: 1rem;
+  padding: 4em 6em;
+  border-radius: 1em;
 }
 
-.popular img {
-  width: 50vw;
-  margin-top: 0.1em;
-  border-radius: 0.5em;
-}
 
-.featuredDiscounts img {
-  width: 50vw;
-  margin-top: 0.1em;
-  border-radius: 0.5em;
-}
+
 
 .featuredDiscounts article {
   display: flex;
@@ -163,7 +158,7 @@ p {
 
 .percentage {
   background-color: var(--lightblue);
-  padding: 0.1rem 0.3rem 0.1rem 0.3rem;
+  padding: 0.1em 0.3em 0.1em 0.3em;
   border-radius: 0.5em;
 }
 
