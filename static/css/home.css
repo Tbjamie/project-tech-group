@@ -73,8 +73,8 @@ p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.swiper-container {
-}
+/* .swiper-container {
+} */
 
 .swiper {
   width: 100%;
@@ -87,8 +87,8 @@ p {
   align-items: center;
 }
 
-.swiper-slide li {
-}
+/* .swiper-slide li {
+} */
 
 .swiper li {
   list-style: none;
