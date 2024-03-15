@@ -335,7 +335,7 @@
       "launcher": "./static/logos/microsoft.svg",
       "title": "Microsoft Flight Simulator",
       "genre": "Simulation",
-      "age": "E for Everyone",
+      "age": "4",
       "description": "Microsoft Flight Simulator is a stunningly realistic flight simulation game that allows players to pilot a variety of aircraft across the entire globe. With breathtaking graphics and accurate physics, it offers an immersive experience for both aviation enthusiasts and casual players alike.",
       "developer": "Asobo Studio",
       "url": "./static/images/cover/flightsimCover.jpeg"
@@ -345,7 +345,7 @@
       "launcher": "./static/logos/microsoft.svg",
       "title": "Cuphead",
       "genre": "Run and gun",
-      "age": "E for Everyone",
+      "age": "4",
       "description": "Cuphead is a challenging run-and-gun platformer inspired by 1930s cartoons. With its unique art style, classic boss battles, and jazz soundtrack, it offers a nostalgic and exhilarating gaming experience.",
       "developer": "Studio MDHR",
       "url": "./static/images/cover/cupheadCover.jpeg"
