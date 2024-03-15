@@ -45,16 +45,42 @@ fetch("/static/json/games.json")
   .then((data) => {
     const games = data.games;
     const uniqueGenres = new Set(); // Een set om unieke genres bij te houden
-    // Functie om games te filteren op basis van het geselecteerde genre
-    function filterGamesByGenre(genre) {
-      const filteredGames = games.filter(
-        (game) => Array.isArray(game.genre) && game.genre.includes(genre)
+    const selectedGenres = []; // Een array om geselecteerde genres bij te houden
+
+    // Functie om games te filteren op basis van de geselecteerde genres
+    function displayGamesByGenres(genres) {
+      const gameItems = document.querySelectorAll(
+        "main section:nth-of-type(3) article"
       );
+      gameItems.forEach((gameItem) => {
+        const gameGenre = gameItem.dataset.genre; // Haal het genre op van het game-item
+
+        // Controleer of het genre van het game-item overeenkomt met een van de geselecteerde genres
+        if (genres.length === 0) {
+          gameItem.style.display = "block"; // Toon het game-item
+        } else {
+          // Controleer of het genre van het game-item overeenkomt met een van de geselecteerde genres
+          if (genres.includes(gameGenre)) {
+            gameItem.style.display = "block"; // Toon het game-item
+          } else {
+            gameItem.style.display = "none"; // Verberg het game-item
+          }
+        }
+      });
+    }
+
+    // Functie om games te filteren op basis van de geselecteerde genres
+    function filterGamesByGenres(genres) {
+      const filteredGames = games.filter((game) => {
+        return (
+          Array.isArray(game.genre) &&
+          genres.some((genre) => game.genre.includes(genre))
+        );
+      });
       // Voeg hier je eigen logica toe om de gefilterde games weer te geven
       console.log(filteredGames);
     }
 
-    console.log(games);
     games.forEach((game) => {
       let gameItem = document.createElement("article");
       gameSection.append(gameItem);
@@ -82,6 +108,8 @@ fetch("/static/json/games.json")
 
       // Voeg het genre toe aan de set als het nog niet voorkomt
       uniqueGenres.add(genre);
+      // Voeg het genre toe als een dataset-attribuut aan het game-item
+      gameItem.dataset.genre = genre;
     });
 
     // Maak knoppen voor elk uniek genre en voeg eventlisteners toe
@@ -92,14 +120,19 @@ fetch("/static/json/games.json")
 
       // Voeg een eventlistener toe aan de knop om te filteren op genre
       genreFilterButton.addEventListener("click", () => {
-        // Markeer de geselecteerde knop en demarkeer de andere knoppen
-        document.querySelectorAll("button").forEach((button) => {
-          button.classList.remove("selected");
-        });
-        genreFilterButton.classList.add("selected");
+        // Markeer de geselecteerde knop en voeg toe aan/verwijder uit de lijst met geselecteerde genres
+        genreFilterButton.classList.toggle("selected");
+        if (selectedGenres.includes(genre)) {
+          selectedGenres.splice(selectedGenres.indexOf(genre), 1);
+        } else {
+          selectedGenres.push(genre);
+        }
 
-        // Filter games op basis van het geselecteerde genre
-        filterGamesByGenre(genre);
+        // Weergeef alleen de games van de geselecteerde genres
+        displayGamesByGenres(selectedGenres);
+
+        // Filter games op basis van de geselecteerde genres
+        filterGamesByGenres(selectedGenres);
       });
     });
   });

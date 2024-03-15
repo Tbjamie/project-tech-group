@@ -2,6 +2,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
 }
 main section:first-of-type {
   display: flex;
@@ -293,6 +294,12 @@ input[type="range"]::-webkit-slider-runnable-track {
   border-style: none;
   cursor: pointer;
 }
+
+.selected {
+  background-color: var(--secondarycolor);
+  color: var(--white);
+}
+
 main section:nth-of-type(3) article {
   position: relative;
   color: white;
