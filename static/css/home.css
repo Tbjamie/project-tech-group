@@ -74,19 +74,12 @@ p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-<<<<<<< HEAD
-/* .swiper-container {
-} */
-
-=======
->>>>>>> 9e602fa2d3cab7ca5aa0ce39e39d28a163336896
 .swiper {
   width: 100%;
   max-width: 374px;
   height: 100%;
   position: relative; 
 }
->>>>>>> 9e602fa2d3cab7ca5aa0ce39e39d28a163336896
 
 .swiper li {
   list-style: none;
