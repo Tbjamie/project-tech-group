@@ -58,6 +58,12 @@ h2 {
   width: 100%;
 }
 
+span h2{
+  position: relative;
+  top: 4.5rem;
+  right: 6rem;
+}
+
 h3 {
   color: var(--white);
   text-transform: uppercase;
@@ -66,6 +72,35 @@ h3 {
   align-self: flex-start;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 1rem;
+}
+
+section:nth-of-type(4) p:nth-of-type(1){
+  position: relative;
+  top: 3rem;
+  color: var(--white);
+  text-transform: uppercase;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 3rem;
+}
+
+section:nth-of-type(4) p{
+  position: relative;
+  top: 1rem;
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+
+section:nth-of-type(4) p:nth-of-type(2){
+  position: relative;
+  top: 2rem;
+}
+
+section:nth-of-type(4) p:nth-of-type(2), section:nth-of-type(4) p:nth-of-type(3){
+  text-align: center;
+  width: 6rem;
+  color: var(--white);
+  padding: 0.3rem;
+  background-color: var(--blue);
 }
 
 form {
@@ -241,16 +276,12 @@ label {
   font-size: 2rem;
 }
 
-/* section:nth-of-type(4) div:nth-of-type(2){
-position: absolute;
-margin-top: 5rem;
-}  */
-
 .select-dropdown {
 	position: relative;
 	background-color: var(--white);
 	border-radius: 4px;
 }
+
 .select-dropdown select {
 	font-size: 1rem;
 	font-weight: normal;
@@ -260,10 +291,12 @@ margin-top: 5rem;
 	background-color: transparent;
 	appearance: none;
 }
+
 .select-dropdown select:active, .select-dropdown select:focus {
 	outline: none;
 	box-shadow: none;
 }
+
 .select-dropdown:after {
 	content: "";
 	position: absolute;
@@ -281,21 +314,21 @@ margin-top: 5rem;
   width: 100vw;
   height: 50vh;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-wrap: nowrap;
-  gap: 5rem;
+  gap: 1.5rem;
   overflow-x: scroll;
   margin: 1rem;;
   margin-left: 2.5rem;
   margin-bottom: -2rem;
   margin-top: 4rem;
   overflow-y: hidden;
-
 }
 
 .scroll article{
   display: flex;
-  justify-content: space-between;
+  display:-webkit-inline-box;
+  /* justify-content: space-between;  */
   width: 40vw;
   height: 35vh;
   background-color: var(--darkgrey);
@@ -303,6 +336,45 @@ margin-top: 5rem;
   border-radius: 1rem;
   border: 1px solid white;
   gap: 10rem;
+}
+
+section:nth-of-type(3) p:nth-of-type(1){
+  position: relative;
+  text-align: center;
+  top: 4.8rem;
+  right: 17rem;
+  color: var(--white);
+  text-transform: uppercase;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 3rem;
+}
+
+section:nth-of-type(3) p:nth-of-type(2){
+  position: relative;
+  top: 10rem;
+  right: 35.5rem;
+  /* left: 0.5rem;  */
+  text-align: center;
+  width: 6rem;
+  height: 2rem;
+  /* height: 2rem; */
+  color: var(--white);
+  padding: 0.3rem;
+  background-color: var(--blue);
+}
+
+section:nth-of-type(3) p:nth-of-type(3){
+  position: relative;
+  top: 13rem;
+  right: 51.5rem;
+  /* left: 0.5rem;  */
+  text-align: center;
+  width: 6rem;
+  height: 2rem;
+  /* height: 2rem; */
+  color: var(--white);
+  padding: 0.3rem;
+  background-color: var(--blue);
 }
 
 section:nth-of-type(5) article:nth-of-type(3){
@@ -322,3 +394,33 @@ section:nth-of-type(3) h2{
 .genreSelect, .taalSelect{
   cursor: pointer;
 }
+
+.buttonContainer {
+  bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.filterMenu button {
+  width: 40%;
+  height: 2.7rem;
+  border-style: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.5rem;
+  align-self: flex-start;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.resultButton {
+  background-color: var(--buttoncolor);
+  color: var(--white);
+}
+

@@ -11,6 +11,7 @@ const taalSelect = document.querySelector(".taalSelect");
 const closeButtonFilter = document.querySelector(".cross");
 const dropDown = document.querySelector(".select-dropdown");
 const matchSection = document.querySelector("section:nth-of-type(4)");
+const matchSection2 = document.querySelector("section:nth-of-type(3)");
 
 
 function rangeSlide(value) {
@@ -40,7 +41,6 @@ filterButton.addEventListener("click", () => {
     // });
   });
 
-
 fetch("/static/json/games.json")
 .then((response) => {
   if (!response.ok) {
@@ -61,7 +61,6 @@ fetch("/static/json/games.json")
   });
 });
 
-
 fetch("/static/json/taal.json")
 .then((response) => {
   if (!response.ok) {
@@ -81,8 +80,6 @@ fetch("/static/json/taal.json")
     taalSelect.append(dropDownOptions);
   });
 });
-
-
 
 fetch("/static/json/user.json")
 .then((response) => {
@@ -113,9 +110,41 @@ fetch("/static/json/user.json")
     let nationality = document.createElement('p')
     nationality.innerText = user.nationality
     userArticle.append(nationality)
-
- 
   });
 });
+
+fetch("/static/json/user.json")
+.then((response) => {
+  if (!response.ok) {
+    console.log("ERROR");
+  }
+
+  return response.json();
+})
+.then((data) => {
+  let users = data.users;
+  console.log(users)
+  users.forEach((user) => {
+    let userArticle1  = document.createElement('article')
+    let username = document.createElement('h3')
+    username.innerText = user.username
+    matchSection2.append(userArticle1)
+    userArticle1.append(username)
+
+    let pElement = document.createElement('p')
+    pElement.innerText = "match based on:"
+    userArticle1.append(pElement)
+
+    let genre = document.createElement('p')
+    genre.innerText = user.genre
+    userArticle1.append(genre)
+
+    let nationality = document.createElement('p')
+    nationality.innerText = user.nationality
+    userArticle1.append(nationality)
+  });
+});
+
+
 
 
