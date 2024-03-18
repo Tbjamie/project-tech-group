@@ -18,6 +18,7 @@ const {
 } = require("mongodb")
 const { error } = require("console")
 const { Cookie } = require("express-session")
+const { request } = require("http")
 
 const uri = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}/${process.env.DB_NAME}?retryWrites=true&w=majority`
 const client = new MongoClient(uri, {
@@ -43,13 +44,21 @@ const collection = db.collection(process.env.DB_COLLECTION)
 app
   .use(express.urlencoded({ extended: true })) // middleware to parse form data from incoming HTTP request and add form fields to req.body
   .use(express.static("./static")) // Allow server to serve static content such as images, stylesheets, fonts or frontend js from the directory named static
+  .use(session({
+    secret: `${process.env.SECRET}`,
+    cookie: {
+      maxAge: 60000 * 60 
+    },
+    saveUninitialized: false,
+    resave: false
+  }))
   .set("view engine", "ejs") // Set EJS to be our templating engine
   .set("views", "view") // And tell it the views can be found in the directory named view
   .get("/", welcome)
   .post("/", login)
   .get("/login", loginPage)
   .post("/login", login)
-  // .get("/home", home)
+  .get("/home", home)
   // .get("/home", home)
   .get("/discover", discover)
   // .get("/get-users", getUsers)
@@ -62,32 +71,19 @@ app.listen(`${process.env.PORT}`, () => {
   )
 })
 
-app.use(session({
-  secret: 'some secret',
-  cookie: { maxAge: 30000 },
-  saveUninitialized: false
-}))
-
-// async function getUsers(req, res) {
-//     let users = await collection.find().toArray()
-//     users.forEach(user => {
-//       console.log(user.username)
-//     })
-//     // console.log(users)
-//     res.render('users.ejs', {users: users})
-// }
-
 async function login(req, res) {
   let user = await collection.findOne({
     username: req.body.username,
   })
   if((user) && (user.password === req.body.password)) {
     console.log(user)
+    req.session.visited = true
+    console.log(req.session)
     console.log(req.sessionID)
     // if(req.session.authenticated) {
 
     // }
-    res.render('home.ejs', {user: user})
+    res.render("home.ejs", {user: user})
   } else {
     console.log(`${req.body.username} not found`)
   }
@@ -98,9 +94,16 @@ async function signUp(req, res) {
   let user = await collection.findOne({
     username: req.body.username,
   })
+
+  let email = await collection.findOne({
+    username: req.body.email,
+  })
+
   if(user) {
     console.log(`The username: ${req.body.username} is already in use, please pick another username!`)
     // res.render('signUp.ejs', {existingUser: existingUser})
+  } else if(email) {
+    console.log(`An account with the email ${req.body.email} already exists.`)
   } else {
     // FIXME: ZORG DAT JE NIET MET DEZELFDE EMAIL EEN ACC AAN KAN MAKEN
     let newUser = await collection.insertOne({
@@ -117,8 +120,6 @@ async function signUp(req, res) {
   }
 }
 
-
-
 function welcome(req, res) {
     res.render("welcome.ejs")
 }
@@ -128,7 +129,23 @@ function loginPage(req, res) {
 }
 
 function discover(req, res) {
+  req.sessionStore.get(req.session.id, (err, sessionData) => {
+    if(err) {
+      console.log(err)
+      throw err
+    }
     res.render("discover.ejs")
+  })
+}
+
+function home(req, res) {
+  req.sessionStore.get(req.session.id, (err, sessionData) => {
+    if(err) {
+      console.log(err)
+      throw err
+    }
+    res.render("home.ejs")
+  })
 }
 
 // function signUp(req, res) {
@@ -139,7 +156,7 @@ function discover(req, res) {
 app.use((req, res) => {
   console.error("404 error at URL: " + req.url)
   if(res.status(404)) {
-      res.render("404page.ejs")
+    res.render("404page.ejs")
   }
 })
 
