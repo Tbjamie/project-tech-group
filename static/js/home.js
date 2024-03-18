@@ -64,3 +64,5 @@ function getNewReleases(array, n) {
   ); // Sort by release date
   return sortedByReleaseDate.slice(0, n); // Get sub-array of first n elements
 }
+
+
