@@ -14,7 +14,7 @@ const app = express()
 const {
   ServerApiVersion,
   ObjectId,
-  MongoClient,
+  MongoClient
 } = require("mongodb")
 const { error } = require("console")
 const { Cookie } = require("express-session")
