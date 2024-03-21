@@ -41,6 +41,7 @@ filterButton.addEventListener("click", () => {
     // });
   });
 
+// fetch voor de genres dropdown
 fetch("/static/json/games.json")
 .then((response) => {
   if (!response.ok) {
@@ -61,6 +62,7 @@ fetch("/static/json/games.json")
   });
 });
 
+// fetch voor de taal dropdown
 fetch("/static/json/taal.json")
 .then((response) => {
   if (!response.ok) {
@@ -81,38 +83,8 @@ fetch("/static/json/taal.json")
   });
 });
 
-fetch("/static/json/user.json")
-.then((response) => {
-  if (!response.ok) {
-    console.log("ERROR");
-  }
 
-  return response.json();
-})
-.then((data) => {
-  let users = data.users;
-  console.log(users)
-  users.forEach((user) => {
-    let userArticle  = document.createElement('article')
-    let username = document.createElement('h3')
-    username.innerText = user.username
-    matchSection.append(userArticle)
-    userArticle.append(username)
-
-    let pElement = document.createElement('p')
-    pElement.innerText = "match based on:"
-    userArticle.append(pElement)
-
-    let genre = document.createElement('p')
-    genre.innerText = user.genre
-    userArticle.append(genre)
-
-    let nationality = document.createElement('p')
-    nationality.innerText = user.nationality
-    userArticle.append(nationality)
-  });
-});
-
+// fetch voor de 3e section (aanbevolen)
 fetch("/static/json/user.json")
 .then((response) => {
   if (!response.ok) {
@@ -131,6 +103,10 @@ fetch("/static/json/user.json")
     matchSection2.append(userArticle1)
     userArticle1.append(username)
 
+    let buttonElement = document.createElement('button')
+    buttonElement.innerText = "Add friend"
+    userArticle1.append(buttonElement)
+
     let pElement = document.createElement('p')
     pElement.innerText = "match based on:"
     userArticle1.append(pElement)
@@ -147,4 +123,39 @@ fetch("/static/json/user.json")
 
 
 
+// fetch voor de 4e section 
+fetch("/static/json/user.json")
+.then((response) => {
+  if (!response.ok) {
+    console.log("ERROR");
+  }
 
+  return response.json();
+})
+.then((data) => {
+  let users = data.users;
+  console.log(users)
+  users.forEach((user) => {
+    let userArticle  = document.createElement('article')
+    let username = document.createElement('h3')
+    username.innerText = user.username
+    matchSection.append(userArticle)
+    userArticle.append(username)
+
+    let buttonElement = document.createElement('button')
+    buttonElement.innerText = "Add friend"
+    userArticle.append(buttonElement)
+
+    let pElement = document.createElement('p')
+    pElement.innerText = "match based on:"
+    userArticle.append(pElement)
+
+    let genre = document.createElement('p')
+    genre.innerText = user.genre
+    userArticle.append(genre)
+
+    let nationality = document.createElement('p')
+    nationality.innerText = user.nationality
+    userArticle.append(nationality)
+  });
+});
