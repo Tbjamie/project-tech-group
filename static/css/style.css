@@ -58,6 +58,7 @@ nav ul li a {
   gap: 0.4em;
   fill: var(--white);
   color: var(--white);
+  transition: 250ms;
 }
 
 nav ul li svg {
@@ -70,6 +71,12 @@ nav ul li a:active {
   color: var(--accentcolor);
   fill: var(--accentcolor);
   cursor: pointer;
+}
+
+nav ul li a:hover p,
+nav ul li a:focus p,
+nav ul li a:active p {
+  color: var(--accentcolor);
 }
 
 .activeNavPage {

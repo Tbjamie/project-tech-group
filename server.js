@@ -97,16 +97,6 @@ app
     })
 })
 
-.get('/test', (req, res) => {
-    console.log(req.session.id)
-    if(req.session.visited) {
-        let user = req.session.user
-        res.render('testCookie.ejs', {user: user})
-    } else {
-        res.redirect('/login')
-    }
-})
-
 app.listen(`${process.env.PORT}`, () => {
   console.log(
     `Running on port ${process.env.PORT}`
