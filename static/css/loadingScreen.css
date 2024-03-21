@@ -16,6 +16,7 @@
 
 body {
   background: linear-gradient(180deg, var(--blue), var(--darkgrey));
+  overflow-y: hidden;
 }
 
 .container {
