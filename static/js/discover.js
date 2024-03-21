@@ -7,6 +7,7 @@ const filterButton = document.querySelector(
 );
 const closeButtonFilter = document.querySelector(".cross");
 const resultButton = document.querySelector(".resultButton");
+const resetButton = document.querySelector(".resetButton");
 const navButtonHome = document.querySelector("nav ul li a:first-of-type");
 const navButtonDiscover = document.querySelector("nav ul li a:nth-of-type(2)");
 const navButtonCommunity = document.querySelector("nav ul li a:nth-of-type(3)");
@@ -169,6 +170,37 @@ fetch("/static/json/games.json")
           });
           activeFilterSection.append(filterItem);
         }
+        resetButton.addEventListener("click", () => {
+          // Reset selected genres
+          const genreButtons = document.querySelectorAll(
+            ".divFlexGenre button"
+          );
+          genreButtons.forEach((button) => {
+            if (button.classList.contains("selected")) {
+              button.classList.remove("selected");
+            }
+          });
+
+          // Clear active filter section
+          activeFilterSection.innerHTML = "";
+
+          // Reset selectedGenres array
+          selectedGenres.length = 0;
+
+          // Reset price range
+          const priceInput = document.getElementById("priceValue");
+          const priceLabel = document.getElementById("prijsLabel");
+          priceInput.value = 75;
+          priceLabel.textContent = "75"; // Update the label to default value
+
+          // Reset display of all game items
+          const gameItems = document.querySelectorAll(
+            "main section:nth-of-type(3) article"
+          );
+          gameItems.forEach((item) => {
+            item.style.display = "block";
+          });
+        });
 
         // Weergeef alleen de games van de geselecteerde genres
         displayGamesByGenres(selectedGenres);
@@ -204,29 +236,16 @@ filterButton.addEventListener("click", () => {
     stateChecker = "active";
     filterMenu.classList.add("activeFilter");
     document.body.style.overflowY = "hidden";
-    // filterMenu.style.display = "flex";
   }
-  // else {
-  //   stateChecker = "inactive";
-  //   filterMenu.classList.remove("activeFilter");
-  // }
 });
 
 closeButtonFilter.addEventListener("click", () => {
-  // filterMenu.style.display = "none";
-  // setTimeout(1000, () => {
   filterMenu.classList.remove("activeFilter");
   document.body.style.overflowY = "scroll";
-  //   });
-  // });
 });
 resultButton.addEventListener("click", () => {
-  // filterMenu.style.display = "none";
-  // setTimeout(1000, () => {
   filterMenu.classList.remove("activeFilter");
   document.body.style.overflowY = "scroll";
-  //   });
-  // });
 });
 
 const activeNavPage = () => {

@@ -4,6 +4,7 @@ main {
   align-items: center;
   min-height: 100vh;
 }
+
 main section:first-of-type {
   display: flex;
   flex-direction: column;
@@ -291,6 +292,10 @@ input[type="range"]::-webkit-slider-runnable-track {
 .resultButton {
   background-color: var(--buttoncolor);
   color: var(--white);
+  cursor: pointer;
+}
+.resetButton {
+  cursor: pointer;
 }
 .divFlexGenre {
   flex-wrap: wrap;

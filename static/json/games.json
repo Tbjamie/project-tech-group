@@ -3,6 +3,7 @@
     {
       "id": "1",
       "launcher": "./static/logos/riotgames.svg",
+      "launcherName": ["Riot Games"],
       "title": "VALORANT",
       "genre": ["FPS"],
       "genre-icon": "./static/genre-icons/fps.svg",
@@ -15,6 +16,7 @@
     {
       "id": "2",
       "launcher": "./static/logos/riotgames.svg",
+      "launcherName": ["Riot Games"],
       "title": "League of Legends",
       "genre": ["MOBA"],
       "age": "13",
@@ -26,6 +28,7 @@
     {
       "id": "3",
       "launcher": "./static/logos/riotgames.svg",
+      "launcherName": ["Riot Games"],
       "title": "Legends of Runeterra",
       "genre": ["CCG"],
       "age": "13",
@@ -37,6 +40,7 @@
     {
       "id": "4",
       "launcher": "./static/logos/riotgames.svg",
+      "launcherName": ["Riot Games"],
       "title": "Teamfight Tactics (TFT)",
       "genre": ["Auto Battler"],
       "age": "13",
@@ -48,6 +52,7 @@
     {
       "id": "5",
       "launcher": "./static/logos/epicgames.svg",
+      "launcherName": ["Epic Games"],
       "title": "Fortnite",
       "genre": ["Battle Royale", "Survival"],
       "age": "13",
@@ -59,6 +64,7 @@
     {
       "id": "6",
       "launcher": "./static/logos/steam.svg",
+      "launcherName": ["Steam"],
       "title": "Bloons TD 6",
       "genre": ["Tower Defense"],
       "genre-icon": "./static/genre-icons/towerdefense.svg",
@@ -71,6 +77,7 @@
     {
       "id": "7",
       "launcher": "./static/logos/epicgames.svg",
+      "launcherName": ["Epic Games"],
       "title": "Fall Guys: Ultimate Knockout",
       "genre": ["Battle Royale", "Platformer"],
       "age": "11",
@@ -82,6 +89,7 @@
     {
       "id": "8",
       "launcher": "./static/logos/epicgames.svg",
+      "launcherName": ["Epic Games"],
       "title": "Rocket League",
       "genre": ["Sports", "Racing"],
       "genre-icon": "./static/genre-icons/racing.svg",
@@ -94,6 +102,7 @@
     {
       "id": "9",
       "launcher": "./static/logos/steam.svg",
+      "launcherName": ["Steam"],
       "title": "The Witcher 3: Wild Hunt",
       "genre": ["Action", "RPG"],
       "age": "18",
@@ -105,6 +114,7 @@
     {
       "id": "10",
       "launcher": "./static/logos/steam.svg",
+      "launcherName": ["Steam"],
       "title": "Grand Theft Auto V",
       "genre": ["Action", "Adventure"],
       "genre-icon": "./static/genre-icons/adventure.svg",
@@ -117,6 +127,7 @@
     {
       "id": "11",
       "launcher": "./static/logos/steam.svg",
+      "launcherName": ["Steam"],
       "title": "PlayerUnknown's Battlegrounds (PUBG)",
       "genre": ["Battle Royale"],
       "age": "17",
@@ -128,6 +139,7 @@
     {
       "id": "12",
       "launcher": "./static/logos/steam.svg",
+      "launcherName": ["Steam"],
       "title": "Counter-Strike: Global Offensive",
       "genre": ["FPS"],
       "genre-icon": "./static/genre-icons/fps.svg",
@@ -140,6 +152,7 @@
     {
       "id": "13",
       "launcher": "./static/logos/steam.svg",
+      "launcherName": ["Steam"],
       "title": "Among Us",
       "genre": ["Party", "Social Deduction"],
       "age": "11",
@@ -151,6 +164,7 @@
     {
       "id": "14",
       "launcher": "./static/logos/steam.svg",
+      "launcherName": ["Steam"],
       "title": "Dota 2",
       "genre": ["MOBA"],
       "age": "14",
@@ -162,6 +176,7 @@
     {
       "id": "15",
       "launcher": "./static/logos/steam.svg",
+      "launcherName": ["Steam"],
       "title": "Red Dead Redemption 2",
       "genre": ["Action", "Adventure"],
       "genre-icon": "./static/genre-icons/adventure.svg",
@@ -174,6 +189,7 @@
     {
       "id": "16",
       "launcher": "./static/logos/steam.svg",
+      "launcherName": ["Steam"],
       "title": "Cyberpunk 2077",
       "genre": ["Action", "RPG"],
       "age": "19",
@@ -185,6 +201,7 @@
     {
       "id": "17",
       "launcher": "./static/logos/steam.svg",
+      "launcherName": ["Steam"],
       "title": "Rust",
       "genre": ["Survival"],
       "age": "18",
@@ -196,6 +213,7 @@
     {
       "id": "18",
       "launcher": "./static/logos/steam.svg",
+      "launcherName": ["Steam"],
       "title": "Monster Hunter: World",
       "genre": ["Action", "RPG"],
       "age": "13",
@@ -207,6 +225,7 @@
     {
       "id": "19",
       "launcher": "./static/logos/steam.svg",
+      "launcherName": ["Steam"],
       "title": "Stardew Valley",
       "genre": ["Simulation", "RPG"],
       "age": "11",
@@ -218,6 +237,7 @@
     {
       "id": "20",
       "launcher": "./static/logos/steam.svg",
+      "launcherName": ["Steam"],
       "title": "Rainbow Six Siege",
       "genre": ["Tactical Shooter"],
       "age": "19",
@@ -229,6 +249,7 @@
     {
       "id": "21",
       "launcher": "./static/logos/steam.svg",
+      "launcherName": ["Steam"],
       "title": "Terraria",
       "genre": ["Action", "Adventure"],
       "genre-icon": "./static/genre-icons/adventure.svg",
@@ -241,6 +262,7 @@
     {
       "id": "22",
       "launcher": "./static/logos/steam.svg",
+      "launcherName": ["Steam"],
       "title": "Team Fortress 2",
       "genre": ["FPS"],
       "genre-icon": "./static/genre-icons/fps.svg",
@@ -253,6 +275,7 @@
     {
       "id": "23",
       "launcher": "./static/logos/steam.svg",
+      "launcherName": ["Steam"],
       "title": "Apex Legends",
       "genre": ["Battle Royale", "First-Person Shooter"],
       "age": "14",
@@ -264,6 +287,7 @@
     {
       "id": "24",
       "launcher": "./static/logos/steam.svg",
+      "launcherName": ["Steam"],
       "title": "Fallout 4",
       "genre": ["Action"],
       "age": "18",
@@ -275,6 +299,7 @@
     {
       "id": "25",
       "launcher": "./static/logos/steam.svg",
+      "launcherName": ["Steam"],
       "title": "Skyrim Special Edition",
       "genre": ["Action", "RPG"],
       "age": "18",
@@ -286,6 +311,7 @@
     {
       "id": "26",
       "launcher": "./static/logos/microsoft.svg",
+      "launcherName": ["Mircosoft"],
       "title": "Minecraft",
       "genre": ["Sandbox", "Survival"],
       "age": "4",
@@ -297,6 +323,7 @@
     {
       "id": "27",
       "launcher": "./static/logos/microsoft.svg",
+      "launcherName": ["Mircosoft"],
       "title": "Forza Horizon 4",
       "genre": ["Racing"],
       "genre-icon": "./static/genre-icons/racing.svg",
@@ -309,6 +336,7 @@
     {
       "id": "28",
       "launcher": "./static/logos/microsoft.svg",
+      "launcherName": ["Mircosoft"],
       "title": "Sea of Thieves",
       "genre": ["MMO"],
       "age": "13",
@@ -320,6 +348,7 @@
     {
       "id": "29",
       "launcher": "./static/logos/microsoft.svg",
+      "launcherName": ["Mircosoft"],
       "title": "Halo: The Master Chief Collection",
       "genre": ["FPS"],
       "genre-icon": "./static/genre-icons/fps.svg",
@@ -332,6 +361,7 @@
     {
       "id": "30",
       "launcher": "./static/logos/microsoft.svg",
+      "launcherName": ["Mircosoft"],
       "title": "Gears 5",
       "genre": ["TPS"],
       "age": "19",
@@ -343,6 +373,7 @@
     {
       "id": "31",
       "launcher": "./static/logos/microsoft.svg",
+      "launcherName": ["Mircosoft"],
       "title": "Ori and the Will of the Wisps",
       "genre": ["Platformer"],
       "age": "4",
@@ -354,6 +385,7 @@
     {
       "id": "32",
       "launcher": "./static/logos/microsoft.svg",
+      "launcherName": ["Mircosoft"],
       "title": "Age of Empires II: Definitive Edition",
       "genre": ["strategy"],
       "age": "13",
@@ -365,6 +397,7 @@
     {
       "id": "33",
       "launcher": "./static/logos/microsoft.svg",
+      "launcherName": ["Mircosoft"],
       "title": "State of Decay 2",
       "genre": ["Action-adventure", "Survival"],
       "age": "19",
@@ -376,6 +409,7 @@
     {
       "id": "34",
       "launcher": "./static/logos/microsoft.svg",
+      "launcherName": ["Mircosoft"],
       "title": "Microsoft Flight Simulator",
       "genre": ["Simulation"],
       "age": "4",
@@ -387,6 +421,7 @@
     {
       "id": "35",
       "launcher": "./static/logos/microsoft.svg",
+      "launcherName": ["Mircosoft"],
       "title": "Cuphead",
       "genre": ["Run and gun"],
       "age": "4",
@@ -398,6 +433,7 @@
     {
       "id": "36",
       "launcher": "./static/logos/origin.svg",
+      "launcherName": ["Origin"],
       "title": "The Sims 4",
       "genre": ["Life Simulation"],
       "age": "14",
@@ -409,6 +445,7 @@
     {
       "id": "37",
       "launcher": "./static/logos/origin.svg",
+      "launcherName": ["Origin"],
       "title": "Battlefield V",
       "genre": ["FPS"],
       "genre-icon": "./static/genre-icons/fps.svg",
@@ -421,6 +458,7 @@
     {
       "id": "38",
       "launcher": "./static/logos/origin.svg",
+      "launcherName": ["Origin"],
       "title": "Star Wars Jedi: Fallen Order",
       "genre": ["Action", "Adventure"],
       "genre-icon": "./static/genre-icons/adventure.svg",
@@ -433,6 +471,7 @@
     {
       "id": "39",
       "launcher": "./static/logos/origin.svg",
+      "launcherName": ["Origin"],
       "title": "Titanfall 2",
       "genre": ["FPS"],
       "genre-icon": "./static/genre-icons/fps.svg",
@@ -445,6 +484,7 @@
     {
       "id": "40",
       "launcher": "./static/logos/origin.svg",
+      "launcherName": ["Origin"],
       "title": "FIFA 21",
       "genre": ["Sports"],
       "age": "4",
@@ -456,6 +496,7 @@
     {
       "id": "41",
       "launcher": "./static/logos/origin.svg",
+      "launcherName": ["Origin"],
       "title": "Need for Speed Heat",
       "genre": ["Racing"],
       "genre-icon": "./static/genre-icons/racing.svg",
@@ -468,6 +509,7 @@
     {
       "id": "42",
       "launcher": "./static/logos/origin.svg",
+      "launcherName": ["Origin"],
       "title": "Plants vs. Zombies: Battle for Neighborville",
       "genre": ["TPS"],
       "age": "11",
@@ -479,6 +521,7 @@
     {
       "id": "43",
       "launcher": "./static/logos/origin.svg",
+      "launcherName": ["Origin"],
       "title": "Anthem",
       "genre": ["Action", "RPG"],
       "age": "17",
@@ -490,6 +533,7 @@
     {
       "id": "44",
       "launcher": "./static/logos/origin.svg",
+      "launcherName": ["Origin"],
       "title": "Mass Effect: Andromeda",
       "genre": ["Action", "RPG"],
       "age": "17",
@@ -501,6 +545,7 @@
     {
       "id": "45",
       "launcher": "./static/logos/origin.svg",
+      "launcherName": ["Origin"],
       "title": "Dragon Age: Inquisition",
       "genre": ["Action-RPG"],
       "age": "18",
@@ -512,6 +557,7 @@
     {
       "id": "46",
       "launcher": "./static/logos/steam.svg",
+      "launcherName": ["Steam"],
       "title": "Hades",
       "genre": ["Action, Indie", "Rogue-like"],
       "age": "13",
@@ -523,6 +569,7 @@
     {
       "id": "47",
       "launcher": "./static/logos/steam.svg",
+      "launcherName": ["Steam"],
       "title": "Helldivers II",
       "genre": ["Action", "Strategy", "Shooter"],
       "age": "17",
