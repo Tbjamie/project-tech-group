@@ -8,14 +8,14 @@
 
 :root {
     --blue: #132d46;
-  --darkgrey: #191e29;
-  --accentcolor: #03dda0;
-  --white: #ffffff;
-  --buttoncolor: #ff006e;
-  --secondarycolor: #696e79;
-  --inactive: #696e79;
-  --navcolor:#212E3A;
-  --lightblue: #5CADFF;
+    --darkgrey: #191e29;
+    --accentcolor: #03dda0;
+    --white: #ffffff;
+    --buttoncolor: #ff006e;
+    --secondarycolor: #696e79;
+    --inactive: #696e79;
+    --navcolor:#212E3A;
+    --lightblue: #5CADFF;
 }
 
 #welcome, 
@@ -37,17 +37,20 @@
     color: var(--white);
 }
 
-#welcome main form h1,
-#signUp main form h1 {
+#welcome main h1 {
     text-align: center;
     color: var(--accentcolor);
-    position: relative;
     margin-bottom: 5rem;
     font-size: 2.25rem;
+    position: relative;
 }
 
-#welcome main form h1::after,
-#signUp main form h1::after {
+#welcome main h1 span {
+    color: var(--white);
+    position: relative;
+}
+
+#welcome main h1::after {
     width: 100%;
     height: 50%;
     content: '';
@@ -61,18 +64,8 @@
     opacity: 0;
 }
 
-#signUp main form h1::after {
-    animation: none;
-}
 
-#welcome main form h1 span,
-#signUp main form h1 span {
-    color: white;
-    position: relative;
-}
-
-#welcome main form h1 span::after,
-#signUp main form h1 span::after {
+#welcome main h1 span::after {
     width: 100%;
     height: 100%;
     content: '';
@@ -83,10 +76,6 @@
     animation-duration: 1.75s;
     animation-iteration-count: 1;
     opacity: 0;
-}
-
-#signUp main form h1 span::after {
-    animation: none;
 }
 
 @keyframes introAnimation {
@@ -101,16 +90,7 @@
     }
 }
 
-#welcome main form,
-#signUp main form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#welcome main form fieldset:last-of-type,
-#signUp main form fieldset:last-of-type {
+#welcome main div {
     width: 100vw;
     height: auto;
     display: flex;
@@ -119,10 +99,6 @@
     animation-name: fadeIn;
     animation-duration: 5s;
     animation-iteration-count: 1;
-}
-
-#signUp main form fieldset:last-of-type {
-    animation: none;
 }
 
 @keyframes fadeIn {
@@ -137,19 +113,16 @@
     100% {
         opacity: 1;
     }
-}
+} */
 
-#welcome main form fieldset input[type="submit"],
-#signUp main form fieldset input[type="submit"] {
+#welcome main div > a {
     width: 60vw;
     padding: 0.75rem;
     border-radius: 10px;
-    border: none;
     background-color: var(--inactive);
     color: var(--white);
     text-transform: uppercase;
     font-weight: 600;
-    cursor: default;
     text-align: center;
     text-decoration: none;
     display: block;
@@ -158,7 +131,7 @@
     letter-spacing: 1px;
 }
 
-#welcome main p,
+/* #welcome main p,
 #signUp main p {
     color: var(--white);
     font-weight: 400;
@@ -225,4 +198,4 @@
 
 #signUp fieldset:last-of-type, #welcome fieldset:last-of-type {
     margin-bottom: 0;
-}
+} */

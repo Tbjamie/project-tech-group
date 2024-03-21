@@ -27,15 +27,23 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  color: var(--white);
+  overflow-y: scroll;
 }
 
 h1 {
-  color: var(--accentcolor);
+  color: var(--white);
   letter-spacing: 0.2rem;
-  margin: 2rem;
+  padding: 2rem;
   align-self: flex-start;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-shadow: var(--darkgrey) 2px 5px;
+}
+
+h1 span {
+  color: var(--accentcolor);
 }
 
 h2 {

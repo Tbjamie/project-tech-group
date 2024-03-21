@@ -5,5 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   setTimeout(function () {
     loadingScreen.style.display = "none";
+    bodyElement.style.overflowY = "scroll";
   }, 2000);
 });

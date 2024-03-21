@@ -1,4 +1,4 @@
-fetch("/static/json/games.json")
+fetch("/json/games.json")
   .then((response) => response.json())
   .then((data) => {
     const games = data.games;
