@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="/css/ejs.css">
     <!-- <script src="/js/welcome.js" defer></script> -->
 </head>
-<body id="signUp">
+<body id="login">
     <header></header>
     <main>
-        <form action="/" method="post">
+        <form action="/login" method="post">
 
             <h1><span>Welcome to,</span> GameSphere</h1>
 
@@ -30,12 +30,11 @@
                     <p>or <a href="/sign-up">Create an account</a></p>
             </fieldset>
         </form>
+
+
         <!-- TODO: IF USERNAME EXISTS IN DB, METHOD GET (OM IN TE LOGGEN) & ACTION => HOMEPAGE & AUTOCOMPLETE = CURRENT PASSWORD, 
             ELSE IF USERNAME DOESNT EXIST IN DB, METHOD PUSH (OM ACC TE MAKEN) & ACTION => HOMEPAGE & AUTOCOMPLETE = NEW PASSWORD -->
-        <!-- <article>
-            <a href="/login">Sign in</a>
-            <p>or <a href="/sign-up">Create an account</a></p>
-        </article> -->
+
     </main>
     <footer></footer>
 </body>

@@ -54,16 +54,58 @@ app
   }))
   .set("view engine", "ejs") // Set EJS to be our templating engine
   .set("views", "view") // And tell it the views can be found in the directory named view
-  .get("/", welcome)
-  .post("/", login)
-  .get("/login", loginPage)
-  .post("/login", login)
-  .get("/home", home)
-  // .get("/home", home)
-  .get("/discover", discover)
-  // .get("/get-users", getUsers)
-  .get("/sign-up", signUp)
-  .post("/sign-up", signUp)
+  .get('/', (req, res) => {
+    console.log(req.session.id)
+    if(req.session.visited) {
+        console.log(req.session.user)
+        let user = req.session.user
+        res.render('home.ejs', {user: user})
+    } else {
+        res.render('welcome.ejs');
+    }
+})
+.get('/login', (req, res) => {
+    if(req.session.visited) {
+        res.redirect('/')
+    } else {
+        res.render('login.ejs')
+    }
+})
+.post('/login', async (req, res) => {
+    const user = await collection.findOne({
+        username: req.body.username
+    })
+    if((user) && (user.password === req.body.password)) {
+        req.session.visited = true
+        req.session.user = user
+        console.log(req.session.id)
+        console.log(req.session.user)
+        // console.log(user)
+        res.redirect('/')
+    } else {
+        console.log("Wrong username or password")
+    }
+})
+
+.get('/logout', (req, res) => {
+    req.session.destroy((err) => {
+        if(err) {
+            console.log(err)
+        } else {
+            res.redirect('/')
+        }
+    })
+})
+
+.get('/test', (req, res) => {
+    console.log(req.session.id)
+    if(req.session.visited) {
+        let user = req.session.user
+        res.render('testCookie.ejs', {user: user})
+    } else {
+        res.redirect('/login')
+    }
+})
 
 app.listen(`${process.env.PORT}`, () => {
   console.log(
@@ -71,88 +113,7 @@ app.listen(`${process.env.PORT}`, () => {
   )
 })
 
-async function login(req, res) {
-  let user = await collection.findOne({
-    username: req.body.username,
-  })
-  if((user) && (user.password === req.body.password)) {
-    console.log(user)
-    req.session.visited = true
-    console.log(req.session)
-    console.log(req.sessionID)
-    // if(req.session.authenticated) {
 
-    // }
-    res.render("home.ejs", {user: user})
-  } else {
-    console.log(`${req.body.username} not found`)
-  }
-}
-
-async function signUp(req, res) {
-  res.render('signUp.ejs')
-  let user = await collection.findOne({
-    username: req.body.username,
-  })
-
-  let email = await collection.findOne({
-    username: req.body.email,
-  })
-
-  if(user) {
-    console.log(`The username: ${req.body.username} is already in use, please pick another username!`)
-    // res.render('signUp.ejs', {existingUser: existingUser})
-  } else if(email) {
-    console.log(`An account with the email ${req.body.email} already exists.`)
-  } else {
-    // FIXME: ZORG DAT JE NIET MET DEZELFDE EMAIL EEN ACC AAN KAN MAKEN
-    let newUser = await collection.insertOne({
-      username: req.body.username,
-      email: req.body.email,
-      genre: "",
-      password: req.body.password,
-      profilepic: "",
-      friends: [],
-      recentlypw: []
-    })
-    console.log(`You made a new account with the username ${req.body.username}`)
-    // res.render('home.ejs', {user: newUser})
-  }
-}
-
-function welcome(req, res) {
-    res.render("welcome.ejs")
-}
-
-function loginPage(req, res) {
-    res.render("login.ejs")
-}
-
-function discover(req, res) {
-  req.sessionStore.get(req.session.id, (err, sessionData) => {
-    if(err) {
-      console.log(err)
-      throw err
-    }
-    res.render("discover.ejs")
-  })
-}
-
-function home(req, res) {
-  req.sessionStore.get(req.session.id, (err, sessionData) => {
-    if(err) {
-      console.log(err)
-      throw err
-    }
-    res.render("home.ejs")
-  })
-}
-
-// function signUp(req, res) {
-//   res.render("signUp.ejs")
-// }
-
-// Middleware to handle not found errors - error 404
 app.use((req, res) => {
   console.error("404 error at URL: " + req.url)
   if(res.status(404)) {
