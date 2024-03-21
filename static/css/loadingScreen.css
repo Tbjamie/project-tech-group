@@ -19,9 +19,21 @@ body {
   overflow-y: hidden;
 }
 
-.container {
-  max-width: 375px;
+.loadingScreen {
   min-height: 100vh;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, var(--blue), var(--darkgrey));
+  transition: opacity 1s ease-out;
+}
+
+.box-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,10 +170,9 @@ body {
   }
 }
 
-p {
+.lsText p {
     color: #ffffff;
     position: relative;
-    bottom: 12.5em;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -169,6 +180,9 @@ p {
     font-weight: 900;
 }
 
+.lsText p:first-of-type {
+  margin-top: 10em;
+  }
 @keyframes fadeInOut {
     0%, 100% {
         opacity: 0;
@@ -178,19 +192,19 @@ p {
     }
 }
 
-p span {
+.lsText p span {
     animation: fadeInOut 1.5s infinite;
     opacity: 0; 
 }
 
-p span:nth-child(1) {
+.lsText p span:nth-child(1) {
     animation-delay: 0.5s;
 }
 
-p span:nth-child(2) {
+.lsText p span:nth-child(2) {
     animation-delay: 1s;
 }
 
-p span:nth-child(3) {
+.lsText p span:nth-child(3) {
     animation-delay: 1.5s;
 }
