@@ -1,5 +1,5 @@
 // Fetch JSON data
-fetch("/static/json/games.json")
+fetch("/json/games.json")
   .then((response) => response.json())
   .then((data) => {
     // Get the game ID from the URL parameter
