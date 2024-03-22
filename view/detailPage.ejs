@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="/css/detail.css" />
     <link rel="stylesheet" href="/css/style.css" />
   </head>
-  <header></header>
+  <header>
+    <%- include('nav') %>
+  </header>
   <body>
     <main>
       <section>
         <img id="image" src="" alt="Game Image" />
-        <h2 id="title"></h2>
+        <h2 id="title"><%= games.title %></h2>
         <h3 id="developer">Asobo/Microsoft</h3>
         <hr />
       </section>
@@ -35,6 +37,6 @@
         </div>
       </section>
     </main>
-    <script src="/js/detail.js"></script>
+    <!-- <script src="/js/detail.js"></script> -->
   </body>
 </html>

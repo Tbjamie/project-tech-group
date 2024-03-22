@@ -155,20 +155,20 @@ app.get('/account/edit', (req, res) => {
 app.get('/discover', (req, res) => {
   if(req.session.visited) {
     let user = req.session.user
-    res.render('discover.ejs', {user: user})
+    res.render('discover.ejs', { user: user })
   } else {
     res.redirect('/login')
   }
 })
 
-app.get('/games/:gameName', async (req, res) => {
+app.get('/games/:game', async (req, res) => {
   if(req.session.visited) {
     games = await gamesCollection.findOne({
-      title: req.params.gameName
+      title: req.params.game
     })
-    console.log(req.params.gameName)
+    console.log(games.title)
     let user = req.session.user
-    res.render('detail.ejs', {user: user}, {games: games})
+    res.render('detailPage.ejs', { user: user, games: games })
   } else {
     res.redirect('/login')
   }
