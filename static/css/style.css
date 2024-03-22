@@ -41,9 +41,9 @@ nav {
   position: fixed;
   bottom: 0;
   width: 100vw;
-  height: 6.5em;
+  height: 5.8em;
   background-color: var(--navcolor);
-  border-radius: 25px 25px 0 0;
+  border-radius: 20px 20px 0 0;
   z-index: 100;
 }
 
@@ -70,12 +70,18 @@ nav ul li svg {
   height: 2rem;
 }
 
-nav ul li a:hover,
-nav ul li a:focus,
-nav ul li a:active {
+nav ul li a:hover {
   color: var(--accentcolor);
   fill: var(--accentcolor);
   cursor: pointer;
+}
+
+.active {
+  fill: var(--accentcolor);
+}
+
+.active p {
+  color: var(--accentcolor);
 }
 
 nav ul li a:hover p,
