@@ -1,7 +1,6 @@
 {
   "games": [
     {
-      "id": "1",
       "launcher": "/logos/riotgames.svg",
       "launcherName": ["Riot Games"],
       "title": "VALORANT",
@@ -14,7 +13,6 @@
       "release": "2020"
     },
     {
-      "id": "2",
       "launcher": "/logos/riotgames.svg",
       "launcherName": ["Riot Games"],
       "title": "League of Legends",
@@ -26,7 +24,6 @@
       "release": "2009"
     },
     {
-      "id": "3",
       "launcher": "/logos/riotgames.svg",
       "launcherName": ["Riot Games"],
       "title": "Legends of Runeterra",
@@ -38,7 +35,6 @@
       "release": "2020"
     },
     {
-      "id": "4",
       "launcher": "/logos/riotgames.svg",
       "launcherName": ["Riot Games"],
       "title": "Teamfight Tactics (TFT)",
@@ -50,19 +46,16 @@
       "release": "2019"
     },
     {
-      "id": "5",
       "launcher": "/logos/epicgames.svg",
       "launcherName": ["Epic Games"],
       "title": "Fortnite",
       "genre": ["Battle Royale", "Survival"],
       "age": "13",
-      "description": "Fortnite is a popular online multiplayer game where players fight to be the last one standing in a rapidly shrinking battlefield. It features building mechanics, a variety of weapons, and frequent updates with new content.",
       "developer": "Epic Games",
       "url": "/images/cover/fortniteCover.jpg",
       "release": "2017"
     },
     {
-      "id": "6",
       "launcher": "/logos/steam.svg",
       "launcherName": ["Steam"],
       "title": "Bloons TD 6",
@@ -75,7 +68,6 @@
       "release": "2018"
     },
     {
-      "id": "7",
       "launcher": "/logos/epicgames.svg",
       "launcherName": ["Epic Games"],
       "title": "Fall Guys: Ultimate Knockout",
@@ -87,20 +79,17 @@
       "release": "2020"
     },
     {
-      "id": "8",
       "launcher": "/logos/epicgames.svg",
       "launcherName": ["Epic Games"],
       "title": "Rocket League",
       "genre": ["Sports", "Racing"],
       "genre-icon": "/genre-icons/racing.svg",
       "age": "11",
-      "description": "Rocket League is a high-powered hybrid of arcade-style soccer and vehicular mayhem with easy-to-understand controls and fluid, physics-driven competition. Players control rocket-powered cars to hit a ball into the opponent's goal.",
       "developer": "Psyonix",
       "url": "/images/cover/rocketleagueCover.jpg",
       "release": "2015"
     },
     {
-      "id": "9",
       "launcher": "/logos/steam.svg",
       "launcherName": ["Steam"],
       "title": "The Witcher 3: Wild Hunt",
@@ -112,7 +101,6 @@
       "release": "2015"
     },
     {
-      "id": "10",
       "launcher": "/logos/steam.svg",
       "launcherName": ["Steam"],
       "title": "Grand Theft Auto V",
@@ -125,32 +113,27 @@
       "release": "2013"
     },
     {
-      "id": "11",
       "launcher": "/logos/steam.svg",
       "launcherName": ["Steam"],
       "title": "PlayerUnknown's Battlegrounds (PUBG)",
       "genre": ["Battle Royale"],
       "age": "17",
-      "description": "PUBG is a multiplayer battle royale game developed and published by PUBG Corporation, a subsidiary of South Korean video game company Bluehole.",
       "developer": "PUBG Corporation",
       "url": "/images/cover/pubgCover.jpg",
       "release": "2017"
     },
     {
-      "id": "12",
       "launcher": "/logos/steam.svg",
       "launcherName": ["Steam"],
       "title": "Counter-Strike: Global Offensive",
       "genre": ["FPS"],
       "genre-icon": "/genre-icons/fps.svg",
       "age": "17",
-      "description": "CS:GO is a multiplayer first-person shooter game developed by Valve and Hidden Path Entertainment. It's the fourth game in the Counter-Strike series.",
       "developer": "Valve",
       "url": "/images/cover/csgoCover.jpeg",
       "release": "2012"
     },
     {
-      "id": "13",
       "launcher": "/logos/steam.svg",
       "launcherName": ["Steam"],
       "title": "Among Us",
@@ -162,7 +145,6 @@
       "release": "2018"
     },
     {
-      "id": "14",
       "launcher": "/logos/steam.svg",
       "launcherName": ["Steam"],
       "title": "Dota 2",
@@ -174,7 +156,6 @@
       "release": "2013"
     },
     {
-      "id": "15",
       "launcher": "/logos/steam.svg",
       "launcherName": ["Steam"],
       "title": "Red Dead Redemption 2",
@@ -187,7 +168,6 @@
       "release": "2018"
     },
     {
-      "id": "16",
       "launcher": "/logos/steam.svg",
       "launcherName": ["Steam"],
       "title": "Cyberpunk 2077",
@@ -199,19 +179,16 @@
       "release": "2020"
     },
     {
-      "id": "17",
       "launcher": "/logos/steam.svg",
       "launcherName": ["Steam"],
       "title": "Rust",
       "genre": ["Survival"],
       "age": "18",
-      "description": "Rust is a multiplayer-only survival video game developed by Facepunch Studios. Players must successfully manage their hunger, thirst, and health, or risk dying.",
       "developer": "Facepunch Studios",
       "url": "/images/cover/rustCover.jpeg",
       "release": "2013"
     },
     {
-      "id": "18",
       "launcher": "/logos/steam.svg",
       "launcherName": ["Steam"],
       "title": "Monster Hunter: World",
@@ -223,7 +200,6 @@
       "release": "2018"
     },
     {
-      "id": "19",
       "launcher": "/logos/steam.svg",
       "launcherName": ["Steam"],
       "title": "Stardew Valley",
@@ -235,7 +211,6 @@
       "release": "2016"
     },
     {
-      "id": "20",
       "launcher": "/logos/steam.svg",
       "launcherName": ["Steam"],
       "title": "Rainbow Six Siege",
@@ -247,7 +222,6 @@
       "release": "2015"
     },
     {
-      "id": "21",
       "launcher": "/logos/steam.svg",
       "launcherName": ["Steam"],
       "title": "Terraria",
@@ -260,7 +234,6 @@
       "release": "2011"
     },
     {
-      "id": "22",
       "launcher": "/logos/steam.svg",
       "launcherName": ["Steam"],
       "title": "Team Fortress 2",
@@ -273,7 +246,6 @@
       "release": "2007"
     },
     {
-      "id": "23",
       "launcher": "/logos/steam.svg",
       "launcherName": ["Steam"],
       "title": "Apex Legends",
@@ -285,7 +257,6 @@
       "release": "2019"
     },
     {
-      "id": "24",
       "launcher": "/logos/steam.svg",
       "launcherName": ["Steam"],
       "title": "Fallout 4",
@@ -297,7 +268,6 @@
       "release": "2015"
     },
     {
-      "id": "25",
       "launcher": "/logos/steam.svg",
       "launcherName": ["Steam"],
       "title": "Skyrim Special Edition",
@@ -309,7 +279,6 @@
       "release": "2011"
     },
     {
-      "id": "26",
       "launcher": "/logos/microsoft.svg",
       "launcherName": ["Mircosoft"],
       "title": "Minecraft",
@@ -321,7 +290,6 @@
       "release": "2011"
     },
     {
-      "id": "27",
       "launcher": "/logos/microsoft.svg",
       "launcherName": ["Mircosoft"],
       "title": "Forza Horizon 4",
@@ -334,19 +302,16 @@
       "release": "2018"
     },
     {
-      "id": "28",
       "launcher": "/logos/microsoft.svg",
       "launcherName": ["Mircosoft"],
       "title": "Sea of Thieves",
       "genre": ["MMO"],
       "age": "13",
-      "description": "Sea of Thieves is a pirate-themed action-adventure game where players can explore a vast open world, engage in naval battles, and search for hidden treasure. With its cooperative multiplayer gameplay, it offers a unique and immersive pirate experience.",
       "developer": "Rare Ltd.",
       "url": "/images/cover/seaofthievesCover.jpg",
       "release": "2018"
     },
     {
-      "id": "29",
       "launcher": "/logos/microsoft.svg",
       "launcherName": ["Mircosoft"],
       "title": "Halo: The Master Chief Collection",
@@ -359,7 +324,6 @@
       "release": "2014"
     },
     {
-      "id": "30",
       "launcher": "/logos/microsoft.svg",
       "launcherName": ["Mircosoft"],
       "title": "Gears 5",
@@ -371,7 +335,6 @@
       "release": "2019"
     },
     {
-      "id": "31",
       "launcher": "/logos/microsoft.svg",
       "launcherName": ["Mircosoft"],
       "title": "Ori and the Will of the Wisps",
@@ -383,7 +346,6 @@
       "release": "2020"
     },
     {
-      "id": "32",
       "launcher": "/logos/microsoft.svg",
       "launcherName": ["Mircosoft"],
       "title": "Age of Empires II: Definitive Edition",
@@ -395,7 +357,6 @@
       "release": "1999"
     },
     {
-      "id": "33",
       "launcher": "/logos/microsoft.svg",
       "launcherName": ["Mircosoft"],
       "title": "State of Decay 2",
@@ -407,7 +368,6 @@
       "release": "2018"
     },
     {
-      "id": "34",
       "launcher": "/logos/microsoft.svg",
       "launcherName": ["Mircosoft"],
       "title": "Microsoft Flight Simulator",
@@ -419,7 +379,6 @@
       "release": "2020"
     },
     {
-      "id": "35",
       "launcher": "/logos/microsoft.svg",
       "launcherName": ["Mircosoft"],
       "title": "Cuphead",
@@ -431,7 +390,6 @@
       "release": "2017"
     },
     {
-      "id": "36",
       "launcher": "/logos/origin.svg",
       "launcherName": ["Origin"],
       "title": "The Sims 4",
@@ -443,7 +401,6 @@
       "release": "2014"
     },
     {
-      "id": "37",
       "launcher": "/logos/origin.svg",
       "launcherName": ["Origin"],
       "title": "Battlefield V",
@@ -456,7 +413,6 @@
       "release": "2018"
     },
     {
-      "id": "38",
       "launcher": "/logos/origin.svg",
       "launcherName": ["Origin"],
       "title": "Star Wars Jedi: Fallen Order",
@@ -469,32 +425,27 @@
       "release": "2019"
     },
     {
-      "id": "39",
       "launcher": "/logos/origin.svg",
       "launcherName": ["Origin"],
       "title": "Titanfall 2",
       "genre": ["FPS"],
       "genre-icon": "/genre-icons/fps.svg",
       "age": "17",
-      "description": "Titanfall 2 is a fast-paced first-person shooter that combines fluid parkour movement with mech-based combat. With its thrilling multiplayer modes and captivating single-player campaign, it offers a dynamic and adrenaline-fueled gameplay experience.",
       "developer": "Respawn Entertainment",
       "url": "/images/cover/titanfall2Cover.jpeg",
       "release": "2016"
     },
     {
-      "id": "40",
       "launcher": "/logos/origin.svg",
       "launcherName": ["Origin"],
       "title": "FIFA 21",
       "genre": ["Sports"],
       "age": "4",
-      "description": "FIFA 21 is a popular football simulation game that offers realistic gameplay, extensive career modes, and immersive online features. With its authentic presentation and innovative gameplay improvements, it provides an unparalleled football experience for players of all skill levels.",
       "developer": "EA Sports",
       "url": "/images/cover/fifa21Cover.jpeg",
       "release": "2020"
     },
     {
-      "id": "41",
       "launcher": "/logos/origin.svg",
       "launcherName": ["Origin"],
       "title": "Need for Speed Heat",
@@ -507,7 +458,6 @@
       "release": "2019"
     },
     {
-      "id": "42",
       "launcher": "/logos/origin.svg",
       "launcherName": ["Origin"],
       "title": "Plants vs. Zombies: Battle for Neighborville",
@@ -519,7 +469,6 @@
       "release": "2019"
     },
     {
-      "id": "43",
       "launcher": "/logos/origin.svg",
       "launcherName": ["Origin"],
       "title": "Anthem",
@@ -531,7 +480,6 @@
       "release": "2019"
     },
     {
-      "id": "44",
       "launcher": "/logos/origin.svg",
       "launcherName": ["Origin"],
       "title": "Mass Effect: Andromeda",
@@ -543,7 +491,6 @@
       "release": "2017"
     },
     {
-      "id": "45",
       "launcher": "/logos/origin.svg",
       "launcherName": ["Origin"],
       "title": "Dragon Age: Inquisition",
@@ -555,7 +502,6 @@
       "release": "2014"
     },
     {
-      "id": "46",
       "launcher": "/logos/steam.svg",
       "launcherName": ["Steam"],
       "title": "Hades",
@@ -567,7 +513,6 @@
       "release": "2018"
     },
     {
-      "id": "47",
       "launcher": "/logos/steam.svg",
       "launcherName": ["Steam"],
       "title": "Helldivers II",
