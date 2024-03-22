@@ -40,8 +40,8 @@ client.connect()
 
 const db = client.db(process.env.DB_NAME)
 const usersCollection = db.collection(process.env.DB_USERS)
-const forumCollection = db.collection(process.env.FORUM)
-const gamesCollection = db.collection(process.env.GAMES)
+const forumCollection = db.collection(process.env.DB_FORUM)
+const gamesCollection = db.collection(process.env.DB_GAMES)
 
 app
   .use(express.urlencoded({ extended: true })) // middleware to parse form data from incoming HTTP request and add form fields to req.body
@@ -161,10 +161,14 @@ app.get('/discover', (req, res) => {
   }
 })
 
-app.get('/games/:gameName', (req, res) => {
+app.get('/games/:gameName', async (req, res) => {
   if(req.session.visited) {
+    games = await gamesCollection.findOne({
+      title: req.params.gameName
+    })
+    console.log(req.params.gameName)
     let user = req.session.user
-    res.render('detail.ejs', {user: user})
+    res.render('detail.ejs', {user: user}, {games: games})
   } else {
     res.redirect('/login')
   }
