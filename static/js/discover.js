@@ -37,7 +37,7 @@ for (input of document.querySelectorAll("input[type=range]")) {
 
 // gameList();
 
-fetch("/static/json/games.json")
+fetch("/json/games.json")
   .then((response) => {
     if (!response.ok) {
       console.log("ERROR");

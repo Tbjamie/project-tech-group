@@ -150,6 +150,15 @@ app.get('/account/edit', (req, res) => {
   }
 })
 
+app.get('/discover', (req, res) => {
+  if(req.session.visited) {
+    let user = req.session.user
+    res.render('discover.ejs', {user: user})
+  } else {
+    res.redirect('/login')
+  }
+})
+
 
 app.use((req, res) => {
   console.error("404 error at URL: " + req.url)
