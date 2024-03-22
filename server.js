@@ -86,7 +86,6 @@ app
         console.log("Wrong username or password")
     }
 })
-
 .get('/logout', (req, res) => {
     req.session.destroy((err) => {
         if(err) {
@@ -96,11 +95,50 @@ app
         }
     })
 })
-
 app.listen(`${process.env.PORT}`, () => {
   console.log(
     `Running on port ${process.env.PORT}`
   )
+})
+app.get('/signup', (req, res) => {
+  if(req.session.visited) {
+      res.redirect('/')
+  } else {
+      res.render('signup.ejs')
+  }
+})
+
+app.post('/signup', async (req, res) => {
+  let existingUser = await collection.findOne({
+    username: req.body.username
+  })
+  let existingEmail = await collection.findOne({
+    email: req.body.email
+  })
+  if((existingUser) || (existingEmail)) {
+    console.log("User already exists")
+  } else {
+    console.log("User created")
+    let newUser = await collection.insertOne({
+    username: req.body.username,
+    email: req.body.email,
+    genre: "",
+    password: req.body.password,
+    friends: [],
+    recentlypw: [],
+    profilepic: ""
+    })
+  }
+  res.redirect('/')
+})
+
+app.get('/account', (req, res) => {
+  if(req.session.visited) {
+    let user = req.session.user
+    res.render('account.ejs', {user: user})
+} else {
+    res.redirect('/login')
+}
 })
 
 

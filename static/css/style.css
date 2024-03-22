@@ -20,6 +20,11 @@
 ::selection {
   background-color: var(--buttoncolor);
 }
+
+html {
+  background: linear-gradient(180deg, var(--blue), var(--darkgrey));
+}
+
 body {
   background: linear-gradient(180deg, var(--blue), var(--darkgrey));
   width: 100vw;
