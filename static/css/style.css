@@ -122,8 +122,8 @@ aan de hand daarvan een active state geven ipv onclick */
   font-weight: 300;
 }
 
-#errPage main a {
-  width: 80vw;
+#errPage main button {
+  width: 70vw;
   padding: 0.75rem;
   border-radius: 10px;
   border: none;
@@ -135,4 +135,11 @@ aan de hand daarvan een active state geven ipv onclick */
   text-align: center;
   text-decoration: none;
   display: block;
+  transition: 250ms;
+}
+
+#errPage main button:active,
+#errPage main button:focus,
+#errPage main button:hover {
+  width: 65vw;
 }

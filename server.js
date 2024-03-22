@@ -141,6 +141,15 @@ app.get('/account', (req, res) => {
 }
 })
 
+app.get('/account/edit', (req, res) => {
+  if(req.session.visited) {
+    let user = req.session.user
+    res.render('editaccount.ejs', {user: user})
+  } else {
+    res.redirect('/login')
+  }
+})
+
 
 app.use((req, res) => {
   console.error("404 error at URL: " + req.url)
