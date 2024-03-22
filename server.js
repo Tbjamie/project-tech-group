@@ -39,7 +39,9 @@ client.connect()
     })
 
 const db = client.db(process.env.DB_NAME)
-const collection = db.collection(process.env.DB_COLLECTION)
+const usersCollection = db.collection(process.env.DB_USERS)
+const forumCollection = db.collection(process.env.FORUM)
+const gamesCollection = db.collection(process.env.GAMES)
 
 app
   .use(express.urlencoded({ extended: true })) // middleware to parse form data from incoming HTTP request and add form fields to req.body
@@ -72,7 +74,7 @@ app
     }
 })
 .post('/login', async (req, res) => {
-    const user = await collection.findOne({
+    const user = await usersCollection.findOne({
         username: req.body.username
     })
     if((user) && (user.password === req.body.password)) {
@@ -109,17 +111,17 @@ app.get('/signup', (req, res) => {
 })
 
 app.post('/signup', async (req, res) => {
-  let existingUser = await collection.findOne({
+  let existingUser = await usersCollection.findOne({
     username: req.body.username
   })
-  let existingEmail = await collection.findOne({
+  let existingEmail = await usersCollection.findOne({
     email: req.body.email
   })
   if((existingUser) || (existingEmail)) {
     console.log("User already exists")
   } else {
     console.log("User created")
-    let newUser = await collection.insertOne({
+    let newUser = await usersCollection.insertOne({
     username: req.body.username,
     email: req.body.email,
     genre: "",
@@ -154,6 +156,15 @@ app.get('/discover', (req, res) => {
   if(req.session.visited) {
     let user = req.session.user
     res.render('discover.ejs', {user: user})
+  } else {
+    res.redirect('/login')
+  }
+})
+
+app.get('/games/:gameName', (req, res) => {
+  if(req.session.visited) {
+    let user = req.session.user
+    res.render('detail.ejs', {user: user})
   } else {
     res.redirect('/login')
   }
