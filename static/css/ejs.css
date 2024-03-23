@@ -442,15 +442,24 @@
 #account #editForm fieldset label {
     text-transform: uppercase;
     margin-bottom: .5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 #account #editForm fieldset input {
     background-color: transparent;
     color: white;
-    height: 2rem;
-    border: solid 1px var(--white);
+    height: 2.25rem;
+    border: solid 1px var(--inactive);
     border-radius: 5px;
     padding: .5rem;
+    transition: 250ms;
+}
+
+#account #editForm fieldset input:focus,
+#account #editForm fieldset input:active {
+    border: solid 1px var(--white);
+    outline: none;
 }
 
 #account #editForm fieldset:last-of-type {
@@ -463,13 +472,26 @@
 
 #account #editForm fieldset:last-of-type input {
     padding: .5rem 2rem;
-    background-color: var(--signOutColor);
+    border: solid 1px var(--signOutColor);
     font-weight: 600;
-    border: none;
     cursor: pointer;
 }
 
+#account #editForm fieldset:last-of-type input:hover,
+#account #editForm fieldset:last-of-type input:focus,
+#account #editForm fieldset:last-of-type input:active {
+    background-color: var(--signOutColor);
+    color: var(--white);
+}
+
 #account #editForm fieldset:last-of-type input:last-of-type {
+    background-color: transparent;
+    border: solid 1px var(--accentcolor);
+}
+
+#account #editForm fieldset:last-of-type input:last-of-type:hover,
+#account #editForm fieldset:last-of-type input:last-of-type:focus,
+#account #editForm fieldset:last-of-type input:last-of-type:active {
     background-color: var(--accentcolor);
     color: var(--darkgrey);
 }
