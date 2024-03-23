@@ -19,6 +19,7 @@ const {
 const { error } = require("console")
 const { Cookie } = require("express-session")
 const { request } = require("http")
+const e = require("express")
 
 const uri = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}/${process.env.DB_NAME}?retryWrites=true&w=majority`
 const client = new MongoClient(uri, {
@@ -82,7 +83,6 @@ app
         req.session.user = user
         console.log(req.session.id)
         console.log(req.session.user)
-        // console.log(user)
         res.redirect('/')
     } else {
         console.log("Wrong username or password")
@@ -150,6 +150,45 @@ app.get('/account/edit', (req, res) => {
   } else {
     res.redirect('/login')
   }
+})
+
+app.post('/account/edit', async (req, res) => {
+  let user = req.session.user
+  let existingUser = await usersCollection.findOne({
+    username: req.body.username
+  })
+  let existingEmail = await usersCollection.findOne({
+    email: req.body.email
+  })
+
+  if(user.username == req.body.username) {
+    console.log("DEZELFDE NAAM")
+  } else if(existingUser) {
+    console.log("USERNAME ALREADY EXISTS")
+  } else if(req.body.username == "") {
+    console.log("JE HEBT NIETS INGEVULD")
+  } else {
+    console.log(`USERNAME CHANGED TO: ${req.body.username}`)
+  }
+
+  if(user.email == req.body.email) {
+    console.log("DEZELFDE EMAIL")
+  } else if(existingEmail) {
+    console.log("EMAIL ALREADY EXISTS")
+  } else if(req.body.email == "") {
+    console.log("JE HEBT NIETS INGEVULD")
+  } else {
+    console.log(`EMAIL CHANGED TO: ${req.body.email}`)
+  }
+
+  if(user.password === req.body.password) {
+    console.log("PASSWORD CANT BE THE SAME")
+  } else if(req.body.password == "") {
+    console.log("JE HEBT NIETS INGEVULD")
+  } else {
+    console.log(`PASSWORD CHANGED TO: ${req.body.password}`)
+  }
+  
 })
 
 app.get('/discover', (req, res) => {
