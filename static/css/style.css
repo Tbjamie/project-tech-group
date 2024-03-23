@@ -66,9 +66,10 @@ nav ul li a {
   transition: 250ms;
 }
 
-nav ul li svg {
+/* nav ul li svg {
   height: 2rem;
-}
+  width: 1.75rem;
+} */
 
 nav ul li a:hover {
   color: var(--accentcolor);
