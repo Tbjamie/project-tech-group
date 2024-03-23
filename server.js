@@ -128,7 +128,7 @@ app.post('/signup', async (req, res) => {
     password: req.body.password,
     friends: [],
     recentlypw: [],
-    profilepic: ""
+    profilepic: "/images/blankProfile.png"
     })
   }
   res.redirect('/')

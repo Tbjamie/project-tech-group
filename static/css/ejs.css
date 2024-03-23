@@ -292,7 +292,7 @@
     position: relative;
 }
 
-#account main section:first-of-type article {
+#account main section:first-of-type img {
     width: 6rem;
     height: 6rem;
     background-color: rgba(33, 46, 58, .7);
