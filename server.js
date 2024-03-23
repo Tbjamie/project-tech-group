@@ -20,6 +20,7 @@ const { error } = require("console")
 const { Cookie } = require("express-session")
 const { request } = require("http")
 const e = require("express")
+const { userInfo } = require("os")
 
 const uri = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}/${process.env.DB_NAME}?retryWrites=true&w=majority`
 const client = new MongoClient(uri, {
@@ -31,13 +32,13 @@ const client = new MongoClient(uri, {
 })
 
 client.connect()
-    .then((res) => {
-        console.log("Database connection established")
-    })
-    .catch((err) => {
-        console.log(`Database connection error - ${err}`)
-        console.log(`For uri - ${uri}`)
-    })
+  .then((res) => {
+    console.log("Database connection established")
+  })
+  .catch((err) => {
+    console.log(`Database connection error - ${err}`)
+    console.log(`For uri - ${uri}`)
+  })
 
 const db = client.db(process.env.DB_NAME)
 const usersCollection = db.collection(process.env.DB_USERS)
@@ -50,7 +51,7 @@ app
   .use(session({
     secret: `${process.env.SECRET}`,
     cookie: {
-      maxAge: 60000 * 60 
+      maxAge: 60000 * 60
     },
     saveUninitialized: false,
     resave: false
@@ -59,54 +60,54 @@ app
   .set("views", "view") // And tell it the views can be found in the directory named view
   .get('/', (req, res) => {
     console.log(req.session.id)
-    if(req.session.visited) {
-        console.log(req.session.user)
-        let user = req.session.user
-        res.render('home.ejs', {user: user})
+    if (req.session.visited) {
+      console.log(req.session.user)
+      let user = req.session.user
+      res.render('home.ejs', { user: user })
     } else {
-        res.render('welcome.ejs');
+      res.render('welcome.ejs');
     }
-})
-.get('/login', (req, res) => {
-    if(req.session.visited) {
-        res.redirect('/')
+  })
+  .get('/login', (req, res) => {
+    if (req.session.visited) {
+      res.redirect('/')
     } else {
-        res.render('login.ejs')
+      res.render('login.ejs')
     }
-})
-.post('/login', async (req, res) => {
+  })
+  .post('/login', async (req, res) => {
     const user = await usersCollection.findOne({
-        username: req.body.username
+      username: req.body.username
     })
-    if((user) && (user.password === req.body.password)) {
-        req.session.visited = true
-        req.session.user = user
-        console.log(req.session.id)
-        console.log(req.session.user)
-        res.redirect('/')
+    if ((user) && (user.password === req.body.password)) {
+      req.session.visited = true
+      req.session.user = user
+      console.log(req.session.id)
+      console.log(req.session.user)
+      res.redirect('/')
     } else {
-        console.log("Wrong username or password")
+      console.log("Wrong username or password")
     }
-})
-.get('/logout', (req, res) => {
+  })
+  .get('/logout', (req, res) => {
     req.session.destroy((err) => {
-        if(err) {
-            console.log(err)
-        } else {
-            res.redirect('/')
-        }
+      if (err) {
+        console.log(err)
+      } else {
+        res.redirect('/')
+      }
     })
-})
+  })
 app.listen(`${process.env.PORT}`, () => {
   console.log(
     `Running on port ${process.env.PORT}`
   )
 })
 app.get('/signup', (req, res) => {
-  if(req.session.visited) {
-      res.redirect('/')
+  if (req.session.visited) {
+    res.redirect('/')
   } else {
-      res.render('signup.ejs')
+    res.render('signup.ejs')
   }
 })
 
@@ -117,43 +118,43 @@ app.post('/signup', async (req, res) => {
   let existingEmail = await usersCollection.findOne({
     email: req.body.email
   })
-  if((existingUser) || (existingEmail)) {
+  if ((existingUser) || (existingEmail)) {
     console.log("User already exists")
   } else {
     console.log("User created")
     let newUser = await usersCollection.insertOne({
-    username: req.body.username,
-    email: req.body.email,
-    genre: "",
-    password: req.body.password,
-    friends: [],
-    recentlypw: [],
-    profilepic: "/images/blankProfile.png"
+      username: req.body.username,
+      email: req.body.email,
+      genre: "",
+      password: req.body.password,
+      friends: [],
+      recentlypw: [],
+      profilepic: "/images/blankProfile.png"
     })
   }
   res.redirect('/')
 })
 
 app.get('/account', (req, res) => {
-  if(req.session.visited) {
+  if (req.session.visited) {
     let user = req.session.user
-    res.render('account.ejs', {user: user})
-} else {
+    res.render('account.ejs', { user: user })
+  } else {
     res.redirect('/login')
-}
+  }
 })
 
 app.get('/account/edit', (req, res) => {
-  if(req.session.visited) {
+  if (req.session.visited) {
     let user = req.session.user
-    res.render('editaccount.ejs', {user: user})
+    res.render('editaccount.ejs', { user: user })
   } else {
     res.redirect('/login')
   }
 })
 
 app.post('/account/edit', async (req, res) => {
-  let user = req.session.user
+  user = req.session.user
   let existingUser = await usersCollection.findOne({
     username: req.body.username
   })
@@ -161,38 +162,43 @@ app.post('/account/edit', async (req, res) => {
     email: req.body.email
   })
 
-  if(user.username == req.body.username) {
+  if (user.username == req.body.username) {
     console.log("DEZELFDE NAAM")
-  } else if(existingUser) {
+  } else if (existingUser) {
     console.log("USERNAME ALREADY EXISTS")
-  } else if(req.body.username == "") {
+  } else if (req.body.username == "") {
     console.log("JE HEBT NIETS INGEVULD")
   } else {
     console.log(`USERNAME CHANGED TO: ${req.body.username}`)
+    changeUsername = await usersCollection.updateOne(
+      user,
+      { $set: { username: req.body.username } }
+      // TODO: HULP VRAGEN HIERBIJ
+    )
   }
 
-  if(user.email == req.body.email) {
+  if (user.email == req.body.email) {
     console.log("DEZELFDE EMAIL")
-  } else if(existingEmail) {
+  } else if (existingEmail) {
     console.log("EMAIL ALREADY EXISTS")
-  } else if(req.body.email == "") {
+  } else if (req.body.email == "") {
     console.log("JE HEBT NIETS INGEVULD")
   } else {
     console.log(`EMAIL CHANGED TO: ${req.body.email}`)
   }
 
-  if(user.password === req.body.password) {
+  if (user.password === req.body.password) {
     console.log("PASSWORD CANT BE THE SAME")
-  } else if(req.body.password == "") {
+  } else if (req.body.password == "") {
     console.log("JE HEBT NIETS INGEVULD")
   } else {
     console.log(`PASSWORD CHANGED TO: ${req.body.password}`)
   }
-  
-})
+}
+)
 
 app.get('/discover', (req, res) => {
-  if(req.session.visited) {
+  if (req.session.visited) {
     let user = req.session.user
     res.render('discover.ejs', { user: user })
   } else {
@@ -201,7 +207,7 @@ app.get('/discover', (req, res) => {
 })
 
 app.get('/games/:game', async (req, res) => {
-  if(req.session.visited) {
+  if (req.session.visited) {
     games = await gamesCollection.findOne({
       title: req.params.game
     })
@@ -216,7 +222,7 @@ app.get('/games/:game', async (req, res) => {
 
 app.use((req, res) => {
   console.error("404 error at URL: " + req.url)
-  if(res.status(404)) {
+  if (res.status(404)) {
     res.render("404page.ejs")
   }
 })
@@ -224,7 +230,7 @@ app.use((req, res) => {
 // Middleware to handle server errors - error 500
 app.use((err, req, res) => {
   console.error(err.stack)
-  if(res.status(500)) {
-      res.render("500page.ejs")
+  if (res.status(500)) {
+    res.render("500page.ejs")
   }
 })
