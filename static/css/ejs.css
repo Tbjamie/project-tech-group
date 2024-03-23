@@ -428,4 +428,50 @@
     color: var(--white)
 }
 
+#account #editForm {
+    padding: 1rem;
+}
+
+#account #editForm fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin-bottom: 2rem;
+}
+
+#account #editForm fieldset label {
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+}
+
+#account #editForm fieldset input {
+    background-color: transparent;
+    color: white;
+    height: 2rem;
+    border: solid 1px var(--white);
+    border-radius: 5px;
+    padding: .5rem;
+}
+
+#account #editForm fieldset:last-of-type {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+#account #editForm fieldset:last-of-type input {
+    padding: .5rem 2rem;
+    background-color: var(--signOutColor);
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+#account #editForm fieldset:last-of-type input:last-of-type {
+    background-color: var(--accentcolor);
+    color: var(--darkgrey);
+}
+
 

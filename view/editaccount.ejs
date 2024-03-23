@@ -5,15 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Account | GameSphere</title>
+    <link rel="stylesheet" href="/css/ejs.css">
 </head>
-<body>
+<body id="account">
     <header>
         <%- include ("nav") -%>
     </header>
     <main>
-        <section></section>
-        <section></section>
-        <section></section>
+        <section>
+            <img src="<%= user.profilepic %>" alt="Profile Picture">
+        </section>
+        <section>
+            <article id="editForm">
+                <h2><%= user.username %></h2>
+                <p><%= user.email %></p>
+
+                <form action="/account/edit" method="post">
+                    <fieldset>
+                        <label for="username">username</label>
+                        <input type="text" name="username" id="username" placeholder="<%= user.username %>" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="email">email</label>
+                        <input type="email" name="email" id="email" placeholder="<%= user.email %>" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="password">password</label>
+                        <input type="password" name="password" id="password" autocomplete="new-password" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <input type="reset" name="cancelButton" id="cancelutton" value="Cancel">
+                        <input type="submit" name="submitButton" id="submitButton" value="Confirm">
+                    </fieldset>
+                </form>
+            </article>
     </main>
     <footer></footer>
 </body>
