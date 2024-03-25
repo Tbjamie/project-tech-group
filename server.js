@@ -155,45 +155,45 @@ app.get('/account/edit', (req, res) => {
 
 app.post('/account/edit', async (req, res) => {
   user = req.session.user
-  let existingUser = await usersCollection.findOne({
-    username: req.body.username
-  })
-  let existingEmail = await usersCollection.findOne({
-    email: req.body.email
-  })
+  // let existingUser = await usersCollection.findOne({
+  //   username: req.body.username
+  // })
+  // let existingEmail = await usersCollection.findOne({
+  //   email: req.body.email
+  // })
 
-  if (user.username == req.body.username) {
-    console.log("DEZELFDE NAAM")
-  } else if (existingUser) {
-    console.log("USERNAME ALREADY EXISTS")
-  } else if (req.body.username == "") {
-    console.log("JE HEBT NIETS INGEVULD")
-  } else {
-    console.log(`USERNAME CHANGED TO: ${req.body.username}`)
-    changeUsername = await usersCollection.updateOne(
-      user,
-      { $set: { username: req.body.username } }
-      // TODO: HULP VRAGEN HIERBIJ
-    )
-  }
+  // if (user.username == req.body.username) {
+  //   console.log("DEZELFDE NAAM")
+  // } else if (existingUser) {
+  //   console.log("USERNAME ALREADY EXISTS")
+  // } else if (req.body.username == "") {
+  //   console.log("JE HEBT NIETS INGEVULD")
+  // } else {
+  //   console.log(`USERNAME CHANGED TO: ${req.body.username}`)
+  //   changeUsername = await usersCollection.updateOne(
+  //     user,
+  //     { $set: { username: req.body.username } }
+  //     // TODO: HULP VRAGEN HIERBIJ
+  //   )
+  // }
 
-  if (user.email == req.body.email) {
-    console.log("DEZELFDE EMAIL")
-  } else if (existingEmail) {
-    console.log("EMAIL ALREADY EXISTS")
-  } else if (req.body.email == "") {
-    console.log("JE HEBT NIETS INGEVULD")
-  } else {
-    console.log(`EMAIL CHANGED TO: ${req.body.email}`)
-  }
+  // if (user.email == req.body.email) {
+  //   console.log("DEZELFDE EMAIL")
+  // } else if (existingEmail) {
+  //   console.log("EMAIL ALREADY EXISTS")
+  // } else if (req.body.email == "") {
+  //   console.log("JE HEBT NIETS INGEVULD")
+  // } else {
+  //   console.log(`EMAIL CHANGED TO: ${req.body.email}`)
+  // }
 
-  if (user.password === req.body.password) {
-    console.log("PASSWORD CANT BE THE SAME")
-  } else if (req.body.password == "") {
-    console.log("JE HEBT NIETS INGEVULD")
-  } else {
-    console.log(`PASSWORD CHANGED TO: ${req.body.password}`)
-  }
+  // if (user.password === req.body.password) {
+  //   console.log("PASSWORD CANT BE THE SAME")
+  // } else if (req.body.password == "") {
+  //   console.log("JE HEBT NIETS INGEVULD")
+  // } else {
+  //   console.log(`PASSWORD CHANGED TO: ${req.body.password}`)
+  // }
 }
 )
 
