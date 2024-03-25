@@ -370,3 +370,23 @@ main section:nth-of-type(3) article {
   border: 1px solid white;
   position: relative;
 }
+@media only screen and (min-width: 992px) {
+  main section:nth-of-type(3) article {
+    width: 25vw;
+    height: 20vh;
+  }
+  main section:nth-of-type(3) article:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+  }
+  main section:nth-of-type(3) {
+    display: inline-grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    justify-items: center;
+  }
+  .filterMenu svg {
+    width: 5vw;
+    fill: var(--accentcolor);
+  }
+}
