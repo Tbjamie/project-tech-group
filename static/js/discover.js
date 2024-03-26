@@ -104,6 +104,56 @@ fetch("/json/games.json")
       gameImage.setAttribute("src", game.url);
       gameItem.append(gameImage);
 
+      function filterGamesByTitle(searchTerm) {
+        // Convert search term to lowercase for case-insensitive matching
+        searchTerm = searchTerm.toLowerCase();
+
+        // Loop through each game item and hide/show based on the search term
+        games.forEach((game) => {
+          let gameTitle = game.title.toLowerCase(); // Convert title to lowercase
+          let gameItem = document.querySelector(`[data-id="${game.id}"]`);
+
+          if (gameTitle.includes(searchTerm)) {
+            gameItem.style.display = "block"; // Show the game item if title matches
+          } else {
+            gameItem.style.display = "none"; // Hide the game item if title doesn't match
+          }
+        });
+      }
+
+      // Example usage:
+      // Assuming you have an input field with id="searchInput" for users to input their search query
+      // Add event listener to trigger search on input
+      let searchInput = document.getElementById("searchbar");
+
+      // Add event listener to trigger search on input
+      searchInput.addEventListener("input", function () {
+        let searchTerm = this.value;
+        filterGamesByTitle(searchTerm);
+      });
+
+      // Function to filter games by title (search)
+      function filterGamesByTitle(searchTerm) {
+        // Convert search term to lowercase for case-insensitive matching
+        searchTerm = searchTerm.toLowerCase();
+
+        // Loop through each game item and hide/show based on the search term
+        const gameItems = document.querySelectorAll(
+          "main section:nth-of-type(3) article"
+        );
+        gameItems.forEach((gameItem) => {
+          const gameTitle = gameItem
+            .querySelector("h3")
+            .innerText.toLowerCase(); // Get the game title
+          if (gameTitle.includes(searchTerm)) {
+            gameItem.style.display = "block"; // Show the game item if title matches
+          } else {
+            gameItem.style.display = "none"; // Hide the game item if title doesn't match
+          }
+        });
+      }
+
+
       let genre = game.genre; // Haal de genres op van de game
 
       // Als er meerdere genres zijn, pak dan alleen het eerste genre
