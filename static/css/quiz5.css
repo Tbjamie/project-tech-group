@@ -29,7 +29,7 @@
     align-items: center;
   }
   
-  main section:first-of-type{
+  main section:first-of-type {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,7 +52,7 @@
   h2 {
     color: var(--white);
     text-transform: uppercase;
-    letter-spacing: 0.2rem;
+    /* letter-spacing: 0.2rem; */
     margin-top: 2rem;
     margin-bottom: 2rem;
     align-self: flex-start;
@@ -81,51 +81,53 @@
     margin-top: 1rem;
   }
 
-  .select-dropdown {
-      margin: 0;
-      padding: 0;
-      position: relative;
-      box-sizing: border-box;
-  }
-  .select-dropdown {
-      position: relative;
-      background-color: #E6E6E6;
-      border-radius: 4px;
-  }
-  .select-dropdown select {
-      font-size: 1rem;
-      font-weight: normal;
-      max-width: 100%;
-      padding: 8px 24px 8px 10px;
-      border: none;
-      background-color: transparent;
-          -webkit-appearance: none;
-          -moz-appearance: none;
-      appearance: none;
-  }
-  .select-dropdown select:active, .select-dropdown select:focus {
-      outline: none;
-      box-shadow: none;
-  }
-  .select-dropdown:after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      right: 8px;
-      width: 0;
-      height: 0;
-      margin-top: -2px;
-      border-top: 5px solid #aaa;
-      border-right: 5px solid transparent;
-      border-left: 5px solid transparent;
-  }
-
-.taalSelect, .genreselect{
-  cursor: pointer;
-}
-
-section article:nth-of-type(2){
+  section:nth-of-type(2) article{
     display: flex;
     justify-content: space-between;
-    margin-top: 15rem;
+    /* margin-top: 15rem; */
+    gap: 10rem;
 }
+
+section:nth-of-type(1) article{
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+section:nth-of-type(1) button{
+   padding: 1rem 2rem;
+   border-radius: 1.5rem;
+   background-color: var(--secondarycolor);
+   color: var(--white)
+}
+
+
+.buttonContainer {
+    bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  
+  .buttonContainer button {
+    width: 40%;
+    height: 2.7rem;
+    border-style: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1.5rem;
+    align-self: flex-start;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .resultButton {
+    background-color: var(--buttoncolor);
+    color: var(--white);
+  }

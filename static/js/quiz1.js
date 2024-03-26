@@ -5,7 +5,7 @@ const filterButton = document.querySelector(
 
 // const pElement = document.querySelector("p")
 
-const genreSelect = document.querySelector(".genreSelect");
+const genreSelect = document.querySelector(".genreselect");
 
 const taalSelect = document.querySelector(".taalSelect");
 const closeButtonFilter = document.querySelector(".cross");
@@ -36,5 +36,25 @@ fetch("/static/json/taal.json")
     dropDownOptions.innerText = nationality
     // let gameItem = document.createElement("option");
     taalSelect.append(dropDownOptions);
+  });
+});
+
+fetch("/static/json/games.json")
+.then((response) => {
+  if (!response.ok) {
+    console.log("ERROR");
+  }
+
+  return response.json();
+})
+.then((data) => {
+  const games = data.games;
+  games.forEach((game) => {
+    let genre = game.genre
+    console.log(genre)
+    let dropDownOptions = document.createElement('option')
+    dropDownOptions.innerText = genre
+    // let gameItem = document.createElement("option");
+    genreSelect.append(dropDownOptions);
   });
 });
