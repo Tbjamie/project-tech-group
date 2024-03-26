@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --blue: #132d46;
+    --darkgrey: #191e29;
+    --accentcolor: #03dda0;
+    --white: #ffffff;
+    --buttoncolor: #ff006e;
+    --secondarycolor: #696e79;
+    --lightblue: #5cadff;
+  }
+  
+  body {
+    background: linear-gradient(180deg, var(--blue), var(--darkgrey));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 100%;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  main section:first-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 100vw;
+    font-size: 1.2rem;
+  }
+  
+  h1 {
+    color: var(--accentcolor);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 2rem;
+    align-self: flex-start;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 4rem;
+    margin-top: 2rem;
+  }
+  
+  h2 {
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    align-self: flex-start;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 100%;
+  }
+  
+  span{
+   color: var(--white);
+  }
+  
+  h3 {
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+    align-self: flex-start;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 1rem;
+  }
+
+  p{
+    color: var(--white);
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .select-dropdown,
+  .select-dropdown * {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      box-sizing: border-box;
+  }
+  .select-dropdown {
+      position: relative;
+      background-color: #E6E6E6;
+      border-radius: 4px;
+  }
+  .select-dropdown select {
+      font-size: 1rem;
+      font-weight: normal;
+      max-width: 100%;
+      padding: 8px 24px 8px 10px;
+      border: none;
+      background-color: transparent;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+      appearance: none;
+  }
+  .select-dropdown select:active, .select-dropdown select:focus {
+      outline: none;
+      box-shadow: none;
+  }
+  .select-dropdown:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 8px;
+      width: 0;
+      height: 0;
+      margin-top: -2px;
+      border-top: 5px solid #aaa;
+      border-right: 5px solid transparent;
+      border-left: 5px solid transparent;
+  }
+
+.genreSelect, .taalSelect{
+  cursor: pointer;
+}
