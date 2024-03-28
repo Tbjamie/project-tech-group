@@ -15,6 +15,9 @@ const eersteSection = document.querySelector("section:nth-of-type(2)");
 const button = document.querySelector('button');
 const svgIcon = document.querySelector('.cross');
 const peStatus = document.querySelector('section:nth-of-type(2) p');
+const peAnswer = document.querySelector('.answers p');
+
+
 
 
 // Verberg de SVG bij het laden van de pagina
@@ -40,14 +43,15 @@ fetch("/static/json/taal.json")
     taalSelect.append(dropDownOptions);// Functie om de tekst van de geselecteerde optie op de knop te zetten
 
     // Voeg een tekst toe aan het genreStatus element om aan te geven dat er nog geen genre is geselecteerd//
-    peStatus.innerText = 'Kies een genre';
+    peStatus.innerText = 'Choose a language';
     document.querySelector('article').appendChild(peStatus);
 
 // Functie om de tekst van de geselecteerde optie op de knop te zetten
 function updateButtonText() {
   button.innerText = taalSelect.value; // Zet de tekst van de geselecteerde optie op de knop
   svgIcon.style.display = 'block'; // Maak de SVG zichtbaar wanneer een genre is geselecteerd
-  peStatus.innerText = `Your language is: ${taalSelect.value}`; // Update de tekst van het genreStatus element
+  // peStatus.innerText = `Your language is: ${taalSelect.value}`; // Update de tekst van het genreStatus element
+  peStatus.innerText = `Your language is:`; // Update de tekst van het genreStatus element
 }
 
 // Functie om de tekst op de knop te resetten en de SVG te verbergen
@@ -94,7 +98,8 @@ fetch("/static/json/games.json")
 function updateButtonText() {
   button.innerText = genreSelect.value; // Zet de tekst van de geselecteerde optie op de knop
   svgIcon.style.display = 'block'; // Maak de SVG zichtbaar wanneer een genre is geselecteerd
-  peStatus.innerText = `Your genre is: ${genreSelect.value}`; // Update de tekst van het genreStatus element
+  // peStatus.innerText = `Your genre is: ${genreSelect.value}`; // Update de tekst van het genreStatus element
+  peStatus.innerText = `Your genre is:`; // Update de tekst van het genreStatus element
 }
 
 // Functie om de tekst op de knop te resetten en de SVG te verbergen
