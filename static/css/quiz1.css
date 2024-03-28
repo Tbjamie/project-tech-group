@@ -129,10 +129,21 @@
   }
 
 .filterMenu button{
-  width: 25vw;
-  height: 5vh;
-  margin-left: 5.5rem;
+  width: 40vw;
+  height: 8vh;
+  /* padding: 1rem 2rem; */
+  margin-left: 4rem;
   margin-top: 2rem;
+}
+
+.cross{
+  width: 9vw;
+  fill: var(--accentcolor);
+  position: absolute;
+  right: 3.5rem;
+  margin-right: 1rem;
+  top: 21.5rem;
+  cursor: pointer;
 }
 
 .taalSelect, .genreselect{
@@ -273,3 +284,4 @@ main section:nth-of-type(3) article::after {
   border: 1px solid white;
   position: relative;
 }
+
