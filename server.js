@@ -122,17 +122,18 @@ app.post('/signup', async (req, res) => {
     console.log("User already exists")
   } else {
     console.log("User created")
-    let newUser = await usersCollection.insertOne({
+    newUser = await usersCollection.insertOne({
       username: req.body.username,
       email: req.body.email,
       genre: "",
       password: req.body.password,
       friends: [],
       recentlypw: [],
-      profilepic: "/images/blankProfile.png"
+      profilepic: "/images/blankProfile.png",
+      newUser: true
     })
+    res.redirect('/')
   }
-  res.redirect('/')
 })
 
 app.get('/account', (req, res) => {
