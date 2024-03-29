@@ -1,95 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage | GameSphere</title>
 
-    <link rel="stylesheet" href="/css/home.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="/css/loadingScreen.css">
-    
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-    <script src="/js/home.js" defer></script>
-    <script src="/js/loadingScreen.js" defer></script>
-  </head>
-  <body id="home">
-    <header>
-        <%- include ("nav") -%>
-    </header>
-    <main>
-      <!-- <% if(user.newUser == false) { %>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homepage | GameSphere</title>
+
+  <link rel="stylesheet" href="/css/home.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="/css/loadingScreen.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <script src="/js/home.js" defer></script>
+</head>
+
+<body id="home">
+  <header>
+    <%- include ("nav") -%>
+  </header>
+  <main>
+    <%- include ("loadingScreen") -%>
+    <!-- <% if(user.newUser == false) { %>
         <%- include ("tutorial") -%>
       <% } %> -->
 
-      <!-- TODO: FIX DEZE INTRODUCTION SCREEN -->
-      <div class="loadingScreen">
-        <div class="box-container">
-      <div class="boxes">
-        <div class="box">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <div class="box">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <div class="box">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <div class="box">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+    <!-- TODO: FIX DEZE INTRODUCTION SCREEN -->
+    
+    <h1>Welcome, <span>
+        <%= user.username %>
+      </span></h1>
+    <section class="swiper mySwiper">
+      <ul class="swiper-wrapper">
+    </section>
+
+    <section class="newReleases">
+      <h2>New releases</h2>
+      <div class="slider">
+        <ul class="slider-wrapper">
+        </ul>
       </div>
-    </div>
+    </section>
 
-    <div class="lsText">
-      <p>loading</p>
-      <p>
-        <span>.</span>
-        <span>.</span>
-        <span>.</span>
-      </p>
-    </div>
-    </div>
-      
-    <h1>Welcome, <span><%= user.username %></span></h1>
-      <section class="swiper mySwiper">
-        <ul class="swiper-wrapper">
-      </section>
+    <section class="popular">
+      <h2>Popular</h2>
+      <div class="slider">
+        <ul class="popular-wrapper">
 
-      <section class="newReleases">
-        <h2>New releases</h2>
-        <div class="slider">
-          <ul class="slider-wrapper">
-          </ul>
-        </div>
-      </section>
+        </ul>
+      </div>
+    </section>
 
-      <section class="popular">
-        <h2>Popular</h2>
-        <div class="slider">
-          <ul class="popular-wrapper">
-
-          </ul>
-        </div>
-      </section>
-
-      <section class="featuredDiscounts">
-        <h2>Featured Discounts</h2>
-        <section class="fd-wrapper">
-          <article class="fd-content"></article>
+    <section class="featuredDiscounts">
+      <h2>Featured Discounts</h2>
+      <section class="fd-wrapper">
+        <article class="fd-content"></article>
         <h3>Battle Royal</h3>
         <h4>Fortnite</h4>
         <article>
@@ -97,9 +62,10 @@
           <p class="discount">€19,99</p>
           <p>€13,99</p>
         </article>
-        </section>       
       </section>
-    </main>
-    <footer></footer>
-  </body>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+
 </html>
