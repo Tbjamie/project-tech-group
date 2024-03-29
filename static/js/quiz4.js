@@ -1,4 +1,4 @@
-const gameSection = document.querySelector("section:nth-of-type(2)");
+const gameSection = document.querySelector("section:nth-of-type(2) .gamesArticle");
 
 fetch("/static/json/games.json")
   .then((response) => {
@@ -29,32 +29,30 @@ fetch("/static/json/games.json")
       gameImage.setAttribute("src", game.url);
       gameItem.append(gameImage);
 
-      // de game items verbergen
+      // De game-items verbergen
       gameItem.style.display = "none";
-
-      // event listener toevoegen om zoeken op invoer te triggeren
-      let searchInput = document.getElementById("searchbar");
-      searchInput.addEventListener("input", function () {
-        let searchTerm = this.value;
-        filterGamesByTitle(searchTerm, gameItem);
-      });
     });
   });
 
-// Functie om spellen te filteren op titel (zoeken)
-function filterGamesByTitle(searchTerm, gameItem) {
-  // Zoekterm omzetten naar kleine letters voor hoofdlettergevoelig zoeken
-  searchTerm = searchTerm.toLowerCase();
+// Event listener toevoegen om te filteren op zoekterm
+let searchInput = document.getElementById("searchbar");
+searchInput.addEventListener("input", function () {
+  let searchTerm = this.value.toLowerCase();
+  const gameItems = document.querySelectorAll(".gamesArticle article");
 
-  // krijg de game title
-  let gameTitle = gameItem.querySelector("h3").innerText.toLowerCase();
-
-  if (gameTitle.includes(searchTerm)) {
-    gameItem.style.display = "block"; // Show de game item als de title matches
+  // Controleren of de zoekterm niet leeg is
+  if (searchTerm.trim() === "") {
+    gameItems.forEach((gameItem) => {
+      gameItem.style.display = "none"; // Verbergen als de zoekterm leeg is
+    });
   } else {
-    gameItem.style.display = "none"; // Hide de game item als de title niet match
+    gameItems.forEach((gameItem) => {
+      let gameTitle = gameItem.querySelector("h3").innerText.toLowerCase();
+      if (gameTitle.includes(searchTerm)) {
+        gameItem.style.display = "block"; // Weergeven als de titel overeenkomt met de zoekterm
+      } else {
+        gameItem.style.display = "none"; // Verbergen als de titel niet overeenkomt met de zoekterm
+      }
+    });
   }
-}
-
-
-
+});
