@@ -158,7 +158,7 @@
 section article:nth-of-type(2){
     display: flex;
     justify-content: space-between;
-    margin-top: 15rem;
+    margin-top: 7rem;
 }
 
 form {
@@ -280,7 +280,7 @@ main section:nth-of-type(3) article::after {
   z-index: 1;
 } */
 
-.filterGame article:not(article:nth-of-type(1)){
+/* .filterGame article:not(article:nth-of-type(1)){
   width: 80vw;
   height: 18vh;
   background-color: #191e29;
@@ -288,4 +288,19 @@ main section:nth-of-type(3) article::after {
   border-radius: 20px;
   border: 1px solid white;
   position: relative;
+} */
+
+.gamesArticle article{
+  width: 80vw;
+  height: 18vh;
+  background-color: #191e29;
+  margin-bottom: 1.4rem;
+  border-radius: 20px;
+  border: 1px solid white;
+  position: relative;
+}
+
+.gamesArticle{
+  display: flex;
+  flex-direction: column;
 }
