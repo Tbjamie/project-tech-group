@@ -352,6 +352,10 @@
 /****************/
 /****************/
 
+#account {
+    overflow-y: hidden;
+}
+
 #account main {
     width: 100vw;
     min-height: 100vh;
@@ -571,5 +575,74 @@
     background-color: var(--accentcolor);
     color: var(--darkgrey);
 }
+
+#account .cancelChangeMessage {
+    position: absolute;
+    width: 100vw;
+    height: 80vh;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    z-index: 100;
+    background-color: var(--navcolor);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform: translateY(100rem);
+    transition: 250ms;
+}
+
+#account .cancelChangeMessage h2 {
+    font-size: 2rem;
+}
+
+#account .cancelChangeMessage p {
+    font-size: 1.25rem;
+    max-width: 80vw;
+}
+
+#account .cancelChangeMessage p span {
+    display: block;
+}
+
+#account .cancelChangeMessage div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+#account .cancelChangeMessage div button {
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    border: solid 1px var(--signOutColor);
+    font-weight: 600;
+    background-color: transparent;
+    color: var(--white);
+    cursor: pointer;
+    transition: 250ms;
+}
+
+#account .cancelChangeMessage div button:first-of-type:hover,
+#account .cancelChangeMessage div button:first-of-type:focus,
+#account .cancelChangeMessage div button:first-of-type:active {
+    background-color: var(--signOutColor);
+}
+
+#account .cancelChangeMessage div button:last-of-type {
+    border: solid 1px var(--accentcolor);
+}
+
+#account .cancelChangeMessage div button:last-of-type:hover,
+#account .cancelChangeMessage div button:last-of-type:focus,
+#account .cancelChangeMessage div button:last-of-type:active {
+    background-color: var(--accentcolor);
+    color: var(--darkgrey);
+}
+
+/* TODO: MAAK HIER EEN COMPONENT VAN */
 
 
