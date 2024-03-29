@@ -198,6 +198,15 @@ app.post('/account/edit', async (req, res) => {
 }
 )
 
+app.get('/account/friends', (req, res) => {
+  if (req.session.visited) {
+    let user = req.session.user
+    res.render('friends.ejs', { user: user })
+  } else {
+    res.redirect('/login')
+  }
+})
+
 app.get('/discover', (req, res) => {
   if (req.session.visited) {
     let user = req.session.user
