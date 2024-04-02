@@ -1,22 +1,22 @@
 /* TODO: VOEG ID'S AAN ALLES TOE OM ZO ALLES IN DE MAIN CSS TE KUNNEN ZETTEN */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --blue: #132d46;
-    --darkgrey: #191e29;
-    --accentcolor: #03dda0;
-    --white: #ffffff;
-    --buttoncolor: #ff006e;
-    --secondarycolor: #696e79;
-    --inactive: #696e79;
-    --navcolor:#212E3A;
-    --lightblue: #5CADFF;
-    --signOutColor: #f54949;
+  --blue: #132d46;
+  --darkgrey: #191e29;
+  --accentcolor: #03dda0;
+  --white: #ffffff;
+  --buttoncolor: #ff006e;
+  --secondarycolor: #696e79;
+  --inactive: #696e79;
+  --navcolor: #212e3a;
+  --lightblue: #5cadff;
+  --signOutColor: #f54949;
 }
 
 /****************/
@@ -26,72 +26,72 @@
 /****************/
 
 #tutorial {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    display: block;
-    background-color: rgba(0, 0, 0, 0.8);;
-    z-index: 1000;
-    overflow-y: hidden;
-    transition: 750ms;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  overflow-y: hidden;
+  transition: 750ms;
 }
 
 #tutorial article {
-    width: 100%;
-    height: 45%;
-    background-color: var(--navcolor);
-    position: absolute;
-    bottom: 0;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem 0;
-    transition: 3s;
+  width: 100%;
+  height: 45%;
+  background-color: var(--navcolor);
+  position: absolute;
+  bottom: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  transition: 3s;
 }
 
 #tutorial article h2 {
-    align-self: center;
-    text-align: center;
-    font-size: 1.75rem;
-    text-transform: none;
-    margin-bottom: 2rem;
-    font-weight: 900;
-    color: var(--white);
-    letter-spacing: .1rem;
+  align-self: center;
+  text-align: center;
+  font-size: 1.75rem;
+  text-transform: none;
+  margin-bottom: 2rem;
+  font-weight: 900;
+  color: var(--white);
+  letter-spacing: 0.1rem;
 }
 
 #tutorial article h2 span {
-    color: var(--accentcolor);
-    display: block;
+  color: var(--accentcolor);
+  display: block;
 }
 
 #tutorial article p {
-    text-align: center;
-    align-self: center;
-    font-size: 1.25rem;
-    max-width: 80vw;
-    margin-bottom: auto;
+  text-align: center;
+  align-self: center;
+  font-size: 1.25rem;
+  max-width: 80vw;
+  margin-bottom: auto;
 }
 
 #tutorial article button {
-    padding: .75rem 3rem;
-    border-radius: 10px;
-    border: none;
-    width: 60%;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 250ms;
-    color: var(--darkgrey);
-    text-transform: uppercase;
+  padding: 0.75rem 3rem;
+  border-radius: 10px;
+  border: none;
+  width: 60%;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 250ms;
+  color: var(--darkgrey);
+  text-transform: uppercase;
 }
 
 #tutorial article button:hover,
 #tutorial article button:focus
 /* #tutorial article button:active */ {
-    background-color: var(--buttoncolor);
-    color: var(--white);
+  background-color: var(--buttoncolor);
+  color: var(--white);
 }
 
 /****************/
@@ -100,142 +100,141 @@
 /****************/
 /****************/
 
-#welcome, 
+#welcome,
 #login,
 #signup {
-    overflow-y: hidden;
-    overflow-x: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 #welcome main,
 #login main,
 #signup main {
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(180deg, var(--blue), var(--darkgrey));
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    font-family: 'Segoe UI', sans-serif, Tahoma, Geneva, Verdana;
-    color: var(--white);
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, var(--blue), var(--darkgrey));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
+  color: var(--white);
 }
 
 #welcome main h1 {
-    text-align: center;
-    color: var(--accentcolor);
-    margin-bottom: 5rem;
-    font-size: 2.25rem;
-    position: relative;
+  text-align: center;
+  color: var(--accentcolor);
+  margin-bottom: 5rem;
+  font-size: 2.25rem;
+  position: relative;
 }
 
 #welcome main h1 span {
-    color: var(--white);
-    position: relative;
+  color: var(--white);
+  position: relative;
 }
 
 #welcome main h1::after {
-    width: 100%;
-    height: 50%;
-    content: '';
-    background: linear-gradient(180deg, #14293F, #152839);
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    animation-name: introAnimation;
-    animation-duration: 3.25s;
-    animation-iteration-count: 1;
-    opacity: 0;
+  width: 100%;
+  height: 50%;
+  content: "";
+  background: linear-gradient(180deg, #14293f, #152839);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  animation-name: introAnimation;
+  animation-duration: 3.25s;
+  animation-iteration-count: 1;
+  opacity: 0;
 }
 
-
 #welcome main h1 span::after {
-    width: 100%;
-    height: 100%;
-    content: '';
-    background: linear-gradient(180deg, #14293F, #152839);
-    position: absolute;
-    left: 0;
-    animation-name: introAnimation;
-    animation-duration: 1.75s;
-    animation-iteration-count: 1;
-    opacity: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: linear-gradient(180deg, #14293f, #152839);
+  position: absolute;
+  left: 0;
+  animation-name: introAnimation;
+  animation-duration: 1.75s;
+  animation-iteration-count: 1;
+  opacity: 0;
 }
 
 @keyframes introAnimation {
-    0% {
-        left: 0;
-        opacity: 100;
-    }
+  0% {
+    left: 0;
+    opacity: 100;
+  }
 
-    100% {
-        left: 20rem;
-        opacity: 100;
-    }
+  100% {
+    left: 20rem;
+    opacity: 100;
+  }
 }
 
 #welcome main div {
-    width: 100vw;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    animation-name: fadeIn;
-    animation-duration: 5s;
-    animation-iteration-count: 1;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation-name: fadeIn;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    50% {
-        opacity: 0;
-    }
+  50% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 #welcome main div > a {
-    width: 70vw;
-    padding: 0.75rem;
-    border-radius: 10px;
-    background-color: var(--buttoncolor);
-    color: var(--white);
-    text-transform: uppercase;
-    font-weight: 600;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    margin-top: 5rem;
-    margin-bottom: 1rem;
-    letter-spacing: 1px;
-    transition: 250ms;
+  width: 70vw;
+  padding: 0.75rem;
+  border-radius: 10px;
+  background-color: var(--buttoncolor);
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  transition: 250ms;
 }
 
 #welcome main div > a:active,
 #welcome main div > a:focus,
 #welcome main div > a:hover {
-    width: 65vw;
+  width: 65vw;
 }
 
 #welcome main p {
-    color: var(--white);
-    font-weight: 400;
+  color: var(--white);
+  font-weight: 400;
 }
 
 #welcome main p a {
-    color: var(--accentcolor);
-    transition: 250ms;
+  color: var(--accentcolor);
+  transition: 250ms;
 }
 
 #welcome main p a:hover,
 #welcome main p a:focus,
 #welcome main p a:active {
-    color: var(--buttoncolor);
+  color: var(--buttoncolor);
 }
 
 /****************/
@@ -246,60 +245,60 @@
 
 #login h1,
 #signup h1 {
-    margin-bottom: 2rem;
-    margin-top: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
 }
 
 #login form,
 #signup form {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #login fieldset,
 #signup fieldset {
-    border: none;
-    margin-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
+  border: none;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 #login fieldset label,
 #signup fieldset label {
-    text-transform: uppercase;
-    font-weight: 600;
-    margin-bottom: .5rem;
-    letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
 }
 
 #login fieldset input,
 #signup fieldset input {
-    background-color: var(--secondarycolor);
-    border: none;
-    width: 60vw;
-    height: 2.25rem;
-    border-radius: 5px;
-    color: var(--white);
-    padding: .5rem;
+  background-color: var(--secondarycolor);
+  border: none;
+  width: 60vw;
+  height: 2.25rem;
+  border-radius: 5px;
+  color: var(--white);
+  padding: 0.5rem;
 }
 
 #login fieldset:last-of-type input,
 #signup fieldset:last-of-type input {
-    width: 60vw;
-    padding: 0.75rem;
-    border-radius: 10px;
-    background-color: var(--buttoncolor);
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-top: 5rem;
-    cursor: pointer;
-    transition: 250ms;
-    margin-bottom: 1rem;
+  width: 60vw;
+  padding: 0.75rem;
+  border-radius: 10px;
+  background-color: var(--buttoncolor);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 5rem;
+  cursor: pointer;
+  transition: 250ms;
+  margin-bottom: 1rem;
 }
 
 #login fieldset:last-of-type input:active,
@@ -308,18 +307,18 @@
 #signup fieldset:last-of-type input:active,
 #signup fieldset:last-of-type input:focus,
 #signup fieldset:last-of-type input:hover {
-    width: 55vw;
+  width: 55vw;
 }
 
 #login fieldset:last-of-type p,
 #signup fieldset:last-of-type p {
-    text-align: center;
+  text-align: center;
 }
 
 #login fieldset:last-of-type p a,
 #signup fieldset:last-of-type p a {
-    color: var(--accentcolor);
-    transition: 250ms;
+  color: var(--accentcolor);
+  transition: 250ms;
 }
 
 #login fieldset:last-of-type p a:hover,
@@ -328,22 +327,22 @@
 #signup fieldset:last-of-type p a:hover,
 #signup fieldset:last-of-type p a:focus,
 #signup fieldset:last-of-type p a:active {
-    color: var(--buttoncolor);
+  color: var(--buttoncolor);
 }
 
 #login fieldset input:focus,
 #signup fieldset input:focus {
-    outline: solid 1px var(--accentcolor);
-    outline-offset: 2px;
-    border: none;
-    width: 60vw;
-    height: 2.25rem;
-    border-radius: 5px;
+  outline: solid 1px var(--accentcolor);
+  outline-offset: 2px;
+  border: none;
+  width: 60vw;
+  height: 2.25rem;
+  border-radius: 5px;
 }
 
 #login fieldset:last-of-type,
 #signup fieldset:last-of-type {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 /****************/
@@ -353,74 +352,74 @@
 /****************/
 
 #account {
-    overflow-y: hidden;
+  overflow-y: hidden;
 }
 
 #account main {
-    width: 100vw;
-    min-height: 100vh;
-    background: var(--darkgrey);
-    font-family: 'Segoe UI', sans-serif, Tahoma, Geneva, Verdana;
-    color: var(--white);
+  width: 100vw;
+  min-height: 100vh;
+  background: var(--darkgrey);
+  font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
+  color: var(--white);
 }
 
 #account main section:first-of-type {
-    width: 100vw;
-    height: 15vh;
-    background-color: var(--accentcolor);
-    position: relative;
+  width: 100vw;
+  height: 15vh;
+  background-color: var(--accentcolor);
+  position: relative;
 }
 
 #account main section:first-of-type img {
-    width: 6rem;
-    height: 6rem;
-    background-color: rgba(33, 46, 58, .7);
-    border-radius: 100%;
-    position: absolute;
-    left: 1rem;
-    bottom: -3rem;
-    border: solid 4px var(--navcolor);
+  width: 6rem;
+  height: 6rem;
+  background-color: rgba(33, 46, 58, 0.7);
+  border-radius: 100%;
+  position: absolute;
+  left: 1rem;
+  bottom: -3rem;
+  border: solid 4px var(--navcolor);
 }
 
 #account main section:nth-of-type(2) {
-    width: 100vw;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    padding: 6rem 0;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 6rem 0;
 }
 
 #account main section:nth-of-type(2) article {
-    background-color: var(--navcolor);
-    width: 90vw;
-    border-radius: 10px;
-    padding: 1rem;
+  background-color: var(--navcolor);
+  width: 90vw;
+  border-radius: 10px;
+  padding: 1rem;
 }
 
 #account main section article:first-of-type p {
-    margin-bottom: 2rem;
-    font-weight: 300;
+  margin-bottom: 2rem;
+  font-weight: 300;
 }
 
 #account main section article:first-of-type .flexdiv {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 #account main section article:first-of-type .flexdiv button,
 #account main section article:first-of-type .flexdiv a {
-    padding: 0.75rem 1.25rem;
-    border-radius: 20px;
-    border: none;
-    background-color: var(--darkgrey);
-    color: var(--white);
-    text-decoration: none;
-    font-size: .8rem;
-    cursor: pointer;
-    transition: 250ms;
+  padding: 0.75rem 1.25rem;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--darkgrey);
+  color: var(--white);
+  text-decoration: none;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 250ms;
 }
 
 #account main section article:first-of-type .flexdiv button:hover,
@@ -429,8 +428,8 @@
 #account main section article:first-of-type .flexdiv a:hover,
 #account main section article:first-of-type .flexdiv a:focus,
 #account main section article:first-of-type .flexdiv a:active {
-    color: var(--darkgrey);
-    background-color: var(--accentcolor);
+  color: var(--darkgrey);
+  background-color: var(--accentcolor);
 }
 
 #account main section article:first-of-type .flexdiv button:hover svg,
@@ -439,210 +438,207 @@
 #account main section article:first-of-type .flexdiv a:hover svg,
 #account main section article:first-of-type .flexdiv a:focus svg,
 #account main section article:first-of-type .flexdiv a:active svg {
-    fill: var(--darkgrey);
+  fill: var(--darkgrey);
 }
 
 #account main section:nth-of-type(2) article:first-of-type a,
 #account main section:nth-of-type(2) article:first-of-type button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 #account main section:nth-of-type(2) article:first-of-type a svg,
 #account main section:nth-of-type(2) article:first-of-type button svg {
-    fill: var(--white);
-    width: 1rem;
-    transition: 250ms;
+  fill: var(--white);
+  width: 1rem;
+  transition: 250ms;
 }
 
 #account main section:nth-of-type(2) article:nth-of-type(4),
 #account main section:nth-of-type(2) article:last-of-type {
-    padding: 0;
+  padding: 0;
 }
 
 #account main section:nth-of-type(2) article:nth-of-type(4) a,
 #account main section:nth-of-type(2) article:last-of-type a {
-    display: flex;
-    text-decoration: none;
-    color: var(--white);
-    width: 100%;
-    height: 100%;
-    padding: 1rem;
-    border-radius: 10px;
-    transition: 250ms;
+  display: flex;
+  text-decoration: none;
+  color: var(--white);
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: 250ms;
 }
 
 #account main section:nth-of-type(2) article:nth-of-type(4) svg {
-    width: 1rem;
-    margin-left: auto;
-    fill: var(--white);
-    transition: 250ms;
+  width: 1rem;
+  margin-left: auto;
+  fill: var(--white);
+  transition: 250ms;
 }
 
 #account main section:nth-of-type(2) article:nth-of-type(4) a:hover {
-    background-color: var(--accentcolor);
-    color: var(--darkgrey);
+  background-color: var(--accentcolor);
+  color: var(--darkgrey);
 }
 
 #account main section:nth-of-type(2) article:nth-of-type(4) a:hover svg {
-    fill: var(--darkgrey);
+  fill: var(--darkgrey);
 }
 
 #account main section:nth-of-type(2) article:last-of-type a {
-    color: var(--signOutColor);
-    transition: 250ms;
+  color: var(--signOutColor);
+  transition: 250ms;
 }
 
 #account main section:nth-of-type(2) article:last-of-type a svg {
-    width: 1.5rem;
-    margin-right: 1rem;
-    fill: var(--white)
+  width: 1.5rem;
+  margin-right: 1rem;
+  fill: var(--white);
 }
 
 #account main section:nth-of-type(2) article:last-of-type a:hover,
 #account main section:nth-of-type(2) article:last-of-type a:focus,
 #account main section:nth-of-type(2) article:last-of-type a:active {
-    background-color: var(--signOutColor);
-    color: var(--white)
+  background-color: var(--signOutColor);
+  color: var(--white);
 }
 
 #account #editForm {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 #account #editForm fieldset {
-    display: flex;
-    flex-direction: column;
-    border: none;
-    margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin-bottom: 2rem;
 }
 
 #account #editForm fieldset label {
-    text-transform: uppercase;
-    margin-bottom: .5rem;
-    font-weight: 600;
-    letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 #account #editForm fieldset input {
-    background-color: transparent;
-    color: white;
-    height: 2.25rem;
-    border: solid 1px var(--inactive);
-    border-radius: 5px;
-    padding: .5rem;
-    transition: 250ms;
+  background-color: transparent;
+  color: white;
+  height: 2.25rem;
+  border: solid 1px var(--inactive);
+  border-radius: 5px;
+  padding: 0.5rem;
+  transition: 250ms;
 }
 
 #account #editForm fieldset input:focus,
 #account #editForm fieldset input:active {
-    border: solid 1px var(--white);
-    outline: none;
+  border: solid 1px var(--white);
+  outline: none;
 }
 
 #account #editForm fieldset:last-of-type {
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 #account #editForm fieldset:last-of-type input {
-    padding: .5rem 2rem;
-    border: solid 1px var(--signOutColor);
-    font-weight: 600;
-    cursor: pointer;
+  padding: 0.5rem 2rem;
+  border: solid 1px var(--signOutColor);
+  font-weight: 600;
+  cursor: pointer;
 }
 
 #account #editForm fieldset:last-of-type input:hover,
 #account #editForm fieldset:last-of-type input:focus,
 #account #editForm fieldset:last-of-type input:active {
-    background-color: var(--signOutColor);
-    color: var(--white);
+  background-color: var(--signOutColor);
+  color: var(--white);
 }
 
 #account #editForm fieldset:last-of-type input:last-of-type {
-    background-color: transparent;
-    border: solid 1px var(--accentcolor);
+  background-color: transparent;
+  border: solid 1px var(--accentcolor);
 }
 
 #account #editForm fieldset:last-of-type input:last-of-type:hover,
 #account #editForm fieldset:last-of-type input:last-of-type:focus,
 #account #editForm fieldset:last-of-type input:last-of-type:active {
-    background-color: var(--accentcolor);
-    color: var(--darkgrey);
+  background-color: var(--accentcolor);
+  color: var(--darkgrey);
 }
 
 #account .cancelChangeMessage {
-    position: absolute;
-    width: 100vw;
-    height: 80vh;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    z-index: 100;
-    background-color: var(--navcolor);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    transform: translateY(100rem);
-    transition: 250ms;
+  position: absolute;
+  width: 100vw;
+  height: 80vh;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  z-index: 100;
+  background-color: var(--navcolor);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transform: translateY(100rem);
+  transition: 250ms;
 }
 
 #account .cancelChangeMessage h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 #account .cancelChangeMessage p {
-    font-size: 1.25rem;
-    max-width: 80vw;
+  font-size: 1.25rem;
+  max-width: 80vw;
 }
 
 #account .cancelChangeMessage p span {
-    display: block;
+  display: block;
 }
 
 #account .cancelChangeMessage div {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
-
 #account .cancelChangeMessage div button {
-    padding: 1rem 3rem;
-    border-radius: 5px;
-    border: solid 1px var(--signOutColor);
-    font-weight: 600;
-    background-color: transparent;
-    color: var(--white);
-    cursor: pointer;
-    transition: 250ms;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  border: solid 1px var(--signOutColor);
+  font-weight: 600;
+  background-color: transparent;
+  color: var(--white);
+  cursor: pointer;
+  transition: 250ms;
 }
 
 #account .cancelChangeMessage div button:first-of-type:hover,
 #account .cancelChangeMessage div button:first-of-type:focus,
 #account .cancelChangeMessage div button:first-of-type:active {
-    background-color: var(--signOutColor);
+  background-color: var(--signOutColor);
 }
 
 #account .cancelChangeMessage div button:last-of-type {
-    border: solid 1px var(--accentcolor);
+  border: solid 1px var(--accentcolor);
 }
 
 #account .cancelChangeMessage div button:last-of-type:hover,
 #account .cancelChangeMessage div button:last-of-type:focus,
 #account .cancelChangeMessage div button:last-of-type:active {
-    background-color: var(--accentcolor);
-    color: var(--darkgrey);
+  background-color: var(--accentcolor);
+  color: var(--darkgrey);
 }
 
 /* TODO: MAAK HIER EEN COMPONENT VAN */
-
-

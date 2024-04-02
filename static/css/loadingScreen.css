@@ -16,7 +16,7 @@
 
 body {
   background: linear-gradient(180deg, var(--blue), var(--darkgrey));
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 .loadingScreen {
@@ -171,40 +171,41 @@ body {
 }
 
 .lsText p {
-    color: #ffffff;
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 900;
+  color: #ffffff;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 900;
 }
 
 .lsText p:first-of-type {
   margin-top: 10em;
-  }
+}
 @keyframes fadeInOut {
-    0%, 100% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
 .lsText p span {
-    animation: fadeInOut 1.5s infinite;
-    opacity: 0; 
+  animation: fadeInOut 1.5s infinite;
+  opacity: 0;
 }
 
 .lsText p span:nth-child(1) {
-    animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 .lsText p span:nth-child(2) {
-    animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 .lsText p span:nth-child(3) {
-    animation-delay: 1.5s;
+  animation-delay: 1.5s;
 }

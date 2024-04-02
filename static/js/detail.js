@@ -1,6 +1,12 @@
 // Fetch JSON data
 fetch("/json/games.json")
-  .then((response) => response.json())
+  .then((response) => {
+    if (!response.ok) {
+      console.log("ERROR");
+    }
+
+    return response.json();
+  })
   .then((data) => {
     // Get the game ID from the URL parameter
     const urlParams = new URLSearchParams(window.location.search);
@@ -11,6 +17,7 @@ fetch("/json/games.json")
 
     if (game) {
       // Set the details of the game on the detail page
+      console.log("testing game");
       document.getElementById("title").innerText = game.title;
       document.getElementById("description").innerText = game.description;
       document.getElementById("image").src = game.url;
