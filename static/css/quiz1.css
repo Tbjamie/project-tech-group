@@ -29,14 +29,14 @@
     align-items: center;
   }
   
-  main section:first-of-type{
+  /* main section:first-of-type{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
     width: 100vw;
     font-size: 1.2rem;
-  }
+  } */
   
   h1 {
     color: var(--accentcolor);
@@ -61,7 +61,7 @@
     width: 100%;
   }
 
-  .quiz4H2{
+  /* .quiz4H2{
     position: relative;
     right: 2rem;
     margin-bottom: 3rem;
@@ -69,7 +69,7 @@
   
   span{
    color: var(--white);
-  }
+  } */
   
   h3 {
     color: var(--white);
@@ -87,7 +87,7 @@
     margin-top: 1rem;
   }
 
-  .select-dropdown {
+  /* .select-dropdown {
       margin: 0;
       padding: 0;
       position: relative;
@@ -131,7 +131,7 @@
 .filterMenu button{
   width: 40vw;
   height: 8vh;
-  /* padding: 1rem 2rem; */
+  padding: 1rem 2rem;
   margin-left: 4rem;
   margin-top: 4rem;
 }
@@ -304,7 +304,7 @@ fieldset{
   border: none;
 }
 
-/* //pagina 2 choose platform// */
+//pagina 2 choose platform//
 .grid-container {
   display: flex;
   flex-direction: column;
@@ -328,7 +328,7 @@ fieldset{
 section:nth-of-type(2) article{
   display: flex;
   justify-content: space-between;
-  /* margin-top: 15rem; */
+  margin-top: 15rem;
   gap: 10rem;
 }
 
@@ -347,14 +347,14 @@ section:nth-of-type(1) button{
 }
 
 
-/* .buttonContainer {
+.buttonContainer {
   bottom: 1rem;
   display: flex;
   justify-content: space-around;
   position: absolute;
   left: 0;
   right: 0;
-} */
+} 
 
 .buttonContainer button {
   width: 10rem;
@@ -375,4 +375,4 @@ section:nth-of-type(1) button{
 .resultButton {
   background-color: var(--buttoncolor);
   color: var(--white);
-}
+} */
