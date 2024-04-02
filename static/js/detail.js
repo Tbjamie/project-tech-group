@@ -9,7 +9,7 @@ fetch("/json/games.json")
   })
   .then((data) => {
     // Get the game ID from the URL parameter
-    const gameId = window.location.pathname.split("/")[2];
+    const gameId = decodeURIComponent(window.location.pathname.split("/")[2]);
 
     // Find the game object with the corresponding ID
     const game = data.games.find((item) => item.title === gameId);
