@@ -158,11 +158,15 @@
 section article:nth-of-type(2){
     display: flex;
     justify-content: space-between;
-    margin-top: 7rem;
 }
 
 .searchArticle {
   position: relative;
+}
+
+.searchIcon{
+  position: absolute;
+  right: 1rem;
 }
 
 #searchbar {
@@ -175,6 +179,7 @@ section article:nth-of-type(2){
   color: white;
   position: relative;
   padding: 10px 10px;
+  margin-left: 5rem;
 }
 
 main section:nth-of-type(2) .flexdiv {
@@ -320,3 +325,54 @@ fieldset{
   background-color: var(--buttoncolor);
 }
 
+section:nth-of-type(2) article{
+  display: flex;
+  justify-content: space-between;
+  /* margin-top: 15rem; */
+  gap: 10rem;
+}
+
+section:nth-of-type(1) article{
+  display: flex;
+  justify-content: space-between;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+section:nth-of-type(1) button{
+ padding: 1rem 2rem;
+ border-radius: 1.5rem;
+ background-color: var(--secondarycolor);
+ color: var(--white)
+}
+
+
+/* .buttonContainer {
+  bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  left: 0;
+  right: 0;
+} */
+
+.buttonContainer button {
+  width: 10rem;
+  height: 2.7rem;
+  border-style: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.5rem;
+  margin-left: 4rem;
+  align-self: flex-start;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.resultButton {
+  background-color: var(--buttoncolor);
+  color: var(--white);
+}
