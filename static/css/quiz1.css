@@ -304,3 +304,7 @@ main section:nth-of-type(3) article::after {
   display: flex;
   flex-direction: column;
 }
+
+.buttons{
+  margin-top: 15rem;
+}
