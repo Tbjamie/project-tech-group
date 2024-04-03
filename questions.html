@@ -14,13 +14,14 @@
   <main> 
     <h1><span>Mini</span> Quiz</h1>
     <form>
+      <article id="pagination"></article> 
       <fieldset id="language">
         <legend>Choose your language</legend>
 
         <div class="select-dropdown">
           <select class="taalSelect" name="taal"></select>
         </div> 
-        <article class="buttons">
+        <!-- <article class="buttons">
           <button id="prvButton" class="prvButton" value="next &raquo;"><svg xmlns="http://www.w3.org/2000/svg" width="84.264" height="82.516" viewBox="0 0 84.264 82.516">
             <path id="Polygon_1" data-name="Polygon 1" d="M32,0,64,60H0Z" transform="matrix(-0.891, 0.454, -0.454, -0.891, 84.264, 53.46)" fill="#03dda0"/>
           </svg></button>
@@ -28,7 +29,7 @@
           <button id="nxtButton" class="nxtButton" value="next &raquo;"><svg xmlns="http://www.w3.org/2000/svg" width="84.264" height="82.516" viewBox="0 0 84.264 82.516">
             <path id="Polygon_2" data-name="Polygon 2" d="M32,0,64,60H0Z" transform="matrix(-0.891, -0.454, 0.454, -0.891, 57.024, 82.516)" fill="#03dda0"/>
           </svg></button>
-        </article>       
+        </article>        -->
       </fieldset>
 
       <fieldset id="platform">
@@ -77,30 +78,37 @@
           <article class="gamesArticle"></article>
       </fieldset>
 
-      <section id="answers">
-        <h2>See your answers</h2>
-        <article>
-            <h3>Question 1</h3>
-            <button>Edit</button>
-          </article>
+      <fieldset id="answers">
+          <legend>See your answers</legend>
           <article>
-            <h3>Question 2</h3>
-            <button>Edit</button>
+              <h3>Question 1</h3>
+              <button>Edit</button>
+            </article>
+            <article>
+              <h3>Question 2</h3>
+              <button>Edit</button>
+            </article>
+            <article>
+              <h3>Question 3</h3>
+              <button>Edit</button>
+            </article>
+            <article>
+              <h3>Question 4</h3>
+              <button>Edit</button>
+            </article>
+            <article>
+              <div class="buttonContainer">
+                  <button class="resultButton">save</button>
+                </div>
           </article>
-          <article>
-            <h3>Question 3</h3>
-            <button>Edit</button>
-          </article>
-          <article>
-            <h3>Question 4</h3>
-            <button>Edit</button>
-          </article>
-          <article>
-            <div class="buttonContainer">
-                <button class="resultButton">safe</button>
-              </div>
-        </article>
-    </section>
+      </fieldset>
+
+           
+
+    <article class="buttons">
+      <button id="prvButton" class="prvButton" value="previous &laquo;">Previous</button>
+      <button id="nxtButton" class="nxtButton" value="next &raquo;">Next</button>
+    </article>
     </form>
   </main>
   <footer></footer>

@@ -29,6 +29,87 @@ const peAnswer = document.querySelector('.answers p');
 
 const gameSection = document.querySelector("fieldset:nth-of-type(4) .gamesArticle");
 
+document.addEventListener("DOMContentLoaded", function() {
+  const fieldsets = document.querySelectorAll("fieldset");
+  const nextButton = document.getElementById("nxtButton");
+  const prevButton = document.getElementById("prvButton");
+  const resultButton = document.querySelector(".resultButton");
+  const answersSection = document.getElementById("answers");
+  const pagination = document.getElementById("pagination");
+  let currentFieldsetIndex = 0;
+
+  // Function to show a specific fieldset
+  function showFieldset(index) {
+    for (let i = 0; i < fieldsets.length; i++) {
+      if (i === index) {
+        fieldsets[i].style.display = "block";
+      } else {
+        fieldsets[i].style.display = "none";
+      }
+    }
+    updatePagination();
+  }
+
+  // Function to update pagination indicator
+  function updatePagination() {
+    pagination.textContent = `Page ${currentFieldsetIndex + 1} of ${fieldsets.length}`;
+  }
+
+  // Function to show the next fieldset
+  function showNextFieldset() {
+    if (currentFieldsetIndex < fieldsets.length - 1) {
+      currentFieldsetIndex++;
+      showFieldset(currentFieldsetIndex);
+    }
+    if (currentFieldsetIndex === fieldsets.length - 1) {
+      nextButton.style.display = "none";
+      resultButton.style.display = "block";
+    }
+  }
+
+  // Function to show the previous fieldset
+  function showPreviousFieldset() {
+    if (currentFieldsetIndex > 0) {
+      currentFieldsetIndex--;
+      showFieldset(currentFieldsetIndex);
+      nextButton.style.display = "block";
+      resultButton.style.display = "none";
+    }
+  }
+
+  // Event listener for the next button
+  if (nextButton) {
+    nextButton.addEventListener("click", function(event) {
+      event.preventDefault();
+      showNextFieldset();
+    });
+  }
+
+  // Event listener for the previous button
+  if (prevButton) {
+    prevButton.addEventListener("click", function(event) {
+      event.preventDefault();
+      showPreviousFieldset();
+    });
+  }
+
+  // Event listener for the result button
+  if (resultButton) {
+    resultButton.addEventListener("click", function(event) {
+      event.preventDefault();
+      // Show answers section
+      answersSection.style.display = "block";
+      // Hide next and previous buttons
+      nextButton.style.display = "none";
+      prevButton.style.display = "block";
+      // Hide result button
+      resultButton.style.display = "none";
+    });
+  }
+
+  // Initially show the first fieldset
+  showFieldset(currentFieldsetIndex);
+});
 
 
 
