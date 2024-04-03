@@ -232,10 +232,34 @@ app.get('/games/:game', async (req, res) => {
 app.get('/forum', async (req, res) => {
   if (req.session.visited) {
     let user = req.session.user
-    res.render('forum.ejs', { user: user })
+    let posts = await forumCollection.find().toArray()
+    // console.log(posts)
+    res.render('forum.ejs', { user: user, posts: posts })
   } else {
     res.redirect('/login')
   }
+})
+
+app.get('/forum/makePost', async (req, res) => {
+  if (req.session.visited) {
+    let user = req.session.user
+    res.render('makePost.ejs', { user: user })
+  } else {
+    res.redirect('/login')
+  }
+})
+
+app.get('/forum/:topic', async (req, res) => {
+  if (req.session.visited) {
+      let user = req.session.user
+      let post = await forumCollection.findOne({
+        title: req.params.topic
+      })
+      console.log(post)
+      res.render('postDetail.ejs', { user: user, post: post }) // , topic: req.params.topic
+    } else {
+      res.redirect('/login')
+    }
 })
 
 
