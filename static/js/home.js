@@ -7,6 +7,9 @@ fetch("/json/games.json")
     const randomGames = getRandomGames(games, 5);
     randomGames.forEach((game) => {
       const li = document.createElement("li");
+      let gameName = game.title;
+      let hrefValue = `games/${gameName}`;
+
       li.classList.add("swiper-slide");
       li.style.backgroundImage = `url(${game.url})`;
       li.setAttribute("id", "game-image");
@@ -14,7 +17,7 @@ fetch("/json/games.json")
         <h4>${game.title}</h4>
         <p>${game.description}</p>
         <p>${game.price}</p>
-        <a href="#">Buy now</a>
+        <a href="${hrefValue}">Buy now</a>
       `;
       document.querySelector(".swiper-wrapper").appendChild(li);
     });
@@ -31,10 +34,12 @@ fetch("/json/games.json")
     games.forEach((game) => {
       const li = document.createElement("li");
       li.classList.add("slider-slide");
+
       li.innerHTML = `
         <img src="${game.url}" alt="${game.title}" id="nr-image" />
         <h3>${game.genre}</h3>
         <h4>${game.title}</h4>
+        
       `;
       sliderWrapper.append(li);
     });
@@ -64,5 +69,3 @@ function getNewReleases(array, n) {
   ); // Sort by release date
   return sortedByReleaseDate.slice(0, n); // Get sub-array of first n elements
 }
-
-
