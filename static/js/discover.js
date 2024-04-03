@@ -152,7 +152,6 @@ fetch("/json/games.json")
         });
       }
 
-
       let genre = game.genre; // Haal de genres op van de game
 
       // Als er meerdere genres zijn, pak dan alleen het eerste genre

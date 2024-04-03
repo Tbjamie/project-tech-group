@@ -31,7 +31,7 @@ h1 {
   color: var(--accentcolor);
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 2rem;
   text-align: center;
@@ -76,7 +76,6 @@ form {
   border-radius: 1.5rem;
   box-shadow: var(--darkgrey) 5px 5px 5px;
   overflow: hidden;
-  margin-top: 1rem;
 }
 
 fieldset {
@@ -246,9 +245,6 @@ fieldset label {
 }
 
 .buttons {
-  position: absolute;
-  left: 9.5rem;
-  top: 5.5rem;
   z-index: 50;
   display: flex;
 }
