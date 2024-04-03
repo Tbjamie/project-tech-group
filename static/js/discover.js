@@ -89,7 +89,6 @@ fetch("/json/games.json")
       gameSection.append(gameItem);
       let gameLink = document.createElement("a");
       let gameName = game.title;
-      // let hrefValue = `discover/detail.html?id=${gameName}`;
       let hrefValue = `games/${gameName}`;
       gameLink.setAttribute("href", hrefValue);
       gameItem.append(gameLink);
