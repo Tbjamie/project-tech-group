@@ -50,12 +50,15 @@ document.addEventListener("DOMContentLoaded", function () {
     updatePagination();
   }
 
-  // Function to update pagination indicator
-  function updatePagination() {
-    pagination.textContent = `Page ${currentFieldsetIndex + 1} of ${
-      fieldsets.length
-    }`;
+// Function to update pagination indicator
+function updatePagination() {
+  pagination.textContent = `Page ${currentFieldsetIndex + 1} of ${fieldsets.length}`;
+  if (currentFieldsetIndex === 0) {
+    prevButton.style.display = "none";
+  } else {
+    prevButton.style.display = "block";
   }
+}
 
   // Function to show the next fieldset
   function showNextFieldset() {
