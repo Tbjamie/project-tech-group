@@ -642,3 +642,210 @@
 }
 
 /* TODO: MAAK HIER EEN COMPONENT VAN */
+/****************/
+/****************/
+/**** FORUM *****/
+/****************/
+/****************/
+
+#forum {
+  background: linear-gradient(180deg, var(--blue), var(--darkgrey));
+  width: 100vw;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--white);
+}
+#forum section:first-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: 100vw;
+
+  font-size: 1.2rem;
+}
+#forum section:first-of-type h1 {
+  color: var(--accentcolor);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2rem;
+  align-self: flex-start;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+form {
+  position: relative;
+}
+#forum #searchbar {
+  width: 65vw;
+  height: 3rem;
+  border-radius: 14px;
+  margin-right: 0.5rem;
+  border-style: none;
+  font-size: 1.2rem;
+  background-color: var(--secondarycolor);
+  color: white;
+  position: relative;
+  padding: 10px 10px;
+}
+#forum section:first-of-type .flexdiv {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1em;
+}
+#forum section:first-of-type .flexdiv form svg {
+  position: absolute;
+  width: 2rem;
+  height: 5vh;
+  right: 0;
+  margin-right: 1rem;
+  fill: white;
+}
+#forum input::placeholder {
+  color: white;
+  padding: 10px 10px;
+}
+#forum section:first-of-type .flexdiv button {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--secondarycolor);
+  border-radius: 10px;
+  border-style: none;
+  cursor: pointer;
+}
+#forum #Icon_awesome-filter {
+  fill: white;
+  width: 1vw;
+}
+#forum section:first-of-type .flexdiv button svg {
+  width: 1rem;
+}
+#forum form {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+#forum .emptyState {
+  height: 0;
+}
+#forum section:nth-of-type(2) {
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+}
+#forum section:nth-of-type(2) a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: var(--accentcolor);
+  cursor: pointer;
+}
+
+#forum section:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#forum fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+#forum input,
+textarea {
+  border-radius: 8px;
+  background-color: var(--inactive);
+  border: none;
+  height: 1.5rem;
+  color: var(--white);
+  padding: 0.5rem 0.7rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#forum select {
+  border-radius: 8px;
+  background-color: var(--inactive);
+  border: none;
+  height: 1.5rem;
+  color: var(--white);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#forum #description {
+  height: 4rem;
+  resize: vertical;
+  max-height: 10rem;
+}
+#forum #svgPlus {
+  width: 2.1rem;
+  height: 2.1rem;
+  position: relative;
+  top: 2.2em;
+  left: 3em;
+  background-color: var(--accentcolor);
+  border-radius: 100%;
+  padding: 0.5rem;
+}
+#forum #submitButton {
+  padding: 0;
+  border: 1px var(--white) solid;
+  background-color: transparent;
+  height: 4em;
+  cursor: pointer;
+}
+#forum #svgPlus {
+  top: 8.5em;
+  left: 5.2em;
+  position: absolute;
+}
+#forum article {
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px var(--white) solid;
+  border-radius: 8px;
+  height: 11rem;
+  background-color: var(--darkgrey);
+}
+#forum article img {
+  width: 35vw;
+  height: 35vw;
+  padding: 0.2em;
+  order: -1;
+  border-radius: 10px;
+}
+
+#forum article h2 {
+  width: 40vw;
+  color: var(--white);
+  text-transform: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  height: 6rem;
+}
+#forum #newPost {
+  width: 80vw;
+  border: 1px var(--white) solid;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  height: 3em;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: var(--darkgrey);
+}
+
+#forum section article svg {
+  margin-top: 0.5em;
+  width: 15px;
+  height: 15px;
+  fill: #ffffff;
+}
+
+#forumsection article p {
+  font-size: 0.9rem;
+}
