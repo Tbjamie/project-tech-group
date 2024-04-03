@@ -229,6 +229,15 @@ app.get('/games/:game', async (req, res) => {
   }
 })
 
+app.get('/forum', async (req, res) => {
+  if (req.session.visited) {
+    let user = req.session.user
+    res.render('forum.ejs', { user: user })
+  } else {
+    res.redirect('/login')
+  }
+})
+
 
 app.use((req, res) => {
   console.error("404 error at URL: " + req.url)
