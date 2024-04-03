@@ -193,3 +193,45 @@ fieldset:nth-child(2) > input {
     background-color: var(--buttoncolor);
     color: var(--white);
   }
+
+  .gamesArticle article{
+    width: 80vw;
+    height: 18vh;
+    background-color: #191e29;
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1.4rem;
+    border-radius: 20px;
+    border: 1px solid white;
+    position: relative;
+  }
+  
+  .gamesArticle{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttons{
+    position: fixed;
+    left: 4rem;
+    bottom: 7rem;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 5rem;
+  }
+
+  .buttons button{
+    background: none;
+    border: none;
+  }
+
+  .buttons button svg{
+    width: 5rem;
+  }
+
+  /* #platform, #genre, #favoGame, #answers
+{
+    display: none;
+} */

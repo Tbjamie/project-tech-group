@@ -12,6 +12,16 @@ const matchSection = document.querySelector("section:nth-of-type(4)");
 const matchSection2 = document.querySelector("section:nth-of-type(3)");
 const eersteSection = document.querySelector("section:nth-of-type(2)");
 const button = document.querySelector('button');
+
+
+const nxtButton = document.querySelector('.nxtButton');
+const prvButton = document.querySelector('.prvButton');
+
+const languageFieldset = document.getElementById('language');
+const platformFieldset = document.getElementById('platform');
+const genreFieldset = document.getElementById('genre');
+const favoGameFieldset = document.getElementById('favoGame');
+
 const svgIcon = document.querySelector('.cross');
 const peStatus = document.querySelector('section:nth-of-type(2) p');
 const peAnswer = document.querySelector('.answers p');
@@ -123,3 +133,6 @@ searchInput.addEventListener("input", function () {
     });
   }
 });
+
+
+
