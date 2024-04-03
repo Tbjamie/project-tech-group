@@ -1,237 +1,263 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  :root {
-    --blue: #132d46;
-    --darkgrey: #191e29;
-    --accentcolor: #03dda0;
-    --white: #ffffff;
-    --buttoncolor: #ff006e;
-    --secondarycolor: #696e79;
-    --lightblue: #5cadff;
-  }
-  
-  body {
-    background: linear-gradient(180deg, var(--blue), var(--darkgrey));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    max-width: 100%;
-  }
-  
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  
-  h1 {
-    color: var(--accentcolor);
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    margin-bottom: 2rem;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 2rem;
-  }
-  
-  h2 {
-    color: var(--white);
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    align-self: flex-start;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    width: 100%;
-  }
-  
-  span{
-   color: var(--white);
-  }
-  
-  h3 {
-    color: var(--white);
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    margin-bottom: 2rem;
-    align-self: flex-start;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    margin: 1rem;
-  }
+:root {
+  --blue: #132d46;
+  --darkgrey: #191e29;
+  --accentcolor: #03dda0;
+  --white: #ffffff;
+  --buttoncolor: #ff006e;
+  --secondarycolor: #696e79;
+  --lightblue: #5cadff;
+}
 
-  p{
-    color: var(--white);
-    text-align: center;
-    margin-top: 1rem;
-  }
+body {
+  background: linear-gradient(180deg, var(--blue), var(--darkgrey));
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  max-width: 100%;
+}
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: var(--accentcolor);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+h2 {
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  align-self: flex-start;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  width: 100%;
+}
+
+span {
+  color: var(--white);
+}
+
+h3 {
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin: 1rem 1rem 2rem 1rem;
+  align-self: flex-start;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+  color: var(--white);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+form {
+  background: linear-gradient(180deg, #2a3346, var(--blue));
+  min-width: 19rem;
+  min-height: 26rem;
+  padding: 3rem 0 3rem 0;
+  border-radius: 1.5rem;
+  box-shadow: var(--darkgrey) 5px 5px 5px;
+  overflow: hidden;
+  margin-top: 1rem;
+}
 
 fieldset {
-    border: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#pagination {
+  color: var(--white);
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  text-shadow: var(--darkgrey) 2px 2px 2px;
 }
 
 legend {
-    color: var(--white);
-    font-weight: bold;
-    text-align: center;
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  color: var(--white);
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 15rem;
 }
 
 .select-dropdown {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .select-dropdown select {
-    width: 15rem;
+  width: 15rem;
+  height: 3rem;
+  font-size: 1rem;
+  padding-left: 1rem;
+  border-radius: 10px;
 }
 
 fieldset label {
-    color: white;
+  color: white;
 }
 
-fieldset:nth-child(2) {
+.platformButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-fieldset:nth-child(2) > input {
-    margin: .4rem 1rem 0 2rem;
+#platform input {
+  width: 15rem;
+  height: 3rem;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: start;
+  padding-left: 1rem;
+  box-shadow: var(--darkgrey) 4px 4px 4px;
 }
 
+#platform input:focus {
+  background-color: var(--buttoncolor);
+  border: thick double var(--white);
+  color: var(--white);
+}
 
-.searchArticle {
-    position: relative;
-  }
-  
-  .searchIcon{
-    position: absolute;
-    right: 4.5rem;
-    height: 3rem;
-  }
-  
-  #searchbar {
-    width: 65vw;
-    height: 3rem;
-    border-radius: 14px;
-    border-style: none;
-    font-size: 1.2rem;
-    background-color: var(--secondarycolor);
-    color: white;
-    position: relative;
-    padding: 10px 10px;
-    margin-left: 3rem;
-  }
-  
-  main section:nth-of-type(2) .flexdiv {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-  }
-  
-  main section:nth-of-type(2) .flexdiv form svg {
-    position: absolute;
-    width: 2rem;
-    height: 5vh;
-    right: 0;
-    margin-right: 4.5rem;
-    top: 0.5rem;
-    fill: white;
-  }
-  
-  input::placeholder {
-    color: white;
-    padding: 10px 10px;
-  }
-  
-  section:nth-of-type(1) article{
-    display: flex;
-    justify-content: space-between;
-    gap: 2.5rem;
-    margin-bottom: 3rem;
-  }
-  
-  section:nth-of-type(1) button{
-   padding: 1rem 2rem;
-   border-radius: 1.5rem;
-   background-color: var(--secondarycolor);
-   color: var(--white)
-  }
-  
-  
-  .buttonContainer {
-    bottom: 1rem;
-    display: flex;
-    justify-content: space-around;
-    left: 0;
-    right: 0;
-  } 
-  
-  .buttonContainer button {
-    width: 10rem;
-    height: 2.7rem;
-    border-style: none;
-    border-radius: 5px;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    margin-bottom: 1.5rem;
-    align-self: flex-start;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .resultButton {
-    background-color: var(--buttoncolor);
-    color: var(--white);
-  }
+.search-container {
+  display: flex;
+  justify-content: center;
+}
 
-  .gamesArticle article{
-    width: 80vw;
-    height: 18vh;
-    background-color: #191e29;
-    margin-left: 1.5rem;
-    margin-top: 2rem;
-    margin-bottom: 1.4rem;
-    border-radius: 20px;
-    border: 1px solid white;
-    position: relative;
-  }
-  
-  .gamesArticle{
-    display: flex;
-    flex-direction: column;
-  }
+.search-container svg {
+  position: absolute;
+  right: 4.5rem;
+  height: 2rem;
+  margin-top: 0.5rem;
+  opacity: 60%;
+}
 
-  .buttons{
-    position: fixed;
-    left: 4rem;
-    bottom: 7rem;
-    z-index: 50;
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    margin-top: 5rem;
-  }
+#searchbar {
+  width: 15rem;
+  height: 3rem;
+  border-radius: 10px;
+  border-style: none;
+  font-size: 1.2rem;
+  background-color: var(--secondarycolor);
+  color: var(--white);
+  padding: 10px 10px;
+}
 
-  .buttons button{
-    background: none;
-    border: none;
-  }
+.search-container input::placeholder {
+  color: var(--white);
+  opacity: 50%;
+  font-style: italic;
+  letter-spacing: 1px;
+}
 
-  .buttons button svg{
-    width: 5rem;
-  }
+.gamesArticle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
 
-  /* #platform, #genre, #favoGame, #answers
-{
-    display: none;
-} */
+.gamesArticle article {
+  width: 70vw;
+  height: 18vh;
+  margin-bottom: 0.5rem;
+  background-color: var(--darkgrey);
+  border-radius: 20px;
+  border: 1px solid var(--white);
+  position: relative;
+}
+
+#answers article {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+#answers article h3 {
+  margin: 0;
+  padding-top: 0.5rem;
+}
+
+#answers article button {
+  width: 5rem;
+  height: 2.5rem;
+  border-radius: 10px;
+  border: none;
+  margin-left: 3rem;
+  color: var(--white);
+  box-shadow: var(--darkgrey) 3px 5px 3px;
+  background: var(--secondarycolor);
+  letter-spacing: 1px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.buttonContainer button {
+  width: 10rem;
+  height: 2.7rem;
+  border-style: none;
+  border-radius: 10px;
+  box-shadow: var(--darkgrey) 3px 5px 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.resultButton {
+  background-color: var(--buttoncolor);
+  color: var(--white);
+}
+
+.buttons {
+  position: absolute;
+  left: 9.5rem;
+  top: 5.5rem;
+  z-index: 50;
+  display: flex;
+}
+
+.buttons button {
+  background: none;
+  border: none;
+}
+
+.buttons button svg {
+  width: 2.5rem;
+}

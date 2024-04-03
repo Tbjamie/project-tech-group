@@ -11,25 +11,25 @@ const dropDown = document.querySelector(".select-dropdown");
 const matchSection = document.querySelector("section:nth-of-type(4)");
 const matchSection2 = document.querySelector("section:nth-of-type(3)");
 const eersteSection = document.querySelector("section:nth-of-type(2)");
-const button = document.querySelector('button');
+const button = document.querySelector("button");
 
+const nxtButton = document.querySelector(".nxtButton");
+const prvButton = document.querySelector(".prvButton");
 
-const nxtButton = document.querySelector('.nxtButton');
-const prvButton = document.querySelector('.prvButton');
+const languageFieldset = document.getElementById("language");
+const platformFieldset = document.getElementById("platform");
+const genreFieldset = document.getElementById("genre");
+const favoGameFieldset = document.getElementById("favoGame");
 
-const languageFieldset = document.getElementById('language');
-const platformFieldset = document.getElementById('platform');
-const genreFieldset = document.getElementById('genre');
-const favoGameFieldset = document.getElementById('favoGame');
+const svgIcon = document.querySelector(".cross");
+const peStatus = document.querySelector("section:nth-of-type(2) p");
+const peAnswer = document.querySelector(".answers p");
 
-const svgIcon = document.querySelector('.cross');
-const peStatus = document.querySelector('section:nth-of-type(2) p');
-const peAnswer = document.querySelector('.answers p');
+const gameSection = document.querySelector(
+  "fieldset:nth-of-type(4) .gamesArticle"
+);
 
-
-const gameSection = document.querySelector("fieldset:nth-of-type(4) .gamesArticle");
-
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const fieldsets = document.querySelectorAll("fieldset");
   const nextButton = document.getElementById("nxtButton");
   const prevButton = document.getElementById("prvButton");
@@ -52,7 +52,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Function to update pagination indicator
   function updatePagination() {
-    pagination.textContent = `Page ${currentFieldsetIndex + 1} of ${fieldsets.length}`;
+    pagination.textContent = `Page ${currentFieldsetIndex + 1} of ${
+      fieldsets.length
+    }`;
   }
 
   // Function to show the next fieldset
@@ -79,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Event listener for the next button
   if (nextButton) {
-    nextButton.addEventListener("click", function(event) {
+    nextButton.addEventListener("click", function (event) {
       event.preventDefault();
       showNextFieldset();
     });
@@ -87,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Event listener for the previous button
   if (prevButton) {
-    prevButton.addEventListener("click", function(event) {
+    prevButton.addEventListener("click", function (event) {
       event.preventDefault();
       showPreviousFieldset();
     });
@@ -95,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Event listener for the result button
   if (resultButton) {
-    resultButton.addEventListener("click", function(event) {
+    resultButton.addEventListener("click", function (event) {
       event.preventDefault();
       // Show answers section
       answersSection.style.display = "block";
@@ -110,8 +112,6 @@ document.addEventListener("DOMContentLoaded", function() {
   // Initially show the first fieldset
   showFieldset(currentFieldsetIndex);
 });
-
-
 
 fetch("/static/json/taal.json")
   .then((response) => {
@@ -133,9 +133,6 @@ fetch("/static/json/taal.json")
     console.error("Error fetching language data:", error);
   });
 
-
-
-  
 fetch("/static/json/games.json")
   .then((response) => {
     if (!response.ok) {
@@ -156,9 +153,7 @@ fetch("/static/json/games.json")
     console.error("Error fetching genre data:", error);
   });
 
-
-
-  fetch("/static/json/games.json")
+fetch("/static/json/games.json")
   .then((response) => {
     if (!response.ok) {
       console.log("ERROR");
@@ -214,6 +209,3 @@ searchInput.addEventListener("input", function () {
     });
   }
 });
-
-
-
