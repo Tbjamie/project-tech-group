@@ -259,7 +259,7 @@ document.addEventListener("DOMContentLoaded", function() {
   genreSelectAnswer.style.display = "none";
   platformSelectAnswer.style.display = "none";
   searchbarAnswer.style.display = "none";
-  searchIcon.style.display = "none"; // Verberg de zoek-icoon SVG
+  searchIcon.style.display = "none"; 
 
   // Array om de antwoorden bij te houden
   const answers = ["", "", "", ""];
@@ -269,7 +269,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const questionArticle = document.querySelector(`#answers article:nth-of-type(${index + 1})`);
     const answerContainer = questionArticle.querySelector("h3");
     if (answerContainer) {
-      answerContainer.textContent = newAnswer; // Toon het nieuwe antwoord in de h3
+      // Toon het nieuwe antwoord in de h3
+      answerContainer.textContent = newAnswer; 
     } else {
       const newAnswerContainer = document.createElement("h3");
       newAnswerContainer.textContent = newAnswer;
@@ -283,7 +284,8 @@ document.addEventListener("DOMContentLoaded", function() {
   const editButtons = document.querySelectorAll("#answers button");
   editButtons.forEach((button, index) => {
     button.addEventListener("click", function(event) {
-      event.preventDefault(); // Voorkom standaardgedrag van knop (scrollen naar boven)
+      // Voorkom standaardgedrag van knop (scrollen naar boven)
+      event.preventDefault(); 
 
       // Toon het juiste antwoordveld van #answers op basis van de vraagindex
       if (index === 0) {
@@ -291,25 +293,25 @@ document.addEventListener("DOMContentLoaded", function() {
         genreSelectAnswer.style.display = "none";
         platformSelectAnswer.style.display = "none";
         searchbarAnswer.style.display = "none";
-        searchIcon.style.display = "none"; // Verberg de zoek-icoon SVG
+        searchIcon.style.display = "none"; 
       } else if (index === 1) {
         platformSelectAnswer.style.display = "block";
         taalSelectAnswer.style.display = "none";
         genreSelectAnswer.style.display = "none";
         searchbarAnswer.style.display = "none";
-        searchIcon.style.display = "none"; // Verberg de zoek-icoon SVG
+        searchIcon.style.display = "none"; 
       } else if (index === 2) {
         genreSelectAnswer.style.display = "block";
         taalSelectAnswer.style.display = "none";
         platformSelectAnswer.style.display = "none";
         searchbarAnswer.style.display = "none";
-        searchIcon.style.display = "none"; // Verberg de zoek-icoon SVG
+        searchIcon.style.display = "none"; 
       } else if (index === 3) {
         searchbarAnswer.style.display = "block";
         taalSelectAnswer.style.display = "none";
         platformSelectAnswer.style.display = "none";
         genreSelectAnswer.style.display = "none";
-        searchIcon.style.display = "block"; // Toon de zoek-icoon SVG
+        searchIcon.style.display = "block"; 
       }
 
       // Verberg de "Edit" knoppen in #answers

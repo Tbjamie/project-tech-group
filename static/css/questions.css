@@ -196,9 +196,14 @@ fieldset label {
   position: relative;
 }
 
+#answers {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 #answers article {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: 1rem;
 }
 
@@ -217,6 +222,7 @@ fieldset label {
   box-shadow: var(--darkgrey) 3px 5px 3px;
   background: var(--secondarycolor);
   letter-spacing: 1px;
+  cursor: pointer;
 }
 
 .buttonContainer {
