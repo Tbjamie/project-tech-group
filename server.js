@@ -58,9 +58,18 @@ app
   }))
   .set("view engine", "ejs") // Set EJS to be our templating engine
   .set("views", "view") // And tell it the views can be found in the directory named view
-  .get('/', (req, res) => {
+
+  // const findUser = async () => {
+  //   let user = await usersCollection.findOne({
+  //     _id: req.session.user
+  //   })
+
+  //   return user
+  // }
+  app.get('/', (req, res) => {
     console.log(req.session.id)
     if (req.session.visited) {
+      // let user = findUser()
       console.log(req.session.user)
       let user = req.session.user
       res.render('home.ejs', { user: user })
@@ -68,14 +77,29 @@ app
       res.render('welcome.ejs');
     }
   })
-  .get('/login', (req, res) => {
+
+  // app.post('/', async (req, res) => {
+  //   if (req.session.visited) {
+  //     console.log(req.session.user)
+  //     let user = req.session.user
+  //     const tutorialDone = await usersCollection.updateOne(
+  //       {_id: new ObjectId(user._id)},
+  //       { $set: { newUser: false } }
+  //       // TODO: HULP VRAGEN HIERBIJ
+  //     )
+  //     res.render('home.ejs', { user: user })
+  //   } else {
+  //     res.render('welcome.ejs');
+  //   }
+  // })
+  app.get('/login', (req, res) => {
     if (req.session.visited) {
       res.redirect('/')
     } else {
       res.render('login.ejs')
     }
   })
-  .post('/login', async (req, res) => {
+  app.post('/login', async (req, res) => {
     const user = await usersCollection.findOne({
       username: req.body.username
     })
@@ -89,7 +113,7 @@ app
       console.log("Wrong username or password")
     }
   })
-  .get('/logout', (req, res) => {
+  app.get('/logout', (req, res) => {
     req.session.destroy((err) => {
       if (err) {
         console.log(err)
@@ -139,6 +163,7 @@ app.post('/signup', async (req, res) => {
 app.get('/account', (req, res) => {
   if (req.session.visited) {
     let user = req.session.user
+    console
     res.render('account.ejs', { user: user })
   } else {
     res.redirect('/login')
@@ -155,45 +180,61 @@ app.get('/account/edit', (req, res) => {
 })
 
 app.post('/account/edit', async (req, res) => {
-  user = req.session.user
-  let existingUser = await usersCollection.findOne({
-    username: req.body.username
-  })
-  let existingEmail = await usersCollection.findOne({
-    email: req.body.email
-  })
-
-  if (user.username == req.body.username) {
-    console.log("DEZELFDE NAAM")
-  } else if (existingUser) {
-    console.log("USERNAME ALREADY EXISTS")
-  } else if (req.body.username == "") {
-    console.log("JE HEBT NIETS INGEVULD")
+  if (req.session.visited) {
+    let user = req.session.user
+    console.log(user)
+    console.log(req.session.user)
+    let existingUser = await usersCollection.findOne({
+      username: req.body.username
+    })
+    let existingEmail = await usersCollection.findOne({
+      email: req.body.email
+    })
+  
+    if (user.username == req.body.username) {
+      console.log("DEZELFDE NAAM")
+    } else if (existingUser) {
+      console.log("USERNAME ALREADY EXISTS")
+    } else if (req.body.username == "") {
+      console.log("JE HEBT NIETS INGEVULD")
+    } else {
+      console.log(`USERNAME CHANGED TO: ${req.body.username}`)
+      const changeUsername = await usersCollection.updateOne(
+        {_id: new ObjectId(user._id)},
+        { $set: { username: req.body.username } }
+        // TODO: HULP VRAGEN HIERBIJ
+      )
+    }
+  
+    if (user.email == req.body.email) {
+      console.log("DEZELFDE EMAIL")
+    } else if (existingEmail) {
+      console.log("EMAIL ALREADY EXISTS")
+    } else if (req.body.email == "") {
+      console.log("JE HEBT NIETS INGEVULD")
+    } else {
+      console.log(`EMAIL CHANGED TO: ${req.body.email}`)
+      const changeEmail = await usersCollection.updateOne(
+        {_id: new ObjectId(user._id)},
+        { $set: { email: req.body.email } }
+        // TODO: HULP VRAGEN HIERBIJ
+      )
+    }
+  
+    if (user.password === req.body.password) {
+      console.log("PASSWORD CANT BE THE SAME")
+    } else if (req.body.password == "") {
+      console.log("JE HEBT NIETS INGEVULD")
+    } else {
+      console.log(`PASSWORD CHANGED TO: ${req.body.password}`)
+      const changePassword = await usersCollection.updateOne(
+        {_id: new ObjectId(user._id)},
+        { $set: { password: req.body.password } }
+        // TODO: HULP VRAGEN HIERBIJ
+      )
+    }
   } else {
-    console.log(`USERNAME CHANGED TO: ${req.body.username}`)
-    changeUsername = await usersCollection.updateOne(
-      user,
-      { $set: { username: req.body.username } }
-      // TODO: HULP VRAGEN HIERBIJ
-    )
-  }
-
-  if (user.email == req.body.email) {
-    console.log("DEZELFDE EMAIL")
-  } else if (existingEmail) {
-    console.log("EMAIL ALREADY EXISTS")
-  } else if (req.body.email == "") {
-    console.log("JE HEBT NIETS INGEVULD")
-  } else {
-    console.log(`EMAIL CHANGED TO: ${req.body.email}`)
-  }
-
-  if (user.password === req.body.password) {
-    console.log("PASSWORD CANT BE THE SAME")
-  } else if (req.body.password == "") {
-    console.log("JE HEBT NIETS INGEVULD")
-  } else {
-    console.log(`PASSWORD CHANGED TO: ${req.body.password}`)
+    res.redirect('/login')
   }
 }
 )
@@ -233,8 +274,13 @@ app.get('/forum', async (req, res) => {
   if (req.session.visited) {
     let user = req.session.user
     let posts = await forumCollection.find().toArray()
-    // console.log(posts)
-    res.render('forum.ejs', { user: user, posts: posts })
+    let game = await gamesCollection.findOne({
+      title: posts.game
+    })
+
+    console.log(posts[0].game)
+
+    res.render('forum.ejs', { user: user, posts: posts, game: game })
   } else {
     res.redirect('/login')
   }
