@@ -10,7 +10,8 @@
       "description": "Valorant is a team-based first-person tactical hero shooter set in the near future. Players play as one of a set of Agents, characters based on several countries and cultures around the world. In the main game mode, players are assigned to either the attacking or defending team with each team having five players on it.",
       "developer": "Riot Games",
       "url": "/images/cover/valorantCover.jpeg",
-      "release": "2020"
+      "release": "2020",
+      "price": "Free"
     },
     {
       "launcher": "/logos/riotgames.svg",
@@ -21,7 +22,8 @@
       "description": "League of Legends is a team-based strategy game where two teams of five powerful champions face off to destroy the other's base. Choose from over 140 champions to make epic plays, secure kills, and take down towers as you battle your way to victory.",
       "developer": "Riot Games",
       "url": "/images/cover/lolCover.jpg",
-      "release": "2009"
+      "release": "2009",
+      "price": "Free"
     },
     {
       "launcher": "/logos/riotgames.svg",
@@ -32,7 +34,8 @@
       "description": "Legends of Runeterra is a free-to-play strategy card game set in the world of League of Legends. It features cards based on the iconic champions of League of Legends, as well as new characters and allies hailing from the regions of Runeterra, each with their own style and strategic advantage.",
       "developer": "Riot Games",
       "url": "/images/cover/lorCover.jpg",
-      "release": "2020"
+      "release": "2020",
+      "price": "Free"
     },
     {
       "launcher": "/logos/riotgames.svg",
@@ -43,7 +46,8 @@
       "description": "Teamfight Tactics is an autobattler: a round-based PvP game where you'll draft a team that battles automatically on your behalf, featuring iconic champions from League of Legends. Your goal? Grow your team and protect your board to become the last player standing.",
       "developer": "Riot Games",
       "url": "/images/cover/tftCover.jpg",
-      "release": "2019"
+      "release": "2019",
+      "price": "Free"
     },
     {
       "launcher": "/logos/epicgames.svg",
@@ -54,7 +58,8 @@
       "description": "Fortnite is a popular online multiplayer battle royale game where players compete to be the last one standing while building structures and scavenging for weapons to survive against opponents.",
       "developer": "Epic Games",
       "url": "/images/cover/fortniteCover.jpg",
-      "release": "2017"
+      "release": "2017",
+      "price": "Free"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -66,7 +71,8 @@
       "description": "Bloons TD 6 is a tower defense game where players strategically place towers to defend against waves of colorful balloons. It features a variety of towers, upgrades, and maps to challenge players of all skill levels.",
       "developer": "Ninja Kiwi",
       "url": "/images/cover/bloonsCover.jpg",
-      "release": "2018"
+      "release": "2018",
+      "price": "€9.99"
     },
     {
       "launcher": "/logos/epicgames.svg",
@@ -77,7 +83,8 @@
       "description": "Fall Guys: Ultimate Knockout is a colorful and chaotic battle royale game where players compete in a series of mini-games to be the last one standing. It features a variety of whimsical obstacle courses and challenges.",
       "developer": "Mediatonic",
       "url": "/images/cover/fallguysCover.jpeg",
-      "release": "2020"
+      "release": "2020",
+      "price": "€19.99"
     },
     {
       "launcher": "/logos/epicgames.svg",
@@ -89,7 +96,8 @@
       "description": "Rocket League is a fast-paced vehicular soccer game where players control rocket-powered cars to score goals against the opposing team in a futuristic sports arena.",
       "developer": "Psyonix",
       "url": "/images/cover/rocketleagueCover.jpg",
-      "release": "2015"
+      "release": "2015",
+      "price": "Free"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -100,7 +108,8 @@
       "description": "The Witcher 3: Wild Hunt is an open-world action role-playing game set in a dark fantasy universe. Players control Geralt of Rivia, a monster hunter, as he searches for his missing adopted daughter.",
       "developer": "CD Projekt Red",
       "url": "/images/cover/witcher3Cover.jpg",
-      "release": "2015"
+      "release": "2015",
+      "price": "€29.99"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -112,7 +121,8 @@
       "description": "Grand Theft Auto V is an action-adventure game set in an open-world environment. Players complete missions—linear scenarios with set objectives—to progress through the story.",
       "developer": "Rockstar North",
       "url": "/images/cover/gtavCover.jpg",
-      "release": "2013"
+      "release": "2013",
+      "price": "€29.99"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -123,7 +133,8 @@
       "description": "PUBG (PlayerUnknown's Battlegrounds) is a multiplayer online battle royale game where up to 100 players parachute onto an island, scavenge for weapons and equipment, and fight to be the last one standing while the playable area shrinks over time.",
       "developer": "PUBG Corporation",
       "url": "/images/cover/pubgCover.jpg",
-      "release": "2017"
+      "release": "2017",
+      "price": "€29.99"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -135,7 +146,8 @@
       "description": "CSGO is a fast-paced multiplayer shooter where teams of terrorists and counter-terrorists compete to complete objectives and eliminate each other.",
       "developer": "Valve",
       "url": "/images/cover/csgoCover.jpeg",
-      "release": "2012"
+      "release": "2012",
+      "price": "Free"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -146,7 +158,8 @@
       "description": "Among Us is an online multiplayer party game where crewmates work together to complete tasks on a spaceship, while impostors try to sabotage and kill them without being caught.",
       "developer": "Innersloth",
       "url": "/images/cover/susCover.jpg",
-      "release": "2018"
+      "release": "2018",
+      "price": "€4.99"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -157,7 +170,8 @@
       "description": "Dota 2 is a multiplayer online battle arena (MOBA) game developed and published by Valve. It's a sequel to Defense of the Ancients (DotA), a community-created mod for Warcraft III: Reign of Chaos.",
       "developer": "Valve",
       "url": "/images/cover/dota2Cover.jpg",
-      "release": "2013"
+      "release": "2013",
+      "price": "Free"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -169,7 +183,8 @@
       "description": "Red Dead Redemption 2 is an action-adventure game set in an open-world environment. It's the third entry in the Red Dead series and a prequel to the 2010 game Red Dead Redemption.",
       "developer": "Rockstar Games",
       "url": "/images/cover/rdr2Cover.jpeg",
-      "release": "2018"
+      "release": "2018",
+      "price": "€39.99"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -180,7 +195,8 @@
       "description": "Cyberpunk 2077 is an open-world action-adventure RPG set in the dystopian Night City, a megalopolis obsessed with power, glamour, and body modification.",
       "developer": "CD Projekt Red",
       "url": "/images/cover/cyberpunkCover.jpg",
-      "release": "2020"
+      "release": "2020",
+      "price": "€49.99"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -191,7 +207,8 @@
       "description": "Rust is a multiplayer survival game where players must gather resources, build shelters, and fend off threats from the environment and other players to survive in a harsh, open-world setting.",
       "developer": "Facepunch Studios",
       "url": "/images/cover/rustCover.jpeg",
-      "release": "2013"
+      "release": "2013",
+      "price": "Free"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -202,7 +219,8 @@
       "description": "Monster Hunter: World is an action role-playing game developed and published by Capcom. Players take on the role of a hunter tasked with tracking and hunting down monsters in various environments.",
       "developer": "Capcom",
       "url": "/images/cover/monsterhunterCover.jpg",
-      "release": "2018"
+      "release": "2018",
+      "price": "€39.99"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -213,7 +231,8 @@
       "description": "Stardew Valley is a farming simulation role-playing game developed by Eric ConcernedApe Barone. Players can grow crops, raise animals, mine for resources, and build relationships with villagers.",
       "developer": "ConcernedApe",
       "url": "/images/cover/stardewvalleyCover.jpg",
-      "release": "2016"
+      "release": "2016",
+      "price": "€14.99"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -224,7 +243,8 @@
       "description": "Rainbow Six Siege is an online tactical shooter game developed by Ubisoft. Players control operators from the Rainbow team and counter-terrorism units, each with their own unique abilities.",
       "developer": "Ubisoft",
       "url": "/images/cover/r6Cover.jpeg",
-      "release": "2015"
+      "release": "2015",
+      "price": "€19.99"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -236,7 +256,8 @@
       "description": "Terraria is an action-adventure sandbox game developed by Re-Logic. Players can explore, build, and fight in a procedurally generated 2D world.",
       "developer": "Re-Logic",
       "url": "/images/cover/terrariaCover.jpeg",
-      "release": "2011"
+      "release": "2011",
+      "price": "€9.99"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -248,7 +269,8 @@
       "description": "Team Fortress 2 is a multiplayer first-person shooter game developed and published by Valve. It's the sequel to the 1996 mod Team Fortress for Quake and its 1999 remake.",
       "developer": "Valve",
       "url": "/images/cover/tf2Coverjpg.jpg",
-      "release": "2007"
+      "release": "2007",
+      "price": "Free"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -259,7 +281,8 @@
       "description": "Apex Legends is a free-to-play battle royale game developed by Respawn Entertainment. It features characters with unique abilities and squad-based gameplay.",
       "developer": "Respawn Entertainment",
       "url": "/images/cover/apexCover.jpg",
-      "release": "2019"
+      "release": "2019",
+      "price": "Free"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -270,7 +293,8 @@
       "description": "Fallout 4 is an action role-playing game developed by Bethesda Game Studios. Players assume the role of the Sole Survivor, who emerges from a long cryogenic stasis in Vault 111, an underground nuclear fallout shelter.",
       "developer": "Bethesda Game Studios",
       "url": "/images/cover/fallout4Cover.jpg",
-      "release": "2015"
+      "release": "2015",
+      "price": "€29.99"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -281,7 +305,8 @@
       "description": "The Elder Scrolls V: Skyrim Special Edition is an open-world action role-playing game developed by Bethesda Game Studios. It's a remastered version of the original game with improved graphics and mod support.",
       "developer": "Bethesda Game Studios",
       "url": "/images/cover/skyrimCover.jpg",
-      "release": "2011"
+      "release": "2011",
+      "price": "€39.99"
     },
     {
       "launcher": "/logos/microsoft.svg",
@@ -292,7 +317,8 @@
       "description": "Minecraft is a sandbox game that allows players to explore, build, and survive in a blocky, procedurally-generated world. With endless possibilities and creative freedom, it has become one of the best-selling games of all time.",
       "developer": "Mojang Studios",
       "url": "/images/cover/minecraftCover.png",
-      "release": "2011"
+      "release": "2011",
+      "price": "€19.99"
     },
     {
       "launcher": "/logos/microsoft.svg",
@@ -304,7 +330,8 @@
       "description": "Forza Horizon 4 is an open-world racing game set in a fictional representation of the United Kingdom. With dynamic seasons, a vast car roster, and stunning visuals, it offers an immersive racing experience for players of all skill levels.",
       "developer": "Playground Games",
       "url": "/images/cover/forzaCover.jpg",
-      "release": "2018"
+      "release": "2018",
+      "price": "€49.99"
     },
     {
       "launcher": "/logos/microsoft.svg",
@@ -315,7 +342,8 @@
       "description": "Sea of Thieves is a multiplayer pirate-themed adventure game where players sail the open seas, search for treasure, engage in naval battles, and explore mysterious islands in a shared world full of other players.",
       "developer": "Rare Ltd.",
       "url": "/images/cover/seaofthievesCover.jpg",
-      "release": "2018"
+      "release": "2018",
+      "price": "€39.99"
     },
     {
       "launcher": "/logos/microsoft.svg",
@@ -327,7 +355,8 @@
       "description": "Halo: The Master Chief Collection is a compilation of first-person shooter games from the Halo series. With enhanced graphics, multiplayer modes, and all previously released campaigns, it offers a comprehensive Halo experience for both new and returning players.",
       "developer": "343 Industries",
       "url": "/images/cover/haloCover.jpg",
-      "release": "2014"
+      "release": "2014",
+      "price": "€39.99"
     },
     {
       "launcher": "/logos/microsoft.svg",
@@ -338,7 +367,8 @@
       "description": "Gears 5 is a third-person shooter game set in the Gears of War universe. With intense combat, a compelling story, and a variety of multiplayer modes, it offers an action-packed experience for fans of the series.",
       "developer": "The Coalition",
       "url": "/images/cover/gears5Cover.jpg",
-      "release": "2019"
+      "release": "2019",
+      "price": "€49.99"
     },
     {
       "launcher": "/logos/microsoft.svg",
@@ -349,7 +379,8 @@
       "description": "Ori and the Will of the Wisps is a platform-adventure game where players control Ori, a guardian spirit, as they navigate through a beautiful and perilous world. With stunning visuals, emotional storytelling, and challenging gameplay, it offers an unforgettable experience.",
       "developer": "Moon Studios",
       "url": "/images/cover/oriCover.jpg",
-      "release": "2020"
+      "release": "2020",
+      "price": "€29.99"
     },
     {
       "launcher": "/logos/microsoft.svg",
@@ -360,7 +391,8 @@
       "description": "Age of Empires II: Definitive Edition is a remastered version of the classic real-time strategy game. With enhanced graphics, new content, and improved gameplay, it offers both nostalgia for fans of the original and a fresh experience for newcomers.",
       "developer": "Forgotten Empires, Tantalus Media, Wicked Witch",
       "url": "/images/cover/ageofempires2Cover.jpg",
-      "release": "1999"
+      "release": "1999",
+      "price": "€19.99"
     },
     {
       "launcher": "/logos/microsoft.svg",
@@ -371,7 +403,8 @@
       "description": "State of Decay 2 is an open-world zombie survival game where players must build and manage a community of survivors in a post-apocalyptic world. With its focus on resource management and strategic decision-making, it offers a challenging and immersive survival experience.",
       "developer": "Undead Labs",
       "url": "/images/cover/stateofdecayCover.jpg",
-      "release": "2018"
+      "release": "2018",
+      "price": "€29.99"
     },
     {
       "launcher": "/logos/microsoft.svg",
@@ -382,7 +415,8 @@
       "description": "Microsoft Flight Simulator is a stunningly realistic flight simulation game that allows players to pilot a variety of aircraft across the entire globe. With breathtaking graphics and accurate physics, it offers an immersive experience for both aviation enthusiasts and casual players alike.",
       "developer": "Asobo Studio",
       "url": "/images/cover/flightsimCover.jpeg",
-      "release": "2020"
+      "release": "2020",
+      "price": "€59.99"
     },
     {
       "launcher": "/logos/microsoft.svg",
@@ -393,7 +427,8 @@
       "description": "Cuphead is a challenging run-and-gun platformer inspired by 1930s cartoons. With its unique art style, classic boss battles, and jazz soundtrack, it offers a nostalgic and exhilarating gaming experience.",
       "developer": "Studio MDHR",
       "url": "/images/cover/cupheadCover.jpeg",
-      "release": "2017"
+      "release": "2017",
+      "price": "€19.99"	
     },
     {
       "launcher": "/logos/origin.svg",
@@ -404,7 +439,8 @@
       "description": "The Sims 4 is a popular life simulation game where players create and control virtual characters, build homes, and pursue various activities and relationships. With endless possibilities for creativity and storytelling, it offers a unique and engaging gameplay experience.",
       "developer": "Maxis",
       "url": "/images/cover/sims4Cover.png",
-      "release": "2014"
+      "release": "2014",
+      "price": "€39.99"
     },
     {
       "launcher": "/logos/origin.svg",
@@ -416,7 +452,8 @@
       "description": "Battlefield V is a first-person shooter set during World War II, featuring large-scale multiplayer battles and immersive single-player War Stories. With realistic graphics, diverse gameplay modes, and extensive customization options, it offers an intense and authentic combat experience.",
       "developer": "EA DICE",
       "url": "/images/cover/battlefieldvCover.jpg",
-      "release": "2018"
+      "release": "2018",
+      "price": "€39.99"
     },
     {
       "launcher": "/logos/origin.svg",
@@ -428,7 +465,8 @@
       "description": "Star Wars Jedi: Fallen Order is an action-adventure game set in the Star Wars universe, following the story of a young Jedi Padawan named Cal Kestis. With its engaging narrative, intense lightsaber combat, and exploration of iconic locations, it offers an immersive Star Wars experience.",
       "developer": "Respawn Entertainment",
       "url": "/images/cover/jedifallenorderCover.jpg",
-      "release": "2019"
+      "release": "2019",
+      "price": "€49.99"
     },
     {
       "launcher": "/logos/origin.svg",
@@ -440,7 +478,8 @@
       "description": "Titanfall 2 is a fast-paced first-person shooter featuring a dynamic mix of on-foot combat and piloting massive mechs called Titans. Players engage in thrilling multiplayer battles and experience a compelling single-player campaign with innovative gameplay mechanics and a gripping story.",
       "developer": "Respawn Entertainment",
       "url": "/images/cover/titanfall2Cover.jpeg",
-      "release": "2016"
+      "release": "2016",
+      "price": "€24.99"
     },
     {
       "launcher": "/logos/origin.svg",
@@ -451,7 +490,8 @@
       "description": "FIFA 21 is a popular sports game featuring realistic football (soccer) gameplay, extensive player customization, and various modes including career, Ultimate Team, and multiplayer matches.",
       "developer": "EA Sports",
       "url": "/images/cover/fifa21Cover.jpeg",
-      "release": "2020"
+      "release": "2020",
+      "price": "€59.99"
     },
     {
       "launcher": "/logos/origin.svg",
@@ -463,7 +503,8 @@
       "description": "Need for Speed Heat is a high-octane racing game set in the fictional open-world of Palm City, where players compete in illicit street races and evade the law during the day and night. With its adrenaline-fueled gameplay and extensive customization options, it offers a thrilling racing experience.",
       "developer": "Ghost Games",
       "url": "/images/cover/nfsheatCover.jpg",
-      "release": "2019"
+      "release": "2019",
+      "price": "€39.99"
     },
     {
       "launcher": "/logos/origin.svg",
@@ -474,7 +515,8 @@
       "description": "Plants vs. Zombies: Battle for Neighborville is a wacky third-person shooter game where players can choose to join the Plants or Zombies in their ongoing battle for suburbia. With its colorful characters, diverse maps, and fun-filled gameplay, it offers a lighthearted and entertaining experience for all ages.",
       "developer": "PopCap Games",
       "url": "/images/cover/pvzCover.jpg",
-      "release": "2019"
+      "release": "2019",
+      "price": "€29.99"
     },
     {
       "launcher": "/logos/origin.svg",
@@ -485,7 +527,8 @@
       "description": "Anthem is an action-RPG set in a vast open-world where players control powerful exosuits known as Javelins and embark on cooperative missions to explore and fight hostile forces. With its stunning visuals and dynamic gameplay, it offers a captivating sci-fi experience.",
       "developer": "BioWare",
       "url": "/images/cover/anthemCover.jpg",
-      "release": "2019"
+      "release": "2019",
+      "price": "€29.99"
     },
     {
       "launcher": "/logos/origin.svg",
@@ -496,7 +539,8 @@
       "description": "Mass Effect: Andromeda is an action-RPG set in the Andromeda galaxy, where players take on the role of a Pathfinder tasked with exploring new worlds and unraveling the mysteries of a hostile alien species. With its expansive universe and engaging narrative, it offers an immersive sci-fi adventure.",
       "developer": "BioWare",
       "url": "/images/cover/masseffectCover.jpg",
-      "release": "2017"
+      "release": "2017",
+      "price": "€19.99"
     },
     {
       "launcher": "/logos/origin.svg",
@@ -507,7 +551,8 @@
       "description": "Dragon Age: Inquisition is an epic action-RPG set in a fantasy world on the brink of chaos. Players assume the role of the Inquisitor and lead a team of heroes on a quest to restore order and save the world from a supernatural threat. With its deep story, strategic combat, and expansive world, it offers a memorable gaming experience.",
       "developer": "BioWare",
       "url": "/images/cover/dragonageCover.jpg",
-      "release": "2014"
+      "release": "2014",
+      "price": "€29.99"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -518,7 +563,8 @@
       "description": "Hades is a rogue-like dungeon crawler where you defy the god of the dead as you hack and slash your way out of the Underworld of Greek myth. ",
       "developer": "Supergiant Games",
       "url": "/images/cover/hadesCover.jpeg",
-      "release": "2018"
+      "release": "2018",
+      "price": "€19.99"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -529,7 +575,8 @@
       "description": "Helldivers II is a hardcore, cooperative, twin-stick shooter from the creators of Magicka. Dive into a procedurally generated universe filled with chaos and challenge as you fight to protect Super Earth and defeat the enemies of mankind in an intense intergalactic war.",
       "developer": "Arrowhead Game Studios",
       "url": "/images/cover/helldiversCover.jpg",
-      "release": "2024"
+      "release": "2024",
+      "price": "€29.99"
     }
   ]
 }
