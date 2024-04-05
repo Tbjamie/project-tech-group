@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const pagination = document.getElementById("pagination");
   let currentFieldsetIndex = 0;
 
-  // Function to show a specific fieldset
+  // Function voor show een specific fieldset
   function showFieldset(index) {
     for (let i = 0; i < fieldsets.length; i++) {
       if (i === index) {
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
     updatePagination();
   }
 
-// Function to update pagination indicator
+// Function voor update pagination indicator
 function updatePagination() {
   pagination.textContent = `Page ${currentFieldsetIndex + 1} of ${fieldsets.length}`;
   if (currentFieldsetIndex === 0) {
@@ -60,7 +60,7 @@ function updatePagination() {
   }
 }
 
-  // Function to show the next fieldset
+  // Function voor show de next fieldset
   function showNextFieldset() {
     if (currentFieldsetIndex < fieldsets.length - 1) {
       currentFieldsetIndex++;
@@ -72,7 +72,7 @@ function updatePagination() {
     }
   }
 
-  // Function to show the previous fieldset
+  // Function voor show de previous fieldset
   function showPreviousFieldset() {
     if (currentFieldsetIndex > 0) {
       currentFieldsetIndex--;
@@ -82,7 +82,7 @@ function updatePagination() {
     }
   }
 
-  // Event listener for the next button
+  // Event listener voor de next button
   if (nextButton) {
     nextButton.addEventListener("click", function (event) {
       event.preventDefault();
@@ -90,7 +90,7 @@ function updatePagination() {
     });
   }
 
-  // Event listener for the previous button
+  // Event listener voor de previous button
   if (prevButton) {
     prevButton.addEventListener("click", function (event) {
       event.preventDefault();
@@ -98,16 +98,16 @@ function updatePagination() {
     });
   }
 
-  // Event listener for the result button
+  // Event listener voor de result button
   if (resultButton) {
     resultButton.addEventListener("click", function (event) {
       event.preventDefault();
-      // Show answers section
+      // Show  de answers section
       answersSection.style.display = "block";
-      // Hide next and previous buttons
+      // verberg next en previous buttons
       nextButton.style.display = "none";
       prevButton.style.display = "block";
-      // Hide result button
+      // verberg result button
       resultButton.style.display = "none";
     });
   }
@@ -212,3 +212,57 @@ searchInput.addEventListener("input", function () {
     });
   }
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const editButtons = document.querySelectorAll("#answers button");
+
+  editButtons.forEach((button, index) => {
+    button.addEventListener("click", function(event) {
+      event.preventDefault(); // Voorkom standaardgedrag van knop (scrollen naar boven)
+
+      const answerFieldsets = document.querySelectorAll("#language, #platform, #genre, #favoGame");
+      const answerFieldset = answerFieldsets[index];
+
+      const answerElement = answerFieldset.querySelector("select, input");
+      const originalAnswer = answerElement.value;
+
+      const newAnswer = prompt(`Bewerk antwoord op vraag ${index + 1}:`, originalAnswer);
+
+      if (newAnswer !== null) { // Als de gebruiker op "OK" klikt in de prompt
+        answerElement.value = newAnswer;
+      }
+    });
+  });
+});
+
+
+
+// document.addEventListener("DOMContentLoaded", function() {
+//   const editButtons = document.querySelectorAll("#answers button");
+
+//   editButtons.forEach((button, index) => {
+//     button.addEventListener("click", function(event) {
+//       event.preventDefault(); // Voorkom standaardgedrag van knop (scrollen naar boven)
+
+//       const answerFieldsets = document.querySelectorAll("#language, #platform, #genre, #favoGame");
+//       const answerFieldset = answerFieldsets[index];
+
+//       // Scroll naar het juiste veld
+//       answerFieldset.scrollIntoView({ behavior: 'smooth' });
+
+//       const answerElement = answerFieldset.querySelector("select, input");
+//       const originalAnswer = answerElement.value;
+
+//       const newAnswer = prompt(`Bewerk antwoord op vraag ${index + 1}:`, originalAnswer);
+
+//       if (newAnswer !== null) { // Als de gebruiker op "OK" klikt in de prompt
+//         answerElement.value = newAnswer;
+
+//         // Voeg het nieuwe antwoord toe aan de bijbehorende h3
+//         const questionH3 = document.querySelector(`#answers article:nth-of-type(${index + 1}) h3`);
+//         questionH3.textContent = `Antwoord: ${newAnswer}`;
+//       }
+//     });
+//   });
+// });
