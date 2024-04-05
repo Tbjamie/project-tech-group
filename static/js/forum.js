@@ -1,4 +1,5 @@
-let searchInput = document.getElementById("searchbar");
+let searchInput = document.getElementById('searchbar');
+let commentCount = document.querySelectorAll('#forum #postsSection article div p:first-of-type')
 
 searchInput.addEventListener("input", function () {
   let searchTerm = this.value.toLowerCase();
@@ -14,3 +15,15 @@ searchInput.addEventListener("input", function () {
     }
   });
 });
+
+const commentCountTextChange = () => {
+    commentCount.forEach(comment => {
+        if(comment.innerText == 1) {
+            comment.innerText = `${comment.innerText} Comment`
+        } else if(comment) {
+            comment.innerText = `${comment.innerText} Comments`
+        }
+    })
+}
+
+commentCountTextChange()
