@@ -918,3 +918,178 @@ textarea {
   font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
   color: var(--white);
 }
+/****************/
+/****************/
+/*** MAKEPOST ***/
+/****************/
+/****************/
+
+#makePost {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
+  color: var(--white);
+}
+#makePost section:first-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: 100vw;
+
+  font-size: 1.2rem;
+}
+#makePost section:first-of-type h1 {
+  color: var(--accentcolor);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#makePost section:first-of-type .flexdiv {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1em;
+}
+
+#makePost section:first-of-type .flexdiv form svg {
+  position: absolute;
+  width: 2rem;
+  height: 5vh;
+  right: 0;
+  margin-right: 1rem;
+  fill: white;
+}
+
+#makePost input::placeholder {
+  color: white;
+  padding: 10px 10px;
+}
+
+#makePost section:first-of-type .flexdiv button {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--secondarycolor);
+  border-radius: 10px;
+  border-style: none;
+  cursor: pointer;
+}
+
+#makePost #Icon_awesome-filter {
+  fill: white;
+  width: 1vw;
+}
+#makePost section:first-of-type .flexdiv button svg {
+  width: 1rem;
+}
+#makePost form {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+#makePost .emptyState {
+  height: 0;
+}
+#makePost section:nth-of-type(2) {
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+}
+#makePost section:nth-of-type(2) a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: var(--accentcolor);
+  cursor: pointer;
+}
+
+#makePost section:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#makePost input,
+textarea {
+  border-radius: 8px;
+  background-color: var(--inactive);
+  border: none;
+  height: 2rem;
+  width: 60vw;
+  color: var(--white);
+  padding: 0.5rem 0.7rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#makePost select {
+  border-radius: 8px;
+  background-color: var(--inactive);
+  border: none;
+  height: 1.5rem;
+  color: var(--white);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#makePost #description {
+  height: 6rem;
+  resize: vertical;
+  max-height: 10rem;
+}
+
+#makePost #submitButton {
+  padding: 0;
+  background-color: var(--buttoncolor);
+  height: 4em;
+  margin-top: 2rem;
+  cursor: pointer;
+  border-radius: 10px;
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: 250ms;
+}
+
+#makePost #submitButton:hover,
+#makePost #submitButton:focus,
+#makePost #submitButton:active {
+  background-color: var(--accentcolor);
+}
+
+#makePost #svgPlus {
+  position: relative;
+}
+
+#makePost fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+#makePost article {
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px var(--white) solid;
+  border-radius: 8px;
+  height: 11rem;
+  background-color: var(--darkgrey);
+}
+#makePost #dropDown {
+  height: 2rem;
+}
+#makePost label {
+  margin-bottom: 0.5rem;
+}
