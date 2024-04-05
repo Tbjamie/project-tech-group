@@ -51,6 +51,7 @@
       "title": "Fortnite",
       "genre": ["Battle Royale", "Survival"],
       "age": "13",
+      "description": "Fortnite is a popular online multiplayer battle royale game where players compete to be the last one standing while building structures and scavenging for weapons to survive against opponents.",
       "developer": "Epic Games",
       "url": "/images/cover/fortniteCover.jpg",
       "release": "2017"
@@ -85,6 +86,7 @@
       "genre": ["Sports", "Racing"],
       "genre-icon": "/genre-icons/racing.svg",
       "age": "11",
+      "description": "Rocket League is a fast-paced vehicular soccer game where players control rocket-powered cars to score goals against the opposing team in a futuristic sports arena.",
       "developer": "Psyonix",
       "url": "/images/cover/rocketleagueCover.jpg",
       "release": "2015"
@@ -118,6 +120,7 @@
       "title": "PlayerUnknown's Battlegrounds (PUBG)",
       "genre": ["Battle Royale"],
       "age": "17",
+      "description": "PUBG (PlayerUnknown's Battlegrounds) is a multiplayer online battle royale game where up to 100 players parachute onto an island, scavenge for weapons and equipment, and fight to be the last one standing while the playable area shrinks over time.",
       "developer": "PUBG Corporation",
       "url": "/images/cover/pubgCover.jpg",
       "release": "2017"
@@ -129,6 +132,7 @@
       "genre": ["FPS"],
       "genre-icon": "/genre-icons/fps.svg",
       "age": "17",
+      "description": "CSGO is a fast-paced multiplayer shooter where teams of terrorists and counter-terrorists compete to complete objectives and eliminate each other.",
       "developer": "Valve",
       "url": "/images/cover/csgoCover.jpeg",
       "release": "2012"
@@ -184,6 +188,7 @@
       "title": "Rust",
       "genre": ["Survival"],
       "age": "18",
+      "description": "Rust is a multiplayer survival game where players must gather resources, build shelters, and fend off threats from the environment and other players to survive in a harsh, open-world setting.",
       "developer": "Facepunch Studios",
       "url": "/images/cover/rustCover.jpeg",
       "release": "2013"
@@ -307,6 +312,7 @@
       "title": "Sea of Thieves",
       "genre": ["MMO"],
       "age": "13",
+      "description": "Sea of Thieves is a multiplayer pirate-themed adventure game where players sail the open seas, search for treasure, engage in naval battles, and explore mysterious islands in a shared world full of other players.",
       "developer": "Rare Ltd.",
       "url": "/images/cover/seaofthievesCover.jpg",
       "release": "2018"
@@ -431,6 +437,7 @@
       "genre": ["FPS"],
       "genre-icon": "/genre-icons/fps.svg",
       "age": "17",
+      "description": "Titanfall 2 is a fast-paced first-person shooter featuring a dynamic mix of on-foot combat and piloting massive mechs called Titans. Players engage in thrilling multiplayer battles and experience a compelling single-player campaign with innovative gameplay mechanics and a gripping story.",
       "developer": "Respawn Entertainment",
       "url": "/images/cover/titanfall2Cover.jpeg",
       "release": "2016"
@@ -441,6 +448,7 @@
       "title": "FIFA 21",
       "genre": ["Sports"],
       "age": "4",
+      "description": "FIFA 21 is a popular sports game featuring realistic football (soccer) gameplay, extensive player customization, and various modes including career, Ultimate Team, and multiplayer matches.",
       "developer": "EA Sports",
       "url": "/images/cover/fifa21Cover.jpeg",
       "release": "2020"
