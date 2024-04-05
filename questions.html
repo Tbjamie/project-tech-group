@@ -108,22 +108,55 @@
           <legend>See your answers</legend>
           <article>
             <h3>Question 1</h3>
+            <div class="select-dropdown">
+              <select class="taalSelect" name="taal"></select>
+            </div>
             <button>Edit</button>
           </article>
           <article>
             <h3>Question 2</h3>
+            <div class="select-dropdown">
+              <select id="platformSelect" class="platformSelect" name="platform">
+                <option value="PC">PC</option>
+                <option value="PS">PS</option>
+                <option value="Switch">Switch</option>
+                <option value="Xbox">Xbox</option>
+                <option value="VR">VR</option>
+              </select>
+            </div>
             <button>Edit</button>
           </article>
           <article>
             <h3>Question 3</h3>
+            <div class="select-dropdown">
+              <select class="genreselect" name="genre"></select>
+            </div>
             <button>Edit</button>
           </article>
           <article>
             <h3>Question 4</h3>
+            <div class="search-container">
+              <input id="searchbar" type="search" placeholder="search..." />
+              <svg
+                id="Layer_1"
+                style="enable-background: new 0 0 512 512"
+                version="1.1"
+                viewBox="0 0 512 512"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <path
+                  d="M344.5,298c15-23.6,23.8-51.6,23.8-81.7c0-84.1-68.1-152.3-152.1-152.3C132.1,64,64,132.2,64,216.3  c0,84.1,68.1,152.3,152.1,152.3c30.5,0,58.9-9,82.7-24.4l6.9-4.8L414.3,448l33.7-34.3L339.5,305.1L344.5,298z M301.4,131.2  c22.7,22.7,35.2,52.9,35.2,85c0,32.1-12.5,62.3-35.2,85c-22.7,22.7-52.9,35.2-85,35.2c-32.1,0-62.3-12.5-85-35.2  c-22.7-22.7-35.2-52.9-35.2-85c0-32.1,12.5-62.3,35.2-85c22.7-22.7,52.9-35.2,85-35.2C248.5,96,278.7,108.5,301.4,131.2z"
+                />
+              </svg>
+            </div>
+  
+            <article class="gamesArticle"></article>
             <button>Edit</button>
           </article>
           <div class="buttonContainer">
-            <button class="resultButton">save</button>
+            <button class="resultButton">Results</button>
           </div>
         </fieldset>
 
