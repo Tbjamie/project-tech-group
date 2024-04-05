@@ -255,8 +255,11 @@ app.get('/forum/:topic', async (req, res) => {
       let post = await forumCollection.findOne({
         title: req.params.topic
       })
-      console.log(post)
-      res.render('postDetail.ejs', { user: user, post: post }) // , topic: req.params.topic
+      let author = await usersCollection.findOne({
+        username: post.user
+      })
+      console.log(author)
+      res.render('postDetail.ejs', { user: user, post: post, author: author }) // , topic: req.params.topic
     } else {
       res.redirect('/login')
     }
