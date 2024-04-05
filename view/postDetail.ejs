@@ -11,7 +11,19 @@
     <header><%- include ("nav") -%></header>
     <main id="postDetail">
         <%- include ("loadingScreen") -%>
-
+        
+        <section></section>
+        <section>
+            <div>
+                <img src="<%= author.profilepic %>" alt="">
+                <p><%= post.user %></p>
+            </div>
+            <h1><%= post.title %></h1>
+            <p><%= post.description %></p>
+        </section>
+        <section>
+            <input type="button">
+        </section>
     </main>
 </body>
 </html>
