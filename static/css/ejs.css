@@ -864,6 +864,7 @@ textarea {
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
+  padding-bottom: 6rem;
 }
 
 #forum #postsSection article {
@@ -898,4 +899,22 @@ textarea {
 
 #forum #postsSection article div p:last-of-type span {
   color: var(--accentcolor);
+}
+
+/******************/
+/******************/
+/** POST DETAIL ***/
+/******************/
+/******************/
+
+#postDetail {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, var(--blue), var(--darkgrey));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
+  color: var(--white);
 }
