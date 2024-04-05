@@ -72,7 +72,7 @@
       "developer": "Ninja Kiwi",
       "url": "/images/cover/bloonsCover.jpg",
       "release": "2018",
-      "price": "€9.99"
+      "price": "9.99"
     },
     {
       "launcher": "/logos/epicgames.svg",
@@ -84,7 +84,7 @@
       "developer": "Mediatonic",
       "url": "/images/cover/fallguysCover.jpeg",
       "release": "2020",
-      "price": "€19.99"
+      "price": "19.99"
     },
     {
       "launcher": "/logos/epicgames.svg",
@@ -109,7 +109,7 @@
       "developer": "CD Projekt Red",
       "url": "/images/cover/witcher3Cover.jpg",
       "release": "2015",
-      "price": "€29.99"
+      "price": "29.99"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -122,7 +122,7 @@
       "developer": "Rockstar North",
       "url": "/images/cover/gtavCover.jpg",
       "release": "2013",
-      "price": "€29.99"
+      "price": "29.99"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -134,7 +134,7 @@
       "developer": "PUBG Corporation",
       "url": "/images/cover/pubgCover.jpg",
       "release": "2017",
-      "price": "€29.99"
+      "price": "29.99"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -159,7 +159,7 @@
       "developer": "Innersloth",
       "url": "/images/cover/susCover.jpg",
       "release": "2018",
-      "price": "€4.99"
+      "price": "4.99"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -184,7 +184,7 @@
       "developer": "Rockstar Games",
       "url": "/images/cover/rdr2Cover.jpeg",
       "release": "2018",
-      "price": "€39.99"
+      "price": "39.99"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -196,7 +196,7 @@
       "developer": "CD Projekt Red",
       "url": "/images/cover/cyberpunkCover.jpg",
       "release": "2020",
-      "price": "€49.99"
+      "price": "49.99"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -220,7 +220,7 @@
       "developer": "Capcom",
       "url": "/images/cover/monsterhunterCover.jpg",
       "release": "2018",
-      "price": "€39.99"
+      "price": "39.99"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -232,7 +232,7 @@
       "developer": "ConcernedApe",
       "url": "/images/cover/stardewvalleyCover.jpg",
       "release": "2016",
-      "price": "€14.99"
+      "price": "14.99"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -244,7 +244,7 @@
       "developer": "Ubisoft",
       "url": "/images/cover/r6Cover.jpeg",
       "release": "2015",
-      "price": "€19.99"
+      "price": "19.99"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -257,7 +257,7 @@
       "developer": "Re-Logic",
       "url": "/images/cover/terrariaCover.jpeg",
       "release": "2011",
-      "price": "€9.99"
+      "price": "9.99"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -294,7 +294,7 @@
       "developer": "Bethesda Game Studios",
       "url": "/images/cover/fallout4Cover.jpg",
       "release": "2015",
-      "price": "€29.99"
+      "price": "29.99"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -306,7 +306,7 @@
       "developer": "Bethesda Game Studios",
       "url": "/images/cover/skyrimCover.jpg",
       "release": "2011",
-      "price": "€39.99"
+      "price": "39.99"
     },
     {
       "launcher": "/logos/microsoft.svg",
@@ -318,7 +318,7 @@
       "developer": "Mojang Studios",
       "url": "/images/cover/minecraftCover.png",
       "release": "2011",
-      "price": "€19.99"
+      "price": "19.99"
     },
     {
       "launcher": "/logos/microsoft.svg",
@@ -331,7 +331,7 @@
       "developer": "Playground Games",
       "url": "/images/cover/forzaCover.jpg",
       "release": "2018",
-      "price": "€49.99"
+      "price": "49.99"
     },
     {
       "launcher": "/logos/microsoft.svg",
@@ -343,7 +343,7 @@
       "developer": "Rare Ltd.",
       "url": "/images/cover/seaofthievesCover.jpg",
       "release": "2018",
-      "price": "€39.99"
+      "price": "39.99"
     },
     {
       "launcher": "/logos/microsoft.svg",
@@ -356,7 +356,7 @@
       "developer": "343 Industries",
       "url": "/images/cover/haloCover.jpg",
       "release": "2014",
-      "price": "€39.99"
+      "price": "39.99"
     },
     {
       "launcher": "/logos/microsoft.svg",
@@ -368,7 +368,7 @@
       "developer": "The Coalition",
       "url": "/images/cover/gears5Cover.jpg",
       "release": "2019",
-      "price": "€49.99"
+      "price": "49.99"
     },
     {
       "launcher": "/logos/microsoft.svg",
@@ -380,7 +380,7 @@
       "developer": "Moon Studios",
       "url": "/images/cover/oriCover.jpg",
       "release": "2020",
-      "price": "€29.99"
+      "price": "29.99"
     },
     {
       "launcher": "/logos/microsoft.svg",
@@ -392,7 +392,7 @@
       "developer": "Forgotten Empires, Tantalus Media, Wicked Witch",
       "url": "/images/cover/ageofempires2Cover.jpg",
       "release": "1999",
-      "price": "€19.99"
+      "price": "19.99"
     },
     {
       "launcher": "/logos/microsoft.svg",
@@ -404,7 +404,7 @@
       "developer": "Undead Labs",
       "url": "/images/cover/stateofdecayCover.jpg",
       "release": "2018",
-      "price": "€29.99"
+      "price": "29.99"
     },
     {
       "launcher": "/logos/microsoft.svg",
@@ -416,7 +416,7 @@
       "developer": "Asobo Studio",
       "url": "/images/cover/flightsimCover.jpeg",
       "release": "2020",
-      "price": "€59.99"
+      "price": "59.99"
     },
     {
       "launcher": "/logos/microsoft.svg",
@@ -428,7 +428,7 @@
       "developer": "Studio MDHR",
       "url": "/images/cover/cupheadCover.jpeg",
       "release": "2017",
-      "price": "€19.99"	
+      "price": "19.99"
     },
     {
       "launcher": "/logos/origin.svg",
@@ -440,7 +440,7 @@
       "developer": "Maxis",
       "url": "/images/cover/sims4Cover.png",
       "release": "2014",
-      "price": "€39.99"
+      "price": "39.99"
     },
     {
       "launcher": "/logos/origin.svg",
@@ -453,7 +453,7 @@
       "developer": "EA DICE",
       "url": "/images/cover/battlefieldvCover.jpg",
       "release": "2018",
-      "price": "€39.99"
+      "price": "39.99"
     },
     {
       "launcher": "/logos/origin.svg",
@@ -466,7 +466,7 @@
       "developer": "Respawn Entertainment",
       "url": "/images/cover/jedifallenorderCover.jpg",
       "release": "2019",
-      "price": "€49.99"
+      "price": "49.99"
     },
     {
       "launcher": "/logos/origin.svg",
@@ -479,7 +479,7 @@
       "developer": "Respawn Entertainment",
       "url": "/images/cover/titanfall2Cover.jpeg",
       "release": "2016",
-      "price": "€24.99"
+      "price": "24.99"
     },
     {
       "launcher": "/logos/origin.svg",
@@ -491,7 +491,7 @@
       "developer": "EA Sports",
       "url": "/images/cover/fifa21Cover.jpeg",
       "release": "2020",
-      "price": "€59.99"
+      "price": "59.99"
     },
     {
       "launcher": "/logos/origin.svg",
@@ -504,7 +504,7 @@
       "developer": "Ghost Games",
       "url": "/images/cover/nfsheatCover.jpg",
       "release": "2019",
-      "price": "€39.99"
+      "price": "39.99"
     },
     {
       "launcher": "/logos/origin.svg",
@@ -516,7 +516,7 @@
       "developer": "PopCap Games",
       "url": "/images/cover/pvzCover.jpg",
       "release": "2019",
-      "price": "€29.99"
+      "price": "29.99"
     },
     {
       "launcher": "/logos/origin.svg",
@@ -528,7 +528,7 @@
       "developer": "BioWare",
       "url": "/images/cover/anthemCover.jpg",
       "release": "2019",
-      "price": "€29.99"
+      "price": "29.99"
     },
     {
       "launcher": "/logos/origin.svg",
@@ -540,7 +540,7 @@
       "developer": "BioWare",
       "url": "/images/cover/masseffectCover.jpg",
       "release": "2017",
-      "price": "€19.99"
+      "price": "19.99"
     },
     {
       "launcher": "/logos/origin.svg",
@@ -552,7 +552,7 @@
       "developer": "BioWare",
       "url": "/images/cover/dragonageCover.jpg",
       "release": "2014",
-      "price": "€29.99"
+      "price": "29.99"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -564,7 +564,7 @@
       "developer": "Supergiant Games",
       "url": "/images/cover/hadesCover.jpeg",
       "release": "2018",
-      "price": "€19.99"
+      "price": "19.99"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -576,7 +576,7 @@
       "developer": "Arrowhead Game Studios",
       "url": "/images/cover/helldiversCover.jpg",
       "release": "2024",
-      "price": "€29.99"
+      "price": "29.99"
     }
   ]
 }

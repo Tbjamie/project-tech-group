@@ -50,9 +50,9 @@ h1 span {
 h2 {
   color: var(--accentcolor);
   text-transform: uppercase;
+  font-size: 1.2rem;
   letter-spacing: 0.2rem;
   margin-bottom: 0.5rem;
-  margin-top: 1rem;
   align-self: flex-start;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -83,6 +83,14 @@ p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+a:link { 
+  text-decoration: none; 
+} 
+
+section {
+  margin-top: 2rem;
+}
+
 .swiper {
   width: 100%;
   max-width: 300px;
@@ -101,7 +109,7 @@ p {
   margin-bottom: 2rem;
 }
 
-.swiper a {
+.swiper button {
   text-decoration: none;
   padding: 0.8rem 1.2rem 0.8rem 1.2rem;
   color: var(--white);
@@ -150,16 +158,11 @@ p {
   box-shadow: #00000080 3px 3px 3px;
 }
 
-.newReleases li {
-  list-style: none;
-}
-
-#nr-image {
-  object-fit: cover;
-  margin-top: 1rem;
-  max-width: 9rem;
-  height: 12rem;
-  border-radius: 0.8rem;
+.newReleases h3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 9rem;
 }
 
 .slider {
@@ -171,6 +174,14 @@ p {
 
 .slider-wrapper {
   display: flex;
+}
+
+.slider-wrapper img {
+  object-fit: cover;
+  margin-top: 1rem;
+  max-width: 9rem;
+  height: 12rem;
+  border-radius: 0.8rem;
 }
 
 .slider::-webkit-scrollbar {
@@ -190,11 +201,7 @@ p {
   margin-right: 1rem;
 }
 
-.popular li {
-  list-style: none;
-}
-
-#popular-image {
+.popular-slide img {
   object-fit: cover;
   margin-top: 1rem;
   max-width: 16rem;
@@ -202,21 +209,48 @@ p {
   border-radius: 0.8rem;
 }
 
-.featuredDiscounts article {
-  display: flex;
+.popular li {
+  list-style: none;
 }
 
 .featuredDiscounts p {
   margin-right: 0.5rem;
 }
 
-.percentage {
-  background-color: var(--lightblue);
-  padding: 0.1rem 0.3rem 0.1rem 0.3rem;
-  border-radius: 0.5rem;
+.discount-wrapper {
+  display: flex;
+  overflow-x: scroll hidden;
 }
 
-.discount {
+.discount-slide {
+  margin-right: 1rem;
+}
+
+.discount-slide img {
+  object-fit: cover;
+  margin-top: 1rem;
+  max-width: 16rem;
+  height: 12rem;
+  border-radius: 0.8rem;
+}
+
+#price-discount {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+#oPrice {
   opacity: 50%;
   text-decoration: line-through;
 }
+
+#nPrice span {
+  background-color: var(--lightblue);
+  padding: .2rem .5rem;
+  border-radius: 3px;
+}
+
+
+
+

@@ -1182,6 +1182,7 @@ textarea {
 }
 #makePost #dropDown {
   height: 2rem;
+  max-width: 60vw;
 }
 #makePost label {
   margin-bottom: 0.5rem;
