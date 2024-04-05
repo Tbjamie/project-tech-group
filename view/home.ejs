@@ -30,10 +30,12 @@
     <h1>Welcome, <span>
         <%= user.username %>
       </span></h1>
-    <section class="swiper mySwiper">
-      <ul class="swiper-wrapper">
-    </section>
 
+    <div class="backgroundBlock">
+      <section class="swiper mySwiper">
+        <ul class="swiper-wrapper">
+      </section>
+    </div>  
     <section class="newReleases">
       <h2>New releases</h2>
       <div class="slider">
@@ -45,25 +47,16 @@
     <section class="popular">
       <h2>Popular</h2>
       <div class="slider">
-        <ul class="popular-wrapper">
-
-        </ul>
+        <ul class="popular-wrapper"></ul>
       </div>
     </section>
 
     <section class="featuredDiscounts">
-      <h2>Featured Discounts</h2>
-      <section class="fd-wrapper">
-        <article class="fd-content"></article>
-        <h3>Battle Royal</h3>
-        <h4>Fortnite</h4>
-        <article>
-          <p class="percentage">30%</p>
-          <p class="discount">€19,99</p>
-          <p>€13,99</p>
-        </article>
+        <h2>Featured Discounts</h2>
+        <div class="slider">
+          <ul class="discount-wrapper"></ul>
+        </div>      
       </section>
-    </section>
   </main>
   <footer></footer>
 </body>
