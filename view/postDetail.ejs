@@ -1,30 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%= post.title %> | GameSphere></title>
-    <link rel="stylesheet" href="/css/ejs.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/css/ejs.css" />
+    <script src="/js/postDetail.js" defer></script>
+  </head>
+  <body>
     <header><%- include ("nav") -%></header>
     <main id="postDetail">
-        <%- include ("loadingScreen") -%>
-        
-        <section></section>
-        <section>
-            <div>
-                <img src="<%= author.profilepic %>" alt="">
-                <p><%= post.user %></p>
-            </div>
-            <h1><%= post.title %></h1>
-            <p><%= post.description %></p>
-            <p><%= post.comments.length %></p>
-        </section>
-        <section>
-            <input type="button" value="Add a Comment">
-        </section>
+      <%- include ("loadingScreen") -%>
+
+      <section></section>
+      <section>
+        <div>
+          <img src="<%= author.profilepic %>" alt="" />
+          <p><%= post.user %></p>
+        </div>
+        <h1><%= post.title %></h1>
+        <p><%= post.description %></p>
+        <p><%= post.comments.length %></p>
+      </section>
+      <section>
+        <input type="button" value="Add a Comment" />
+        <% post.comments.forEach(comment => { %>
+        <article>
+          <div>
+            <img src="<%= author.profilepic %>" alt="" />
+            <p><%= comment.author %></p>
+          </div>
+          <p><%= comment.comment %></p>
+        </article>
+        <% }) %>
+      </section>
     </main>
-</body>
+  </body>
 </html>
