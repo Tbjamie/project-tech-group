@@ -83,12 +83,16 @@ p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-a:link { 
-  text-decoration: none; 
-} 
+a:link {
+  text-decoration: none;
+}
 
 section {
-  margin-top: 2rem;
+  margin-top: 0.5rem;
+}
+
+.backgroundBlock {
+  height: 60vh;
 }
 
 .swiper {
@@ -104,10 +108,10 @@ section {
   border-radius: 1.5rem;
   margin-bottom: 4rem;
 }
-
+/* 
 .swiper p {
   margin-bottom: 2rem;
-}
+} */
 
 .swiper button {
   text-decoration: none;
@@ -116,8 +120,11 @@ section {
   background-color: var(--buttoncolor);
   border: none;
   border-radius: 0.5rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.1rem;
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
 }
 
 #game-image {
@@ -152,10 +159,42 @@ section {
   z-index: 1;
   color: #ffffff;
   text-shadow: #2d2d2d 3px 3px 3px;
+  margin-bottom: 0.5rem;
+}
+
+#game-image p:nth-of-type(2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+#game-image p:last-of-type {
+  bottom: 1rem;
+  margin-bottom: 0;
+  padding: 0.65rem 1.2rem;
+  border-radius: 8px;
+  background: var(--accentcolor);
+  text-shadow: none;
+  color: var(--darkgrey);
+  font-weight: 600;
+  width: 5rem;
+  text-align: center;
 }
 
 #game-image a {
-  box-shadow: #00000080 3px 3px 3px;
+  /* box-shadow: #00000080 3px 3px 3px; */
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 2rem;
 }
 
 .newReleases h3 {
@@ -247,10 +286,6 @@ section {
 
 #nPrice span {
   background-color: var(--lightblue);
-  padding: .2rem .5rem;
+  padding: 0.2rem 0.5rem;
   border-radius: 3px;
 }
-
-
-
-

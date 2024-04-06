@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
         li.innerHTML = `
                 <a href="${hrefValue}">
                 <h4>${game.title}</h4>
+                <p>${game.genre}</p>
                 <p>${game.description}</p>
                 <p>${game.price}</p>
                 <button>Get the game</button>

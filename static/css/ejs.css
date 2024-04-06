@@ -1012,6 +1012,7 @@ textarea {
   color: white;
   cursor: pointer;
   transition: 250ms;
+  margin-bottom: 1rem;
 }
 
 #postDetail section:last-of-type input:hover,
@@ -1025,7 +1026,7 @@ textarea {
   background-color: var(--darkgrey);
   padding: 1rem;
   border-radius: 10px;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 #postDetail section:last-of-type article > p {
