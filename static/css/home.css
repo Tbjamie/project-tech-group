@@ -125,6 +125,7 @@ section {
   position: absolute;
   bottom: 1rem;
   right: 2rem;
+  cursor: pointer;
 }
 
 #game-image {

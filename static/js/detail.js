@@ -22,9 +22,10 @@ fetch("/json/games.json")
       document.getElementById("image").src = game.url;
       document.getElementById("devIcon").src = game.launcher;
       document.getElementById("age").innerText = game.age;
+      let developerSpan = document.getElementById("developerSpan").innerHTML = game.developer
       document.getElementById(
         "developer"
-      ).innerText = `Developer: ${game.developer}`;
+      ).innerText = `Developer: ${developerSpan}`;
     } else {
       // Handle case where game ID is not found
       document.body.innerHTML = "<h1>Game not found</h1>";

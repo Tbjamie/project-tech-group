@@ -154,8 +154,15 @@ app.post('/signup', async (req, res) => {
       friends: [],
       recentlypw: [],
       profilepic: "/images/blankProfile.png",
-      newUser: true
+      newUser: true,
+      creationDate: new Date().toDateString(),
+      status: ""
     })
+    const user = await usersCollection.findOne({
+      username: req.body.username
+    })
+    req.session.visited = true
+    req.session.user = user
     res.redirect('/')
   }
 })
@@ -163,8 +170,27 @@ app.post('/signup', async (req, res) => {
 app.get('/account', (req, res) => {
   if (req.session.visited) {
     let user = req.session.user
-    console
     res.render('account.ejs', { user: user })
+  } else {
+    res.redirect('/login')
+  }
+})
+
+app.post('/account', async (req, res) => {
+  if (req.session.visited) {
+    let user = req.session.user
+
+    if(req.body.statusField == "") {
+      console.log("JE HEBT NIET INGEVULD")
+    } else {
+        const updateStatus = await usersCollection.updateOne(
+          {_id: new ObjectId(user._id)},
+          { $set: { status: req.body.statusField } }
+        )
+        console.log('status updated')
+        res.render('account.ejs', { user: user })
+    }
+  
   } else {
     res.redirect('/login')
   }
@@ -193,10 +219,13 @@ app.post('/account/edit', async (req, res) => {
   
     if (user.username == req.body.username) {
       console.log("DEZELFDE NAAM")
+      res.render('editaccount.ejs', { user: user })
     } else if (existingUser) {
       console.log("USERNAME ALREADY EXISTS")
+      res.render('editaccount.ejs', { user: user })
     } else if (req.body.username == "") {
       console.log("JE HEBT NIETS INGEVULD")
+      res.render('editaccount.ejs', { user: user })
     } else {
       console.log(`USERNAME CHANGED TO: ${req.body.username}`)
       const changeUsername = await usersCollection.updateOne(
@@ -208,10 +237,13 @@ app.post('/account/edit', async (req, res) => {
   
     if (user.email == req.body.email) {
       console.log("DEZELFDE EMAIL")
+      res.render('editaccount.ejs', { user: user })
     } else if (existingEmail) {
       console.log("EMAIL ALREADY EXISTS")
+      res.render('editaccount.ejs', { user: user })
     } else if (req.body.email == "") {
       console.log("JE HEBT NIETS INGEVULD")
+      res.render('editaccount.ejs', { user: user })
     } else {
       console.log(`EMAIL CHANGED TO: ${req.body.email}`)
       const changeEmail = await usersCollection.updateOne(
@@ -223,8 +255,10 @@ app.post('/account/edit', async (req, res) => {
   
     if (user.password === req.body.password) {
       console.log("PASSWORD CANT BE THE SAME")
+      res.render('editaccount.ejs', { user: user })
     } else if (req.body.password == "") {
       console.log("JE HEBT NIETS INGEVULD")
+      res.render('editaccount.ejs', { user: user })
     } else {
       console.log(`PASSWORD CHANGED TO: ${req.body.password}`)
       const changePassword = await usersCollection.updateOne(
