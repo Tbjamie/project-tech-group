@@ -11,7 +11,7 @@
       "developer": "Riot Games",
       "url": "/images/cover/valorantCover.jpeg",
       "release": "2020",
-      "price": "Free"
+      "price": "0"
     },
     {
       "launcher": "/logos/riotgames.svg",
@@ -23,7 +23,7 @@
       "developer": "Riot Games",
       "url": "/images/cover/lolCover.jpg",
       "release": "2009",
-      "price": "Free"
+      "price": "0"
     },
     {
       "launcher": "/logos/riotgames.svg",
@@ -35,7 +35,7 @@
       "developer": "Riot Games",
       "url": "/images/cover/lorCover.jpg",
       "release": "2020",
-      "price": "Free"
+      "price": "0"
     },
     {
       "launcher": "/logos/riotgames.svg",
@@ -47,7 +47,7 @@
       "developer": "Riot Games",
       "url": "/images/cover/tftCover.jpg",
       "release": "2019",
-      "price": "Free"
+      "price": "0"
     },
     {
       "launcher": "/logos/epicgames.svg",
@@ -59,7 +59,7 @@
       "developer": "Epic Games",
       "url": "/images/cover/fortniteCover.jpg",
       "release": "2017",
-      "price": "Free"
+      "price": "0"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -97,7 +97,7 @@
       "developer": "Psyonix",
       "url": "/images/cover/rocketleagueCover.jpg",
       "release": "2015",
-      "price": "Free"
+      "price": "0"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -147,7 +147,7 @@
       "developer": "Valve",
       "url": "/images/cover/csgoCover.jpeg",
       "release": "2012",
-      "price": "Free"
+      "price": "0"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -171,7 +171,7 @@
       "developer": "Valve",
       "url": "/images/cover/dota2Cover.jpg",
       "release": "2013",
-      "price": "Free"
+      "price": "0"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -208,7 +208,7 @@
       "developer": "Facepunch Studios",
       "url": "/images/cover/rustCover.jpeg",
       "release": "2013",
-      "price": "Free"
+      "price": "0"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -270,7 +270,7 @@
       "developer": "Valve",
       "url": "/images/cover/tf2Coverjpg.jpg",
       "release": "2007",
-      "price": "Free"
+      "price": "0"
     },
     {
       "launcher": "/logos/steam.svg",
@@ -282,7 +282,7 @@
       "developer": "Respawn Entertainment",
       "url": "/images/cover/apexCover.jpg",
       "release": "2019",
-      "price": "Free"
+      "price": "0"
     },
     {
       "launcher": "/logos/steam.svg",
