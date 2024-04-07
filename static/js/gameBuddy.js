@@ -108,7 +108,7 @@ function updatePagination() {
   showFieldset(currentFieldsetIndex);
 });
 
-fetch("/static/json/taal.json")
+fetch("/json/taal.json")
   .then((response) => {
     if (!response.ok) {
       throw new Error("Failed to fetch language data.");
@@ -128,7 +128,7 @@ fetch("/static/json/taal.json")
     console.error("Error fetching language data:", error);
   });
 
-  fetch("/static/json/taal.json")
+  fetch("/json/taal.json")
   .then((response) => {
     if (!response.ok) {
       throw new Error("Failed to fetch language data.");
@@ -148,7 +148,7 @@ fetch("/static/json/taal.json")
     console.error("Error fetching language data:", error);
   });
 
-fetch("/static/json/games.json")
+fetch("/json/games.json")
   .then((response) => {
     if (!response.ok) {
       throw new Error("Failed to fetch genre data.");
@@ -168,7 +168,7 @@ fetch("/static/json/games.json")
     console.error("Error fetching genre data:", error);
   });
 
-  fetch("/static/json/games.json")
+  fetch("/json/games.json")
   .then((response) => {
     if (!response.ok) {
       throw new Error("Failed to fetch genre data.");
@@ -188,7 +188,7 @@ fetch("/static/json/games.json")
     console.error("Error fetching genre data:", error);
   });
 
-fetch("/static/json/games.json")
+fetch("/json/games.json")
   .then((response) => {
     if (!response.ok) {
       console.log("ERROR");

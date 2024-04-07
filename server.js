@@ -296,6 +296,15 @@ app.get('/discover', (req, res) => {
   }
 })
 
+app.get('/gamebuddy', (req, res) => {
+  if (req.session.visited) {
+    let user = req.session.user
+    res.render('gamebuddy.ejs', { user: user })
+  } else {
+    res.redirect('/login')
+  }
+})
+
 app.get('/games/:game', async (req, res) => {
   if (req.session.visited) {
     games = await gamesCollection.findOne({

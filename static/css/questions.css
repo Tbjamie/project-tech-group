@@ -28,13 +28,13 @@ main {
 }
 
 h1 {
-  color: var(--accentcolor);
   text-transform: uppercase;
+  margin-bottom: 2rem;
+  align-self: flex-start;
+  color: var(--accentcolor);
   letter-spacing: 0.2rem;
-  margin-bottom: 1rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin-top: 2rem;
-  text-align: center;
+  font-size: 2rem;
+  text-shadow: var(--darkgrey) 2px 5px;
 }
 
 h2 {

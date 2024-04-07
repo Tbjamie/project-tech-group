@@ -1099,6 +1099,7 @@ textarea {
 #postDetail section:nth-of-type(2) div:first-of-type p,
 #postDetail section:last-of-type div:first-of-type p {
   color: var(--accentcolor);
+  font-weight: 600;
 }
 
 #postDetail section:nth-of-type(2) div:last-of-type {
