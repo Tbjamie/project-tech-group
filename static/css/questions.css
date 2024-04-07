@@ -25,6 +25,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2rem;
+  padding-bottom: 10rem;
 }
 
 h1 {
