@@ -334,6 +334,28 @@ app.get('/forum/makePost', async (req, res) => {
   }
 })
 
+app.post('/forum/makePost', async (req, res) => {
+  if (req.session.visited) {
+    let user = req.session.user
+    let posts = await forumCollection.find().toArray()
+    let game = await gamesCollection.findOne({
+      title: posts.game
+    })
+    let newPost = await forumCollection.insertOne({
+      title: req.body.title,
+      description: req.body.description,
+      game: req.body.game,
+      user: user.username,
+      image: "",
+      comments: []
+    })
+    console.log(newPost)
+    res.render('forum.ejs', { user: user, posts: posts, game: game })
+  } else {
+    res.redirect('/login')
+  }
+})
+
 app.get('/forum/:topic', async (req, res) => {
   if (req.session.visited) {
       let user = req.session.user

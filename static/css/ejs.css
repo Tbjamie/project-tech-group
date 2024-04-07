@@ -1179,18 +1179,19 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem;
   width: 100vw;
 
   font-size: 1.2rem;
 }
 #makePost section:first-of-type h1 {
-  color: var(--accentcolor);
   text-transform: uppercase;
-  letter-spacing: 0.2rem;
   margin-bottom: 2rem;
-  text-align: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  align-self: flex-start;
+  color: var(--accentcolor);
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  text-shadow: var(--darkgrey) 2px 5px;
 }
 
 #makePost section:first-of-type .flexdiv {
@@ -1262,7 +1263,7 @@ textarea {
 
 #makePost input,
 textarea {
-  border-radius: 8px;
+  border-radius: 5px;
   background-color: var(--inactive);
   border: none;
   height: 2rem;
@@ -1331,6 +1332,7 @@ textarea {
 #makePost #dropDown {
   height: 2rem;
   max-width: 60vw;
+  border-radius: 5px;
 }
 #makePost label {
   margin-bottom: 0.5rem;
