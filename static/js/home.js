@@ -134,7 +134,7 @@ randomGamesForSwiper.forEach((game) => {
       }
 
       // Filter out free games
-      const pricedGames = games.filter((game) => game.price !== "Free");
+      const pricedGames = games.filter((game) => game.price !== 0);
 
       const randomGamesForDiscount = shuffle([...pricedGames]);
       const numberOfGamesToDisplayForDiscount = Math.min(
