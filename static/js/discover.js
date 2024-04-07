@@ -120,9 +120,6 @@ fetch("/json/games.json")
         });
       }
 
-      // Example usage:
-      // Assuming you have an input field with id="searchInput" for users to input their search query
-      // Add event listener to trigger search on input
       let searchInput = document.getElementById("searchbar");
 
       // Add event listener to trigger search on input

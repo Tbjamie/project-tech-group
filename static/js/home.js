@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((data) => {
       const games = data.games;
 
-      // Function to generate a random integer between min (inclusive) and max (inclusive)
       function getRandomInt(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
       }
@@ -32,16 +31,16 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
 
-randomGamesForSwiper.forEach((game) => {
-  const li = document.createElement("li");
-  let gameName = game.title;
-  let hrefValue = `games/${gameName}`;
-  let priceDisplay = game.price !== 0 ? `€${game.price}` : "Free";
+      randomGamesForSwiper.forEach((game) => {
+        const li = document.createElement("li");
+        let gameName = game.title;
+        let hrefValue = `games/${gameName}`;
+        let priceDisplay = game.price !== 0 ? `€${game.price}` : "Free";
 
-  li.classList.add("swiper-slide");
-  li.style.backgroundImage = `url(${game.url})`; // Set background image
-  li.setAttribute("id", "game-image");
-  li.innerHTML = `
+        li.classList.add("swiper-slide");
+        li.style.backgroundImage = `url(${game.url})`; // Set background image
+        li.setAttribute("id", "game-image");
+        li.innerHTML = `
         <a href="${hrefValue}">
         <h4>${game.title}</h4>
         <p>${game.genre}</p>
@@ -51,13 +50,8 @@ randomGamesForSwiper.forEach((game) => {
         </a>
     `;
 
-  document.querySelector(".swiper-wrapper").appendChild(li);
-});
-
-
-
-
-
+        document.querySelector(".swiper-wrapper").appendChild(li);
+      });
 
       // Initialize Swiper after adding the slides dynamically
       let swiper = new Swiper(".mySwiper", {
