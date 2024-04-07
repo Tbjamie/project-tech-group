@@ -273,10 +273,15 @@ app.post('/account/edit', async (req, res) => {
 }
 )
 
-app.get('/account/friends', (req, res) => {
+app.get('/account/friends', async (req, res) => {
   if (req.session.visited) {
     let user = req.session.user
-    res.render('friends.ejs', { user: user })
+    let friends = user.friends
+    let findFriends = usersCollection.find({
+      username: friends.username
+    })
+    console.log(findFriends)
+    res.render('friends.ejs', { user: user, friends: friends })
   } else {
     res.redirect('/login')
   }

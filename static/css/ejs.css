@@ -586,6 +586,7 @@
 
 #account main #addStatus fieldset:first-of-type {
   position: relative;
+  margin-bottom: 4rem;
 }
 
 #account main #addStatus fieldset label {
@@ -770,6 +771,30 @@
 }
 
 /* TODO: MAAK HIER EEN COMPONENT VAN */
+
+
+/****************/
+/****************/
+/**** FRIENDS ***/
+/****************/
+/****************/
+
+#friends {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, var(--blue), var(--darkgrey));
+  font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
+  color: var(--white);
+  padding: 2rem;
+}
+
+#friends h1 {
+  color: var(--accentcolor);
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  text-shadow: var(--darkgrey) 2px 5px;
+}
+
 /****************/
 /****************/
 /**** FORUM *****/
@@ -787,18 +812,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem;
   width: 100vw;
-
   font-size: 1.2rem;
 }
 #forum section:first-of-type h1 {
-  color: var(--accentcolor);
   text-transform: uppercase;
-  letter-spacing: 0.2rem;
   margin-bottom: 2rem;
   align-self: flex-start;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--accentcolor);
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  text-shadow: var(--darkgrey) 2px 5px;
 }
 form {
   position: relative;
@@ -931,7 +956,7 @@ textarea {
 }
 
 #forum #svgPlus {
-  top: 8.5em;
+  top: 11.5rem;
   left: 5.2em;
   position: absolute;
 }
@@ -1292,7 +1317,7 @@ textarea {
   border: none;
   display: flex;
   flex-direction: column;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 #makePost article {
   width: 80vw;

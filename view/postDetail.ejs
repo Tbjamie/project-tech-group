@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= post.title %> | GameSphere></title>
-    <link rel="stylesheet" href="/css/ejs.css" />
+    <link rel="stylesheet" href="/css/ejs.css">
     <script src="/js/postDetail.js" defer></script>
   </head>
   <body>
@@ -16,7 +16,7 @@
       <section></section>
       <section>
         <div>
-          <img src="<%= author.profilepic %>" alt="" />
+          <img src="<%= author.profilepic %>" alt="Profile picture">
           <p><%= post.user %></p>
         </div>
         <h1><%= post.title %></h1>
@@ -24,11 +24,11 @@
         <p><%= post.comments.length %></p>
       </section>
       <section>
-        <input type="button" value="Add a Comment" />
+        <input type="button" value="Add a Comment">
         <% post.comments.forEach(comment => { %>
         <article>
           <div>
-            <img src="<%= author.profilepic %>" alt="" />
+            <img src="<%= author.profilepic %>" alt="Profile picture">
             <p><%= comment.author %></p>
           </div>
           <p><%= comment.comment %></p>
