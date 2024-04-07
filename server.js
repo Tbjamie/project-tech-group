@@ -350,7 +350,7 @@ app.post('/forum/makePost', async (req, res) => {
       comments: []
     })
     console.log(newPost)
-    res.render('forum.ejs', { user: user, posts: posts, game: game })
+    res.redirect('/forum')
   } else {
     res.redirect('/login')
   }

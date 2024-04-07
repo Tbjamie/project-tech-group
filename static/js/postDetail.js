@@ -1,4 +1,4 @@
-const commentCount = document.querySelector('#postDetail section:nth-of-type(2) > p:last-of-type')
+const commentCount = document.querySelector('#postDetail section:nth-of-type(2) > div:last-of-type p:first-of-type')
 
 const commentCountTextChange = () => {
         if(commentCount.innerText == 1) {

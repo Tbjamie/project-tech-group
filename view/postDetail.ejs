@@ -21,7 +21,10 @@
         </div>
         <h1><%= post.title %></h1>
         <p><%= post.description %></p>
-        <p><%= post.comments.length %></p>
+        <div>
+          <p><%= post.comments.length %></p>
+          <p><%= post.game %></p>
+        </div>
       </section>
       <section>
         <input type="button" value="Add a Comment">
