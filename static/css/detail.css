@@ -1,42 +1,99 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
+:root {
+  --blue: #132d46;
+  --darkgrey: #191e29;
+  --accentcolor: #03dda0;
+  --white: #ffffff;
+  --buttoncolor: #ff006e;
+  --secondarycolor: #696e79;
+  --lightblue: #5cadff;
+}
+
 body {
   min-height: 100vh;
   overflow-x: hidden;
 }
+
+h1 {
+  color: var(--accentcolor);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  color: var(--accentcolor);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  align-self: flex-start;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3 {
+  color: var(--white);
+  font-size: 1rem;
+}
+
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 90vh;
   overflow-x: hidden;
+  padding-bottom: 10rem;
+}
+
+#title {
+  padding: 0 0.7rem;
+}
+
+#developer {
+  padding: 0 0.7rem;
 }
 
 main section:first-of-type img {
   width: 100vw;
 }
 
-main section:first-of-type h2 {
-  margin-left: 1rem;
-}
-main section:first-of-type h3 {
+#developer {
   color: var(--white);
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
   text-align: left;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.1rem;
   margin-left: 1rem;
   margin-top: 0.2rem;
   font-size: 1rem;
+  font-weight: 700;
+  opacity: 100%;
 }
+
+.genre {
+  margin-left: 1.6rem;
+  margin-top: 1rem;
+  opacity: 50%;
+  font-weight: 400;
+}
+
+#genre {
+  margin-left: 1.6rem;
+  color: var(--white);
+  font-weight: 100;
+}
+
 main section:first-of-type p {
   margin-left: 1rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: var(--white);
   font-size: 0.8rem;
 }
+
 hr {
   text-align: center;
   margin-top: 1rem;
@@ -47,84 +104,40 @@ hr {
   margin-right: 2%;
   border-radius: 1px;
 }
-main section:nth-of-type(2) {
-  margin-top: 1rem;
-  width: 100vw;
-}
-main section:nth-of-type(2) h2 {
-  width: 100vw;
-  margin-left: 1rem;
-}
+
 main section:nth-of-type(2) p {
-  margin: 1.6rem;
+  margin: 1rem;
   color: var(--white);
 }
-main section:nth-of-type(3) {
-  width: 100vw;
-}
-main section:nth-of-type(3) h2 {
-  margin: 1rem;
-}
-main section:nth-of-type(3) article {
-  width: 6rem;
-  height: 6rem;
-  margin: 1rem;
-  background-color: aliceblue;
-  border-radius: 14px;
-  align-items: center;
-  text-align: center;
-}
-main section:nth-of-type(3) .flexDiv {
-  display: flex;
-  justify-content: center;
-  justify-content: space-around;
-}
-main section:nth-of-type(3) img {
-  width: 60%;
-  margin: auto;
-}
-main section:nth-of-type(3) article {
-  display: flex;
-  flex-direction: column;
-}
-main section:nth-of-type(3) article h4 {
-  text-align: center;
-  align-self: center;
 
-  margin: auto;
-  font-size: 3rem;
+.info {
+  display: flex;
+}
+
+.info h3 {
+  font-weight: 500;
 }
 
 .container {
-  display: flex; /* Use flexbox to align items horizontally */
-  justify-content: center;
-  justify-content: space-around;
-
-  margin-left: 0.4rem;
-}
-h3 {
   display: flex;
   flex-direction: column;
+  margin-right: 2.5rem;
+}
+
+#devIcon {
+  width: 4rem;
+}
+
+#age {
   color: var(--white);
-  font-size: 1rem;
+  background-color: var(--blue);
   text-align: center;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-size: 2rem;
+  text-shadow: var();
 }
 
-h3 span {
-  display: block;
-}
 
-h1 {
-  color: var(--accentcolor);
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  align-self: flex-start;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-h2 {
-  color: var(--accentcolor);
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  align-self: flex-start;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
+
+

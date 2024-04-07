@@ -22,6 +22,8 @@ fetch("/json/games.json")
       document.getElementById("image").src = game.url;
       document.getElementById("devIcon").src = game.launcher;
       document.getElementById("age").innerText = game.age;
+      document.getElementById("genre").innerText = game.genre;
+
       let developerSpan = document.getElementById("developerSpan").innerHTML = game.developer
       document.getElementById(
         "developer"
