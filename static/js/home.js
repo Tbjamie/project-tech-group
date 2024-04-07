@@ -46,17 +46,16 @@ randomGamesForSwiper.forEach((game) => {
         <h4>${game.title}</h4>
         <p>${game.genre}</p>
         <p>${game.description}</p>
-        <p>${priceDisplay}</p>
+        <p>${game.price !== 0 ? `€${game.price}` : "Free"}</p>
         <button>Get the game</button>
         </a>
     `;
 
-  if (game.price === 0) {
-    li.querySelector("p").innerText = "Free";
-  }
-
   document.querySelector(".swiper-wrapper").appendChild(li);
 });
+
+
+
 
 
 
@@ -86,13 +85,14 @@ randomGamesForSwiper.forEach((game) => {
 
         let gameName = game.title;
         let hrefValue = `games/${gameName}`;
+        let priceDisplay = game.price !== 0 ? `€${game.price}` : "Free";
 
         li.innerHTML = `
                 <a href="${hrefValue}">
                 <img src="${game.url}" alt="${game.title}" />
                 <h3>${game.genre}</h3>
                 <h4>${game.title}</h4>
-                <p>€${game.price}</p>
+                <p>${game.price !== 0 ? `€${game.price}` : "Free"}</p>
                 </a>
             `;
         sliderWrapper.append(li);
