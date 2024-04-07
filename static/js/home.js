@@ -32,25 +32,33 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
 
-      randomGamesForSwiper.forEach((game) => {
-        const li = document.createElement("li");
-        let gameName = game.title;
-        let hrefValue = `games/${gameName}`;
+randomGamesForSwiper.forEach((game) => {
+  const li = document.createElement("li");
+  let gameName = game.title;
+  let hrefValue = `games/${gameName}`;
+  let priceDisplay = game.price !== 0 ? `€${game.price}` : "Free";
 
-        li.classList.add("swiper-slide");
-        li.style.backgroundImage = `url(${game.url})`; // Set background image
-        li.setAttribute("id", "game-image");
-        li.innerHTML = `
-                <a href="${hrefValue}">
-                <h4>${game.title}</h4>
-                <p>${game.genre}</p>
-                <p>${game.description}</p>
-                <p>${game.price}</p>
-                <button>Get the game</button>
-                </a>
-            `;
-        document.querySelector(".swiper-wrapper").appendChild(li);
-      });
+  li.classList.add("swiper-slide");
+  li.style.backgroundImage = `url(${game.url})`; // Set background image
+  li.setAttribute("id", "game-image");
+  li.innerHTML = `
+        <a href="${hrefValue}">
+        <h4>${game.title}</h4>
+        <p>${game.genre}</p>
+        <p>${game.description}</p>
+        <p>${priceDisplay}</p>
+        <button>Get the game</button>
+        </a>
+    `;
+
+  if (game.price === 0) {
+    li.querySelector("p").innerText = "Free";
+  }
+
+  document.querySelector(".swiper-wrapper").appendChild(li);
+});
+
+
 
       // Initialize Swiper after adding the slides dynamically
       let swiper = new Swiper(".mySwiper", {
@@ -84,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <img src="${game.url}" alt="${game.title}" />
                 <h3>${game.genre}</h3>
                 <h4>${game.title}</h4>
-                <p>${game.price}</p>
+                <p>€${game.price}</p>
                 </a>
             `;
         sliderWrapper.append(li);
