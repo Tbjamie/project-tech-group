@@ -88,3 +88,8 @@ Features that we have in mind but are not yet available are:
 
 ## How to run the project
 
+1. Download/Clone this repository
+2. NPM install in the terminal
+3. Node/Nodemon server.js
+4. Server should be running
+> NOTE: This project is using a .env file. To access the data you'll need to fill in the .env first!
