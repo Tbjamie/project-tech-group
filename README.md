@@ -31,7 +31,32 @@ The current features that this website has to offer are:
    * New releases are easy to find under the "New Releases" heading.
    * Discounted games are easy to find under the "Featured Discounts" heading.
   
-2. Login/Logout/Sign up
+2. Discover
+   * Search for any game with the searchbar at the top of this page.
+   * Explore all the games that we offer.
+   * Use filters to find games to your liking (e.g. FPS games).
+  
+3. Gamebuddy
+   * Fill in a short quiz to find users that match your energy.
+   * The questions are about: Preferred lagnuage, Platform (e.g. PC), Favorite Genre & Favorite Game.
+  
+4. Forum
+   * Scroll through posts or search for a specific post using the searchbar.
+   * Create a post yourself! Just add a title, description & game and you're set!
+   * You can see the title, amount of comments and the user that created the post.
+  
+5. Forum detailpage
+   * You can read the full post, title and the user that posted it.
+   * You can see what game the post is about.
+   * See all comments and the user that posted the comment
+  
+6. Account page
+   * See your information (username, email, account creation date & status)
+   * Add/Update your status
+   * Edit your profile (username, email, password)
+   * Logout
+  
+7. Login/Logout/Sign up
    * It's possible to make an account with a unique username and email.
    * Once you have an account you can login to your account and stay logged in for at least 1 hour.
    * If you want to log out, you can go to the account page to simply log out and end your session.
