@@ -1,20 +1,14 @@
-# Project Tech
+# GameSphere (Project Tech)
+
+## About
+
+GameSphere. THE website to find all the games that you desire! You can explore games right from the homepage. Already know what you're looking for? You can search any game right from the discover page! This website has all you need
+
+## How to run the project
 
 1. **Gamen Concept**:
    - Doelgroep: 18 tot 35 jaar.
    - Gebruikers kunnen een platform kiezen en een game selecteren op basis van genre en tijdstip.
-
-2. **Series/Films Concept**:
-   - Gebruikers kiezen een streamingplatform en selecteren hun voorkeuren voor genre en kijktijdstip.
-   - Aanbevelingen worden gedaan op basis van deze selecties.
-
-3. **Studeren Concept**:
-   - Gebruikers kiezen een onderwerp en leerstijl, zoals videolessen of geschreven materiaal.
-   - Studieaanbevelingen worden gegeven op basis van gekozen onderwerp en tijdstip.
-
-4. **Restaurants Concept**:
-   - Gebruikers kiezen een keukentype, locatie en gelegenheid voor het dineren.
-   - Aanbevelingen voor restaurants worden gepresenteerd op basis van deze voorkeuren.
      
 
 - **Idee Uitwerking**:
@@ -48,4 +42,11 @@ Hier kun je filteren en sorten van alle games die zijn gemaakt in het JSON besta
 
 **Form**:
 Hier kun je een form aanmaken en posten. Doordat je het post kunnen andere users deze ook bezichtigen.
+
+![mongodb](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![express js](https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white)
+![css](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![html](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![json](https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white)
 
