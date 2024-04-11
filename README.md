@@ -85,6 +85,21 @@ Features that we have in mind but are not yet available are:
    * Uploading a custom profile image
    * Customizing your profile design/colors
 
+#### Challenges
+
+Some of the challenges we faced during this project were:
+
+1. Staying logged in
+   * Since this was the first time I (@Tbjamie) made a backend project I never heard of express-sessions, so I had to do quite some research into it before I managed to get it working. But even though it was one of the most challenging parts, it was also the most satisfying for me when I finally managed to make it work!
+
+2. Filtering/Searching
+   * Since the frontend team never made any filtering system before it was quite hard at first to get the filters working. But step by step they worked very hard to overcome this struggle and they managed (especially @camil1404) to make the filters work!
+   * The searching was also something we had never done before but after a lot of research @KeyshaManucan found out how to make a working searchbar and these steps were a huge leap forward from making a very plain and static website to a website that actually feels interactive.
+
+3. Forum
+   * Making the forum working was a big challenge and me (@Tbjamie) with the help of @sanderboompje (Made the "Make a post page" together with me) did quite some research and also brainstormed a lot. But in the end I managed to get the forum working! With making the forum I noticed I started getting a lot more comfortable with using the backend code, so this was also a great challenge!
+  
+
 
 ## How to run the project
 
