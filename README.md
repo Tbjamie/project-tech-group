@@ -2,7 +2,44 @@
 
 ## About
 
-GameSphere. THE website to find all the games that you desire! You can explore games right from the homepage. Already know what you're looking for? You can search any game right from the discover page! This website has all you need
+### GameSphere
+
+THE website to find all the games that you desire! 
+
+You can explore games right from the homepage. Already know what you're looking for? You can search any game right from the discover page! This website has all you need to find the perfect game!
+
+Are you just trying to find people to play with? Our website has a matching system that can find the perfect gamebuddy for you, so that you'll never have to play alone again!
+So don't hesitate and start right away!
+
+### Technologies used
+
+[![mongodb](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
+[![express js](https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
+
+[![css](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![json](https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white)](https://www.json.org/json-en.html)
+
+### Features and Challenges
+
+#### Supported Features
+
+The current features that this website has to offer are:
+
+1. Homepage
+   * You can browse through a set of random games.
+   * New releases are easy to find under the "New Releases" heading.
+   * Discounted games are easy to find under the "Featured Discounts" heading.
+  
+2. Login/Logout/Sign up
+   * It's possible to make an account with a unique username and email.
+   * Once you have an account you can login to your account and stay logged in for at least 1 hour.
+   * If you want to log out, you can go to the account page to simply log out and end your session.
+
+
+#### Future Features
+
+
 
 ## How to run the project
 
@@ -42,10 +79,4 @@ Hier kun je filteren en sorten van alle games die zijn gemaakt in het JSON besta
 
 **Form**:
 Hier kun je een form aanmaken en posten. Doordat je het post kunnen andere users deze ook bezichtigen.
-
-![mongodb](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
-![express js](https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white)
-![css](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-![json](https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white)
 
